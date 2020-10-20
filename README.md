@@ -21,3 +21,7 @@ Operator [service-binding-operator.v0.3.0] [certified=false]
 Operator [service-registry-operator.v1.0.2] [certified=false]
 Operator [servicemeshoperator.v1.1.10] [certified=false]
 Operator [web-terminal.v1.0.1] [certified=false]
+
+Here is a link to the various marketplace operator indexes from where you can pull
+data:
+https://github.com/operator-framework/operator-marketplace/tree/master/defaults
