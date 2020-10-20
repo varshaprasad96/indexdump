@@ -35,5 +35,7 @@ docker login https://registry.redhat.io
 Then run the  oc-get-index-redhat-operators.sh script to download the index
 files.
 
+also...
 
-
+docker login quay.io
+quay.io/operatorhubio/catalog:latest
