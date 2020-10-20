@@ -22,6 +22,18 @@ Operator [service-registry-operator.v1.0.2] [certified=false]
 Operator [servicemeshoperator.v1.1.10] [certified=false]
 Operator [web-terminal.v1.0.1] [certified=false]
 
+## OperatorHub Indexes
+
 Here is a link to the various marketplace operator indexes from where you can pull
 data:
 https://github.com/operator-framework/operator-marketplace/tree/master/defaults
+
+To download indexes from that location:
+
+docker login https://registry.redhat.io
+
+Then run the  oc-get-index-redhat-operators.sh script to download the index
+files.
+
+
+
