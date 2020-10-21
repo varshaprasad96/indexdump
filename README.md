@@ -37,5 +37,7 @@ files.
 
 also...
 
+https://github.com/operator-framework/operator-lifecycle-manager/blob/master/deploy/upstream/manifests/0.16.1/0000_50_olm_17-upstream-operators.catalogsource.yaml#L10
+
 docker login quay.io
 quay.io/operatorhubio/catalog:latest
