@@ -15,6 +15,10 @@ func main() {
 		fmt.Printf("path is a required argument\n")
 		os.Exit(1)
 	}
+	if len(args) != 2 {
+		fmt.Printf("path, sourceDescription are required parameters\n")
+		os.Exit(1)
+	}
 
 	pathToIndexFile := args[0]
 	db, err := sql.Open("sqlite3", pathToIndexFile)
@@ -22,22 +26,24 @@ func main() {
 		panic(err)
 	}
 
-	dump(db)
+	sourceDescription := args[1]
+
+	dump(db, sourceDescription)
 }
 
-func dump(db *sql.DB) {
+func dump(db *sql.DB, sourceDescription string) {
 	row, err := db.Query("SELECT name, csv FROM operatorbundle where csv is not null order by name")
 	if err != nil {
 		panic(err)
 	}
 	var csvStruct v1alpha1.ClusterServiceVersion
 
+	fmt.Println("operator, version, certified, createdAt, company, source")
 	defer row.Close()
 	for row.Next() { // Iterate and fetch the records from result cursor
 		var name string
 		var csv string
 		row.Scan(&name, &csv)
-		//fmt.Println("Operator: ", name, " csv ", csv)
 		err := json.Unmarshal([]byte(csv), &csvStruct)
 		if err != nil {
 			fmt.Printf("error unmarshalling csv %s\n", err.Error())
@@ -48,10 +54,18 @@ func dump(db *sql.DB) {
 			fmt.Printf("Label [%s] [%s]\n", k, v)
 		}
 		*/
+		/**
 		for k, v := range csvStruct.ObjectMeta.Annotations {
 			if k == "certified" {
-				fmt.Printf("Operator [%s] [%s=%s]\n", name, k, v)
+				//fmt.Printf("Operator [%s] [%s=%s]\n", name, k, v)
+				certified = v
+				break
 			}
 		}
+		*/
+		certified := csvStruct.ObjectMeta.Annotations["certified"]
+		createdAt := csvStruct.ObjectMeta.Annotations["createdAt"]
+		companyName := csvStruct.Spec.Provider.Name
+		fmt.Printf("%s|%s|%s|%s|%s|%s\n", name, csvStruct.Spec.Version, certified, createdAt, companyName, sourceDescription)
 	}
 }

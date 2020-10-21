@@ -1,0 +1,422 @@
+3scale-operator.v0.3.0|0.3.0|false|2019-05-30T22:40:00Z|Red Hat|redhat
+3scale-operator.v0.4.2|0.4.1|false|2019-05-30T22:40:00Z|Red Hat|redhat
+3scale-operator.v0.5.5|0.5.5|false|2019-05-30T22:40:00Z|Red Hat|redhat
+3scale-operator.v0.6.0|0.6.0|false|2019-05-30T22:40:00Z|Red Hat|redhat
+aci-containers-operator.v1.0.0|1.0.0|false|2020-01-09T12:00:00Z|Cisco Systems Inc|marketplace
+aci-containers-operator.v1.0.0|1.0.0|false|2020-09-03T12:00:00Z|Cisco Systems Inc|certified
+advanced-cluster-management.v2.0.3|2.0.3|true|2020-09-17T23:51:40Z|Red Hat|redhat
+akka-cluster-operator-certified.v1.0.0|1.0.0|true|2019-06-28T15:23:00Z|Lightbend, Inc.|certified
+akka-cluster-operator-certified.v1.0.0|1.0.0|true|2019-06-28T15:23:00Z|Lightbend, Inc.|marketplace
+akka-cluster-operator.v1.0.0|1.0.0|false|2019-06-28T15:23:00Z|Lightbend, Inc.|operatorhub
+alcide-kaudit-operator.v0.0.3|0.0.3|true|2020-04-07 12:59:59|Alcide|certified
+amq7-interconnect-operator.v1.2.1|1.2.1|false|2019-06-28T22:00:00Z|Red Hat|redhat
+amq-online.1.5.3|1.5.3|false|2019-02-19T00:00:00Z|Red Hat, Inc|redhat
+amqstreams.v1.5.3|1.5.3|false|2020-05-25T10:00:00Z|Red Hat|redhat
+anaconda-team-edition.v6.1.3|6.1.3|false|2020-08-27T04:49:49Z|Anaconda, Inc.|certified
+anaconda-team-edition.v6.1.3|6.1.3|false|2020-08-27T04:49:49Z|Anaconda, Inc.|marketplace
+anchore-engine-operator.v0.1.3|0.1.3|true|2019-12-13T07:00:00Z|Anchore Inc.|operatorhub
+anzograph-operator.v1.3.400|1.3.4|true|2020-10-15|Cambridge Semantics|certified
+anzograph-operator.v1.3.400|1.3.4|true|2020-10-15|Cambridge Semantics|marketplace
+apicast-community-operator.v0.2.1|0.2.1|false|2019-10-27T22:40:00Z|Red Hat|operatorhub
+apicast-operator.v0.2.4|0.2.4|false|2019-10-27T22:40:00Z|Red Hat|redhat
+apicast-operator.v0.3.0|0.3.0|false|2019-10-27T22:40:00Z|Red Hat|redhat
+apicurio-registry.v0.0.3-v1.2.3.final|0.0.3-v1.2.3.final|false|2020-07-08|Apicurio|operatorhub
+api-operator.v1.2.1|1.2.1|false|2020-09-25T03:00:00.000Z|WSO2|operatorhub
+appdynamics-operator.v0.4.1|0.4.1|false|2019-11-30 12:00:00|AppDynamics LLC|operatorhub
+appranix.v2.3.0|2.3.0|true|2020-02-18 10:47:57|Appranix, Inc|certified
+appranix.v2.3.0|2.3.0|true|2020-02-18 10:47:57|Appranix, Inc|marketplace
+appranix.v2.4.0|2.4.0|true|2020-03-04 12:34:42|Appranix, Inc|certified
+appranix.v2.4.0|2.4.0|true|2020-03-04 12:34:42|Appranix, Inc|marketplace
+appsody-operator.v0.6.0|0.6.0|true|2020-05-21 09:00:00|Appsody|operatorhub
+appsody-operator.v0.6.1|0.6.1|true|2020-06-26 09:00:00|Appsody|certified
+aqua-operator.v1.0.2|1.0.2|false|2020-03-25T08:00:00Z|Aqua Security, Inc.|operatorhub
+aqua-operator.v1.0.4|1.0.4|true|2020-03-25T08:00:00Z|Aqua Security, Inc.|certified
+aqua-operator.v1.0.4|1.0.4|true|2020-03-25T08:00:00Z|Aqua Security, Inc.|marketplace
+argocd-operator-helm.v0.0.7|0.0.7|false|2020-07-07 01:01:01|Disposable Zone|operatorhub
+argocd-operator.v0.0.14|0.0.14|false|2020-10-09 15:19:40|Argo CD Community|operatorhub
+artifactory-ha-operator.v1.1.1|1.1.1|true|2020-03-25 00:00:00+00:00|JFrog|certified
+atlasmap-operator.v0.3.0|0.3.0|false|2019-06-10T06:42:43Z|AtlasMap|operatorhub
+atomicorp-helm-operator.v0.0.1|0.0.1|false|2020-05-05T12:00:00Z|Atomicorp|certified
+atomicorp-helm-operator.v0.0.1|0.0.1|false|2020-05-05T12:00:00Z|Atomicorp|marketplace
+awss3operator.v1.0.0|1.0.0|false|2019-05-02 16:12:00|Red Hat|operatorhub
+awss3operator.v1.0.1|1.0.1|false|2019-05-02 16:12:00|Community|operatorhub
+aws-sources-operator.v0.2.0|0.2.0|false|2020-07-18T12:00:00Z|TriggerMesh Inc.|certified
+aws-sources-operator.v0.2.0|0.2.0|false|2020-07-18T12:00:00Z|TriggerMesh Inc.|marketplace
+ax-cps-operator.v1.0.0|1.0.0|true|2020-01-30T12:45:55+05:30|Appranix, Inc|operatorhub
+ax-cps-operator.v2.3.0|2.3.0|true|2020-02-10T13:27:50+05:30|Appranix, Inc|operatorhub
+azure-service-operator.v0.37.0|0.37.0|false|2020-08-20 12:00:00|Microsoft|operatorhub
+banzaicloud-kafka-operator.0.3.1|0.3.1|false|2019-05-28T08:00:00Z|Banzai Cloud|operatorhub
+banzaicloud-kafka-operator.0.6.1|0.6.1|false|2019-10-15T08:00:00Z|Banzai Cloud|operatorhub
+businessautomation-operator.7.8.1|7.8.1|true|2020-09-07 08:37:06|Red Hat|redhat
+camel-k-operator.v1.2.0|1.2.0|false|2020-10-12T02:45:00Z|The Apache Software Foundation|operatorhub
+can-operator.v0.0.1|0.0.1|false|2020-10-15T10:18:00Z|Avanseus Technologies Pvt. Ltd.|certified
+can-operator.v0.0.1|0.0.1|false|2020-10-15T10:18:00Z|Avanseus Technologies Pvt. Ltd.|marketplace
+cassandra-operator.v2.0.0|2.0.0|false|2019-09-04 12:00:00|Instaclustr|operatorhub
+cass-operator.v1.0.0|1.0.0|true|2020-03-31|DataStax|certified
+cass-operator.v1.0.0|1.0.0|true|2020-03-31|DataStax|marketplace
+cert-manager-operator.v0.15.2|0.15.2|true|2020-05-04T12:00:00Z|Jetstack|certified
+cert-manager-operator.v0.15.2|0.15.2|true|2020-05-04T12:00:00Z|Jetstack|marketplace
+chaosblade-operator.v0.5.1|0.5.1|false|2020-02-11T15:40:00Z|Alibaba Cloud|operatorhub
+chaosoperator.v0.1.0|0.1.0|false|2019-07-15 10:28:08|MayaData|operatorhub
+chaosoperator.v1.3.0|1.3.0|false|2020-04-16T02:45:37Z|MayaData|operatorhub
+cic-operator.v1.7.6|1.7.6|false|2020-02-06|Citrix|certified
+citrix-adc-istio-ingress-gateway-operator.v1.0.1|1.0.1|false|2019-12-03 14:16:17|Citrix|certified
+citrix-api-gateway-operator.v0.0.1|1.8.19|false|06-26-2020|Citrix|certified
+citrix-api-gateway-operator.v0.0.1|1.8.19|false|06-26-2020|Citrix|marketplace
+clickhouse-operator.v0.10.0|0.10.0|false|2019-11-11T10:00:00Z|Altinity|operatorhub
+cloud-native-postgresql.v0.3.0|0.3.0|true|2020-09-01T11:43:00Z|2ndQuadrant|certified
+cluster-manager.v0.2.0|0.2.0|false|2020-10-13T20:00:31Z|Red Hat, Inc.|operatorhub
+cnvrg-operator.v0.352.0|0.352.0|true|2020-06-11T12:59:59.000Z|cnvrg.io/new|certified
+cnvrg-operator.v0.352.0|0.352.0|true|2020-06-11T12:59:59.000Z|cnvrg.io/new|marketplace
+cockroachdb.v2.1.11|2.1.11|false|2019-01-24T15-33-43Z|Helm Community|operatorhub
+cockroachdb.v3.0.7|3.0.7|false|2020-06-22T15-00-00Z|Helm Community|operatorhub
+cockroach-operator.v1.0.1|1.0.1|true|2020-09-03T19:29:26Z|Cockroach Labs|certified
+cockroach-operator.v1.0.1|1.0.1|true|2020-09-03T19:29:26Z|Cockroach Labs|marketplace
+composable-operator.v0.1.3|0.1.3|false|2019-11-16T20:39:31Z|IBM|operatorhub
+container-security-operator.v3.3.1|3.3.1|true|2020-05-20 17:15:55|Red Hat|redhat
+conversational-hub-operator.v2.1.0|2.1.0|true|2020-04-20 12:59:59|EscalateAI Conversation Hub Team|certified
+coralogix-operator.v1.0.0|1.0.0|false|2020-09-08T07:15:53Z|Coralogix Ltd.|certified
+cortex-certifai-operator.v1.3.4|1.3.4|false|2020-1-23T12:03:45Z|CognitiveScale|certified
+cortex-certifai-operator.v1.3.4|1.3.4|true|2020-1-23T12:03:45Z|CognitiveScale|marketplace
+cortex-certifai-operator.v1.3.5-rc.2|1.3.5-rc.2|false|2020-1-23T12:03:45Z|CognitiveScale|certified
+cortex-fabric-operator.v1.0.0|1.0.0|false|2020-5-01T12:03:45Z|CognitiveScale|certified
+cortex-fabric-operator.v1.0.0|1.0.0|false|2020-5-01T12:03:45Z|CognitiveScale|marketplace
+cortex-healthcare-hub-operator.v0.0.25|0.0.25|false|2020-5-01T12:03:45Z|CognitiveScale|certified
+cortex-healthcare-hub-operator.v0.0.25|0.0.25|false|2020-5-01T12:03:45Z|CognitiveScale|marketplace
+cortex-hub-operator.v0.0.25|0.0.25|false|2020-5-01T12:03:45Z|CognitiveScale|certified
+cortex-hub-operator.v0.0.25|0.0.25|false|2020-5-01T12:03:45Z|CognitiveScale|marketplace
+cos-bucket-operator.v0.1.0|0.1.0|false|2019-08-23T12:38:36Z|IBM|operatorhub
+couchbase-operator.v1.0.0|1.0.0|false|2019-02-25T12:24:59Z|Couchbase|operatorhub
+couchbase-operator.v1.2.2|1.2.2|true|2019/08/30|Couchbase|certified
+couchbase-operator.v1.2.2|1.2.2|true|2019/08/30|Couchbase|marketplace
+couchbase-operator.v2.0.2|2.0.2|true|2020/08/13|Couchbase|operatorhub
+couchdb-operator.v1.0.13|1.0.13|true|2020-05-29T12:00:00Z|IBM|operatorhub
+couchdb-operator.v1.0.14|1.0.14|true|2020-08-06T12:00:00Z|IBM|certified
+couchdb-operator.v1.1.0|1.1.0|true|2020-09-08T12:00:00Z|IBM|certified
+couchdb-operator.v1.2.1|1.2.1|true|2020-09-15T18:00:00Z|IBM|certified
+cpx-cic-operator.v130.47.103|130.47.103|false|2020-02-06|Citrix|certified
+cpx-cic-operator.v130.47.103|130.47.103|false|2020-02-06|Citrix|marketplace
+credstash-operator.v1.13.0|1.13.0|false|2020-07-20 01:01:01|Ouzi|operatorhub
+crossplane.v0.11.0|0.11.0|false|2020-05-26T00:20:38.159772+00:00|Upbound|operatorhub
+cyberarmor-operator.0.0.1|0.0.1|false|26-05-2020|Cyber Armor Ltd|certified
+cyberarmor-operator.0.0.1|0.0.1|false|26-05-2020|Cyber Armor Ltd|marketplace
+datadog-operator.v0.3.0|0.3.0|true|2020-008-31 17:01:40|Datadog|certified
+datadog-operator.v0.3.0|0.3.0|true|2020-008-31 17:01:40|Datadog|marketplace
+datadog-operator.v0.3.2|0.3.2|true|2020-009-16 14:14:02|Datadog|operatorhub
+datagrid-operator.v8.0.3|8.0.3|false|2020-08-07T16:26:17Z|Red Hat|redhat
+datagrid-operator.v8.1.1|8.1.1|false|2020-10-06T20:33:23Z|Red Hat|redhat
+dell-csi-operator.v1.0.0|1.0.0|Yes|2020-03-03T11:30:59Z|Dell EMC|operatorhub
+dell-csi-operator.v1.1.0|1.1.0|true|2020-03-03T11:30:59Z|Dell EMC|certified
+dell-csi-operator.v1.1.0|1.1.0|true|2020-03-03T11:30:59Z|Dell EMC|marketplace
+densify-operator.v0.0.2|0.0.2|false|2020-08-19T:12:00:00Z|Densify|certified
+densify-operator.v0.0.2|0.0.2|false|2020-08-19T:12:00:00Z|Densify|marketplace
+deployment-validation-operator.v0.0.10|0.0.10|false|08/25/2020|Red Hat|operatorhub
+ditto-operator.v0.1.1|0.1.1|false|2020-07-19T19:15:00Z|Jens Reimann|operatorhub
+dynatrace-monitoring.v0.8.2|0.8.2|false|2020-06-15T07:00:00Z|Dynatrace LLC|operatorhub
+dynatrace-monitoring.v0.8.2|0.8.2|false|2020-08-24T15:00:00Z|Dynatrace LLC|certified
+dynatrace-monitoring.v0.8.2|0.8.2|false|2020-08-24T15:00:00Z|Dynatrace LLC|marketplace
+eap-operator.v2.0.0|2.0.0|false|2020-09-17T08:00:00Z|Red Hat|redhat
+eclipse-che.v7.19.2|7.19.2|false|2020-09-30T14:30:51Z|Eclipse Foundation|operatorhub
+eddi-operator.v1.0.2|1.0.2|false|2020-05-26|LABS.AI|certified
+eddi-operator.v1.0.2|1.0.2|false|2020-05-26|LABS.AI|marketplace
+elastic-cloud-eck.v1.2.1|1.2.1|false|2020-08-12 07:39:56|Elastic|operatorhub
+ember-csi-operator.v0.9.1|0.9.1|false|2020-06-25:16:07:00|Red Hat|operatorhub
+enc-key-sync-operator.v0.0.1|0.0.1|false|2020-07-21 20:00:00|IBM|operatorhub
+enmasse.0.32.2|0.32.2|false|2019-02-19T00:00:00Z|EnMasse|operatorhub
+esindex-operator.v0.1.0|0.1.0|false|2019-08-09T09:40:38Z|IBM|operatorhub
+etcdoperator-community.v0.6.1|0.6.1|false|2019-08-09T09:40:38Z|CoreOS, Inc|operatorhub
+etcdoperator.v0.9.4|0.9.4|false|2019-02-28 01:03:00|CNCF|operatorhub
+etcdoperator.v0.9.4-clusterwide|0.9.4-clusterwide|false|2019-02-28 01:03:00|CNCF|operatorhub
+eunomia.v0.1.7|0.1.7|false|11/18/2019|Kohl's Technology|operatorhub
+event-streams-topic.v0.1.1|0.1.1|false|2019-10-29T13:52:40Z|IBM|operatorhub
+ext-postgres-operator.v0.4.1|0.4.1|false|2019-12-19T14:12:00Z|movetokube.com|operatorhub
+f5-bigip-ctlr-operator.v1.2.0|1.2.0|false|2020-08-21|F5 Networks Inc.|certified
+falco-operator.v0.7.6|0.7.6|false|2019-03-12T18:30:00Z|Sysdig|operatorhub
+falco-operator.v1.2.0|1.2.0|false|2020-07-07 18:30:00|Sysdig|certified
+federatorai.v4.2.603|4.2.603|true|2019-10-07T18:00:00Z|ProphetStor Data Services, Inc.|community
+federatorai.v4.3.958|4.3.958|false|2020-09-18T13:00:00Z|ProphetStor Data Services, Inc.|operatorhub
+federatorai.v4.3.958|4.3.958|true|2020-09-18T13:00:00Z|ProphetStor Data Services, Inc.|certified
+fp-predict-plus-operator.v0.0.4|0.0.4|true|2020-05-16 00:00:00|Findability Sciences, LLC|certified
+gitlab-operator.v0.1.12|0.1.12|false|2020-03-11T13:29:00Z|GitLab, Inc|certified
+gpu-operator-certified.v1.1.7-r2|1.1.7-r2|false|2019-02-27T00:21:25Z|NVIDIA Corporation|certified
+grafana-operator.v2.0.0|2.0.0|False|2019-07-23 00:00:00|Red Hat|operatorhub
+grafana-operator.v3.2.0|3.2.0|False|2020-04-20 00:00:00|Red Hat|operatorhub
+growth-stack-operator.v1.0.0|1.0.0|true|2020-09-19T16:00:00Z|IBM Digital Growth and Commerce|certified
+growth-stack-operator.v1.0.0|1.0.0|true|2020-09-19T16:00:00Z|IBM Digital Growth and Commerce|marketplace
+halkyon.v0.1.8|0.1.8|false|2019-08-21|Snowdrop Team|operatorhub
+ham-deploy.v0.1.0|0.1.0|false|2020-05-12 00:00:00|IBM|operatorhub
+hawkbit-operator.v0.1.4|0.1.4|false|2020-09-07T16:23:00Z|Jens Reimann|operatorhub
+hazelcast-enterprise-operator.v0.3.2|0.3.2|false|2020-08-13T11:59:59Z|Hazelcast, Inc|operatorhub
+hazelcast-enterprise-operator.v0.3.2|0.3.2|true|2020-08-13 11:59:59+00:00|Hazelcast, Inc|certified
+hazelcast-enterprise-operator.v0.3.2|0.3.2|true|2020-08-13 11:59:59+00:00|Hazelcast, Inc|marketplace
+hazelcast-jet-enterprise-operator.v0.2.0|0.2.0|false|2020-04-16T11:59:59Z|Hazelcast Inc.|operatorhub
+hazelcast-jet-enterprise-operator.v0.2.0|0.2.0|true|2020-04-16 11:59:59|Hazelcast Inc.|certified
+hazelcast-jet-enterprise-operator.v0.2.0|0.2.0|true|2020-04-16 11:59:59|Hazelcast Inc.|marketplace
+hazelcast-jet-operator.v0.2.0|0.2.0|false|2020-04-16T11:59:59Z|Hazelcast Inc.|operatorhub
+hazelcast-operator.v0.3.2|0.3.2|false|2020-08-13T11:59:59Z|Hazelcast, Inc|operatorhub
+hive-operator.v1.0.11|1.0.11|false|2020-10-07T11:48:51Z|Red Hat|operatorhub
+hive-operator.v1.0.3-7-gba4793f|1.0.3-7-gba4793f|false|2020-05-08T15:03:21Z|Red Hat|operatorhub
+hive-operator.v1.0.5|1.0.5|false|2020-06-22T15:46:24Z|Red Hat|operatorhub
+hls-service-operator.v0.0.1|0.0.1|true|2020-03-24|HERE Technologies|certified
+hpa-operator.v0.1.6|0.1.6|false|2019-04-09T08:00:00Z|Banzai Cloud|operatorhub
+hpe-csi-operator.v1.2.0|1.2.0|true|Mon Jun  1 12:54:27 PDT 2020|HPE|operatorhub
+hpe-csi-operator.v1.3.0|1.3.0|true|Tue Aug 18 13:26:38 PDT 2020|HPE|certified
+ibm-application-gateway-operator.v0.9.0|0.9.0|false|2020-09-04T21:30:05Z|IBM|operatorhub
+ibm-block-csi-operator.v1.3.0|1.3.0|true|2020-08-30T15:15:00Z|IBM|certified
+ibm-block-csi-operator.v1.3.0|1.3.0|true|2020-08-30T15:15:00Z|IBM|marketplace
+ibm-block-csi-operator.v1.3.0|1.3.0|true|2020-08-30T15:15:00Z|IBM|operatorhub
+ibmcloud-iam-operator.v0.1.0|0.1.0|false|2020-08-12T13:36:55Z|IBM|operatorhub
+ibmcloud-operator.v0.1.11|0.1.11|false|2020-06-25T20:38:46Z|IBM|operatorhub
+ibmcloud-operator.v1.0.0|1.0.0|false|2020-09-23T23:57:03Z|IBM|operatorhub
+ibm-quantum-operator.v0.1.0|0.1.0|false|2020-008-28 22:25:53|IBM Quantum|operatorhub
+ibm-spectrum-scale-csi-operator.v2.0.0|2.0.0|false|Tue Jun  9 11:18:01 EDT 2020|IBM|certified
+ibm-spectrum-scale-csi-operator.v2.0.0|2.0.0|false|Tue Jun  9 11:18:01 EDT 2020|IBM|operatorhub
+ibm-spectrum-symphony-operator.v1.0.0|1.0.0|true|Mon  6 Apr 2020 11:00:00 EDT|IBM|certified
+infinibox-operator.v0.0.1|0.0.1|false|2020-03-11 10:20:01|Infinidat|certified
+infinispan-operator.v1.1.2|1.1.2|false|2020-05-15T08:42:04Z|Infinispan|operatorhub
+infinispan-operator.v2.0.3|2.0.3|false|2020-08-03T09:29:47Z|Infinispan|operatorhub
+insightedge-enterprise-operator.v15.0.1|15.0.1|true|2020-04-17 14:59:59|Gigaspaces|certified
+insightedge-enterprise-operator.v15.0.1|15.0.1|true|2020-04-17 14:59:59|Gigaspaces|marketplace
+instana-agent-operator.v0.3.6|0.3.6|false|2020-09-09T19:33:51Z|Instana|operatorhub
+instana-agent-operator.v0.3.6|0.3.6|false|2020-09-09T19:33:54Z|Instana|certified
+instana-agent-operator.v0.3.6|0.3.6|false|2020-09-09T19:33:54Z|Instana|marketplace
+iot-simulator.0.1.0|0.1.0|false|2019-03-19 00:00:00|Jens Reimann|operatorhub
+istio-operator.0.1.6|0.1.6|false|2019-04-01T08:00:00Z|Banzai Cloud|operatorhub
+ivory-server-operator.v1.0.0|1.0.0|false|2019-09-01 12:00:00|GT Software, Inc.|certified
+ivory-server-operator.v1.0.0|1.0.0|false|2019-09-01 12:00:00|GT Software, Inc.|marketplace
+jaeger-operator.v1.13.2-1|1.13.2-1|false|2019-07-05T11:16:15+00:00|Red Hat, Inc.|redhat
+jaeger-operator.v1.17.6|1.17.6|false|2020-07-27T00:00:00+00:00|Red Hat|redhat
+jaeger-operator.v1.20.0|1.20.0|false|2019-09-04T13:28:40+00:00|CNCF|operatorhub
+jenkins-operator.v0.3.0|0.3.0|false|2019-09-04T13:28:40+00:00|VirtusLab|operatorhub
+joget-dx-openshift-operator.v0.0.1|0.0.1|true|2019-07-23 12:59:59|Joget, Inc|certified
+joget-dx-openshift-operator.v0.0.1|0.0.1|true|2019-07-23 12:59:59|Joget, Inc|marketplace
+joget-openshift-operator.v0.0.4|0.0.4|true|2019-07-23 12:59:59|Joget, Inc|certified
+joget-openshift-operator.v0.0.4|0.0.4|true|2019-07-23 12:59:59|Joget, Inc|marketplace
+k10-helm-operator.2.5.18|2.5.18|true|2020-04-22 23:00:00|Kasten, Inc.|certified
+k10-helm-operator.2.5.18|2.5.18|true|2020-04-22 23:00:00|Kasten, Inc.|marketplace
+k8s-triliovault-cluster.v1.1.1|1.1.1|false|2020-04-27 17:12:00|Trilio|certified
+k8s-triliovault-cluster.v1.1.1|1.1.1|false|2020-04-27 17:12:00|Trilio|marketplace
+k8s-triliovault-namespaced.v1.1.1|1.1.1|false|2020-04-27 17:12:00|Trilio|certified
+k8s-triliovault-namespaced.v1.1.1|1.1.1|false|2020-04-27 17:12:00|Trilio|marketplace
+keda.v1.5.0|1.5.0|false|2020-07-08T00:00:00.000Z|KEDA Community|operatorhub
+keycloak-operator.v11.0.0|11.0.0|False|2020-07-24 00:00:00|Red Hat|operatorhub
+kiali-operator.v1.12.16|1.12.16|false|2020-08-05T00:00:00Z|Red Hat|redhat
+kiali-operator.v1.24.0|1.24.0|false|2020-09-16T15:55:52Z|Kiali|operatorhub
+klusterlet.v0.2.0|0.2.0|false|2020-10-15T12:00:31Z|Red Hat, Inc.|operatorhub
+knative-eventing-operator.v0.13.1|0.13.1|false|2020-03-27T10:00:00Z|The Knative Authors|operatorhub
+knative-operator.v0.18.0|0.18.0|false|2020-10-07T00:00:00Z|The Knative Authors|operatorhub
+knative-serving-operator.v0.13.1|0.13.1|false|2020-03-04T00:00:00Z|The Knative Authors|operatorhub
+kogito-operator.v0.16.0|0.16.0|false|2019-08-22T13:12:22Z|Red Hat|operatorhub
+kong.v0.3.0|0.3.0|true|2020-04-10T17:26:45Z|Kong Inc|certified
+kong.v0.3.0|0.3.0|true|2020-04-10T17:26:45Z|Kong Inc|marketplace
+kong.v0.5.0|0.5.0|false|2020-08-05T16:07:00Z|Kong Inc.|operatorhub
+kube-arangodb.v1.0.1|1.0.1|true|2019-11-30 22:40:00|ArangoDB GmbH|certified
+kube-arangodb.v1.0.2|1.0.1|true|2019-11-30 22:40:00|ArangoDB GmbH|operatorhub
+kubefed-operator.v0.1.0|0.1.0|false|2019-06-14T00:00:00Z|Red Hat|operatorhub
+kubeflow.v1.0.0|1.0.0|False|2020-03-19T00:00:00Z|Kubeflow|operatorhub
+kubemq-operator.v0.3.2|0.3.2|false|2020-02-16T18:00:00.000Z|Kubemq.io|operatorhub
+kubemq-operator.v0.5.1|0.5.1|false|2020-03-11T12:00:00.000Z|Kubemq.io|operatorhub
+kubemq-operator.v1.1.0|1.1.0|false|2020-03-11 12:00:00+00:00|Kubemq.io|certified
+kubemq-operator.v1.1.0|1.1.0|false|2020-03-11 12:00:00+00:00|Kubemq.io|marketplace
+kubernetes-imagepuller-operator.v0.0.3|0.0.3|false||Red Hat, Inc.|operatorhub
+kubestone.v0.4.0|0.4.0|false|2019-10-18T12:32:00Z|xridge.io|operatorhub
+kubeturbo-operator.v7.21.0|7.21.0|false|2019-05-01T00:00:00.000Z|Turbonomic, Inc.|operatorhub
+kubeturbo-operator.v7.22.0|7.22.0|false|2019-05-01T00:00:00.000Z|Turbonomic, Inc.|operatorhub
+kubeturbo-operator.v7.22.9|7.22.9|false|2019-05-01T00:00:00Z|Turbonomic, Inc.|certified
+kubeturbo-operator.v7.22.9|7.22.9|false|2019-05-01T00:00:00Z|Turbonomic, Inc.|marketplace
+kubevirt-hyperconverged-operator.v2.1.0|2.1.0|false|2019-10-17 09:34:37|KubeVirt project|redhat
+kubevirt-hyperconverged-operator.v2.2.0|2.2.0|false|2020-01-26 16:24:03|KubeVirt project|redhat
+kubevirt-hyperconverged-operator.v2.3.0|2.3.0|true|2020-04-27 14:59:35|Red Hat|redhat
+kubevirt-hyperconverged-operator.v2.4.2|2.4.2|true|2020-09-29 09:20:17|Red Hat|redhat
+kubevirtoperator.0.18.1|0.18.1|false|2019-06-13 10:28:08|KubeVirt project|operatorhub
+lib-bucket-provisioner.v1.0.0|1.0.0|false|2014-07-19 07:02:32.267701|Red Hat|operatorhub
+lightbend-console-operator.v0.0.1|0.0.1|false|2019-09-18T00:00:00Z|Lightbend, Inc.|operatorhub
+linstor-operator.v1.0.0-dev4-ef10773|1.0.0-dev4+ef10773|true|2019-05-01T00:00:00Z|LINBIT|marketplace
+linstor-operator.v1.0.0-dev9.bc86329|1.0.0-dev9.bc86329|true|2020-10-13T14:46:07+00:00|LINBIT|certified
+linstor-operator.v1.1.0|1.1.0|true|2020-10-14T13:16:20+00:00|LINBIT|certified
+linstor-operator.v1.1.0|1.1.0|true|2020-10-14T13:16:20+00:00|LINBIT|marketplace
+logging-operator.v0.2.0|0.2.0|false|9-07-2020|Opstree Solutions|operatorhub
+mariadb-operator.v0.0.4|0.0.4|true|2020-04-07T11:17:00Z|Manoj Dhanorkar|operatorhub
+mattermost-operator.v0.5.0|0.5.0|false|2019-07-18 09:42:00|Mattermost|operatorhub
+mcad-operator.v0.1.9|0.1.9|false|2019-07-18 09:42:00|IBM|operatorhub
+memsql-operator.v1.2.1|1.2.1|true|2020-08-19 21:52:47.341572+00:00|MemSQL|certified
+memsql-operator.v1.2.1|1.2.1|true|2020-08-19 21:52:47.341572+00:00|MemSQL|marketplace
+metering-operator-upstream.v4.2.0|4.2.0|false|2019-01-01 11:59:59|Red Hat|operatorhub
+microcks-operator.v0.3.0|0.3.0|false|2020-04-07T19:21:00Z|Microcks.io|operatorhub
+microcks-operator.v1.0.0|1.0.0|false|2020-08-11T07:56:00Z|Microcks.io|operatorhub
+minio-operator.v1.0.3|1.0.3|false|2019-10-21T00:00:00.000Z|MinIO, Inc.|operatorhub
+mongodb-enterprise-advanced-ibm.v1.6.3|1.6.3|true|2020-07-06T10:00:00Z|IBM|certified
+mongodb-enterprise-advanced-ibm.v1.6.3|1.6.3|true|2020-07-06T10:00:00Z|IBM|marketplace
+mongodb-enterprise.v1.8.0|1.8.0|true|2020-09-02T15:33:27Z|MongoDB, Inc|certified
+mongodb-enterprise.v1.8.0|1.8.0|true|2020-09-02T15:33:27Z|MongoDB, Inc|marketplace
+mongodb-enterprise.v1.8.0|1.8.0|true|2020-09-02T15:33:27Z|MongoDB, Inc|operatorhub
+mtc-operator.v1.2.5|1.2.5|false|2019-07-25T10:21:00Z|Red Hat|redhat
+mtc-operator.v1.3.0|1.3.0|false|2019-07-25T10:21:00Z|Red Hat|redhat
+multicluster-operators-subscription.v0.1.2|0.1.2|false|2020-03-24T17:00:00Z|Red Hat|operatorhub
+myvirtualdirectory.1.0.0|1.0.0|false|2019-04-15|Tremolo Security, Inc.|operatorhub
+neuvector-operator.v1.0.0|1.0.0|false|2019-11-18T02:09:59Z|NeuVector|operatorhub
+neuvector-operator.v1.0.1|1.0.1|false|2019-11-18 02:09:59|NeuVector|certified
+neuvector-operator.v1.0.1|1.0.1|false|2019-11-18 02:09:59|NeuVector|marketplace
+nexus-operator.v0.3.0|0.3.0|false|2019-11-16T13:12:22Z|m88i Labs|operatorhub
+nfd-operator.v0.1.0|0.1.0|false|2019-05-30T00:00:00Z|Red Hat|operatorhub
+nginx-ingress-operator.v0.0.4|0.0.4|true|2020-03-03 12:59:59+00:00|NGINX Inc|certified
+node-red-operator.v0.0.2|0.0.2|false|2020-05-29T12:00:00Z|IBM-Edge|certified
+node-red-operator.v0.0.2|0.0.2|false|2020-05-29T12:00:00Z|IBM-Edge|marketplace
+noobaa-operator.v2.1.1|2.1.1|false|2019-07-08T13:10:20.940Z|NooBaa|operatorhub
+noobaa-operator.v2.3.0|2.3.0|false|2019-07-08T13:10:20.940Z|NooBaa|operatorhub
+nsm-operator.v0.0.1|0.0.1|false|2020-01-28T10:45:31.000Z|networkservicemesh.io|operatorhub
+nsx-container-plugin-operator.v0.1.0|0.1.0|True|2020-05-29T12:00:00Z|VMware|certified
+nuodb-operator.v2.0.2|2.0.2|true|2019-06-06 12:59:59|NuoDB, Inc.|marketplace
+nuodb-operator.v2.0.3|2.0.3|true|2019-06-06 12:59:59|NuoDB, Inc.|certified
+nuodb-operator.v2.0.3|2.0.3|true|2019-06-06T12:59:59Z|NuoDB, Inc.|operatorhub
+nuxeo-operator.v0.7.1|0.7.1|false|2020-09-26T00:00:00Z|Eric Ace|operatorhub
+nxiq-operator-certified.v1.99.0-1|1.99.0-1|true|2020-07-20|Sonatype|certified
+nxrm-operator-certified.v3.26.1-1|3.26.1-1|true|2020-07-17|Sonatype|certified
+ocs-operator.v4.3.0|4.3.0|false|2020-04-06 21:53:38|Red Hat, Inc|redhat
+ocs-operator.v4.4.2|4.4.2|false|2020-07-29 18:34:25|Red Hat, Inc|redhat
+ocs-operator.v4.5.0|4.5.0|false|2020-09-11 16:12:25|Red Hat|redhat
+openebsoperator.v1.5.0|1.5.0|false|2020-01-11T15:52:12Z|MayaData|operatorhub
+open-liberty-0.0.1|0.0.1|false|2019-05-16T12:00:00.000-0500|IBM|operatorhub
+open-liberty-operator.v0.7.0|0.7.0|true|2020-07-22 09:00:00|IBM|certified
+open-liberty-operator.v0.7.0|0.7.0|true|2020-07-22 09:00:00|IBM|operatorhub
+openshift-qiskit-operator.v0.1.0|0.1.0|false|2020-006-28 22:25:53|IBM Quantum|operatorhub
+openunison.1.0.0|1.0.0|true|2020-01-08|Tremolo Security, Inc.|certified
+openunison.1.0.0|1.0.0|true|2020-01-08|Tremolo Security, Inc.|marketplace
+operator, version, certified, createdAt, company, source
+operator, version, certified, createdAt, company, source
+operator, version, certified, createdAt, company, source
+operator, version, certified, createdAt, company, source
+operator, version, certified, createdAt, company, source
+opsmx-spinnaker-operator.v1.20.3|1.20.3|false|2019-04-08 19:49:35|OpsMx|operatorhub
+orca-operator.v1.0.197|1.0.197|true||Tufin|certified
+orca-operator.v1.0.197|1.0.197|true||Tufin|marketplace
+perceptilabs-operator.v1.0.16|1.0.16|false|2019-10-02T12:00:00Z|PerceptiLabs|certified
+perceptilabs-operator.v1.0.16|1.0.16|false|2019-10-02T12:00:00Z|PerceptiLabs|marketplace
+percona-server-mongodb-operator.v1.3.0|1.3.0|false|2019-12-11T11:35:26.000Z|Percona|operatorhub
+percona-server-mongodb-operator.v1.4.0|1.4.0|true|2020-03-10T10:35:26Z|Percona|certified
+percona-server-mongodb-operator.v1.5.0|1.5.0|true|2020-09-10T10:35:26.000Z|Percona|operatorhub
+percona-xtradb-cluster-operator.v1.5.0|1.5.0|true|2020-05-08T19:11:44.000Z|Percona|certified
+percona-xtradb-cluster-operator.v1.6.0|1.6.0|true|2020-10-15T10:11:44.000Z|Percona|operatorhub
+performance-addon-operator.v4.4.1|4.4.1|false|2020-09-11 16:12:25|Red Hat|redhat
+performance-addon-operator.v4.5.1|4.5.1|false|2020-09-11 16:12:25|Red Hat|redhat
+planetscale-operator.v0.1.8|0.1.8|False|2019-03-06 21:40:00|PlanetScale|operatorhub
+pmem-csi-operator.v0.8.0|0.8.0|false|2020-10-13T17:41:44Z|Intel® Corporation|operatorhub
+portshift-operator.v0.1.6|0.1.6|true|2020-02-11 01:00:00+00:00|Portshift|certified
+portshift-operator.v0.1.6|0.1.6|true|2020-02-11 01:00:00+00:00|Portshift|marketplace
+portworx-essentials.v1.3.3|1.3.3|false|2020-08-04T08:00:00Z|Portworx|operatorhub
+portworx-operator.v1.4.0|1.4.0|false|2020-08-24T08:00:00Z|Portworx|operatorhub
+portworx-operator.v1.4.0|1.4.0|true|2020-09-24T08:00:00Z|Portworx|certified
+portworx-operator.v1.4.0|1.4.0|true|2020-09-24T08:00:00Z|Portworx|marketplace
+postgres-operator.v1.3.0|1.3.0|false|2019-07-24 10:30:00|Zalando SE|operatorhub
+postgresoperator.v4.0.1|4.0.1|false|07/04/2019|CrunchyData.com|operatorhub
+postgresoperator.v4.1.0|4.1.0|false|10/29/2019|CrunchyData.com|operatorhub
+postgresoperator.v4.2.2|4.2.2|false|2019-12-31 19:40Z|Crunchy Data|operatorhub
+postgresoperator.v4.3.2|4.3.2|false|2019-12-31 19:40Z|Crunchy Data|operatorhub
+postgresoperator.v4.5.0|4.5.0|false|2019-12-31 19:40Z|Crunchy Data|certified
+postgresoperator.v4.5.0|4.5.0|false|2019-12-31 19:40Z|Crunchy Data|marketplace
+postgresoperator.v4.5.0|4.5.0|false|2019-12-31 19:40Z|Crunchy Data|operatorhub
+postgresql-operator.v0.0.1|0.0.1|true|2019-12-13 09:00:00|Openlabs|operatorhub
+postgresql-operator.v0.1.1|0.1.1|false|2019-09-08T08:00:00Z|Dev4Devs.com|operatorhub
+presto-operator.0.32.0|0.32.0|true|2020-07-23T01:49:01Z|Starburst Data|certified
+presto-operator.0.32.0|0.32.0|true|2020-07-23T01:49:01Z|Starburst Data|marketplace
+prisma-cloud-compute-console-operator.v1.0.0|1.0.0|false|2019-04-01 00:00:00|Palo Alto Networks|operatorhub
+project-quay-container-security-operator.v1.0.6|1.0.6|false|2020-04-13 00:00:00|Project Quay|operatorhub
+project-quay.v1.1.2|1.1.2|false|2020-07-01|Project Quay|operatorhub
+prometheus-exporter-operator.v0.2.0|0.2.0|false|2020-06-08 00:00:00|Red Hat|operatorhub
+prometheusoperator.0.37.0|0.37.0|false|2019-09-04 12:00:00|Red Hat|operatorhub
+pystol.v0.8.17|0.8.17|false|2020-06-11 10:00:00|Pystol|operatorhub
+quay-bridge-operator.v3.3.1|3.3.1|false|2020-03-18 01:03:00|Red Hat|redhat
+rapidbiz-operator.v0.0.1|0.0.1|Red Hat certified|2020-02-04T16:00:00Z|Vacava|certified
+rapidbiz-operator.v0.0.1|0.0.1|Red Hat certified|2020-02-04T16:00:00Z|Vacava|marketplace
+redhat-marketplace-operator.v1.0.4|1.0.4|true|2020-10-16T03:24:13Z|Red Hat Marketplace|certified
+red-hat-quay.v3.3.2-20200903|3.3.2-20200903|false|2020-06-08|Red Hat|redhat
+redis-enterprise-operator-preview.v6.0.6-24|6.0.6-24|true|2020-10-16T03:24:13Z|Redis Labs|certified
+redis-enterprise-operator.v0.0.1|0.0.1|false|2019-02-24 11:35:59|Redis Labs, Inc|operatorhub
+redis-enterprise-operator.v5.4.14-7|5.4.14-7|true|2020-10-16T03:24:13Z|Redis Labs|certified
+redis-enterprise-operator.v6.0.6-24|6.0.6-24|true|2020-10-16T03:24:13Z|Redis Labs|certified
+redis-operator.v0.2.0|0.2.0|false|8-1-2020|Opstree Solutions|operatorhub
+rhsso-operator.7.4.2|7.4.2|False|2020-05-04 00:00:00|Red Hat|redhat
+ripsaw.v0.1.0|0.1.0|false|2019-06-28 06:42:43|Red Hat Performance|operatorhub
+robin-operator.v5.1.1|5.1.0|true|2019-05-06 14:00:00|Robin.io|certified
+robin-operator.v5.1.1|5.1.0|true|2019-05-06 14:00:00|Robin.io|marketplace
+robin-operator.v5.1.1|5.1.1|true|2019-05-06T14:00:00Z|Robin.io|operatorhub
+rocketchat-operator.v0.1.0|0.1.0|true|2020-03-26T04:07:54+00:00|Rocket.Chat|certified
+rocketchat-operator.v0.1.0|0.1.0|true|2020-03-26T04:07:54+00:00|Rocket.Chat|marketplace
+rocketmq-operator.0.2.1|0.2.1|False|2019-11-8 16:06:00|the Apache Software Foundation|operatorhub
+rook-ceph.v1.1.1|1.1.1|false|2019-09-23T11-51-58Z|The Rook Authors|operatorhub
+rook-edgefs.v1.0.1|1.0.1|false|2019-05-16T22-53-57Z|The Rook Authors|operatorhub
+rqlite-operator.v0.0.1|0.0.1|false||Jeff McCormick|operatorhub
+runtime-component-operator.v0.7.0|0.7.0|true|2020-07-16 09:00:00|Community|certified
+runtime-component-operator.v0.7.0|0.7.0|true|2020-07-16 09:00:00|Community|marketplace
+runtime-component-operator.v0.7.0|0.7.0|true|2020-07-16 09:00:00|Community|operatorhub
+sealed-secrets-operator-helm.v0.0.2|0.0.2|false|2020-07-08 01:01:01|Disposable Zone|operatorhub
+seldon-deploy-operator.v0.7.0|0.7.0|false|2020-05-21 15:00:00|Seldon Technologies|certified
+seldon-deploy-operator.v0.7.0|0.7.0|false|2020-05-21 15:00:00|Seldon Technologies|marketplace
+seldon-operator.v1.2.2|1.2.2|false|2019-05-21 15:00:00|Seldon Technologies|certified
+seldon-operator.v1.2.2|1.2.2|false|2019-05-21 15:00:00|Seldon Technologies|marketplace
+seldon-operator.v1.2.2|1.2.2|false|2019-05-21 15:00:00|Seldon Technologies|operatorhub
+sematext-operator.v1.0.9|1.0.9|false|2019-06-13 08:00:00|Sematext|certified
+sematext-operator.v1.0.9|1.0.9|false|2019-06-13 08:00:00|Sematext|operatorhub
+serverless-operator.v1.10.0|1.10.0|false|2020-04-20T17:00:00Z|Red Hat|redhat
+serverless-operator.v1.7.2|1.7.2|false|2020-04-20T17:00:00Z|Red Hat, Inc.|redhat
+service-binding-operator.v0.3.0|0.3.0|false|2020-10-05T10:38:22Z|Red Hat|redhat
+servicemeshoperator.v1.1.10|1.1.10-0|false|2020-10-09T23:28:18UTC|Red Hat, Inc.|redhat
+service-registry-operator.v1.0.2|1.0.2|false|2020-06-04|Red Hat|redhat
+siddhi-operator.v0.2.2|0.2.2|false|2020-01-02T16:45:00Z|Siddhi|operatorhub
+skydive-operator.v0.0.12|0.0.12|false|Jan 14, 2020 11:40 am|Skydive Community|operatorhub
+snapscheduler.v1.1.1|1.1.1|false||Backube|operatorhub
+snyk-operator.v1.33.0|1.33.0|false|2020-10-03T05:05:45Z|Snyk Ltd.|operatorhub
+sparkoperator.v1.0.2|1.0.2|false|2019-01-17 12:00:00|radanalytics.io|operatorhub
+sparkoperator.v2.4.0|2.4.0|False|2019-01-17 12:00:00|GoogleCloudPlatform|operatorhub
+spinnaker-operator.v1.20.3|1.20.3|false|2019-04-29 19:49:35|OpsMx|operatorhub
+splunk.v0.1.0|0.1.0|false|2019-12-18|Splunk Inc.|certified
+splunk.v0.1.0|0.1.0|false|2019-12-18|Splunk Inc.|operatorhub
+starboard-operator.v0.6.0|0.6.0|false|2020-09-15T08:00:00Z|Aqua Security|operatorhub
+storageosoperator.v2.2.0|2.2.0|false|2020-08-12T09:14:49Z|StorageOS, Inc|operatorhub
+storageosoperator.v2.2.0|2.2.0|true|2020-09-01T22:31:18Z|StorageOS, Inc|certified
+storageosoperator.v2.2.0|2.2.0|true|2020-09-01T22:31:18Z|StorageOS, Inc|marketplace
+strimzi-cluster-operator.v0.19.0|0.19.0|false|2020-07-27 22:49:00|Strimzi|operatorhub
+submariner.v0.6.1|0.6.1|false|2020-07-20 07:00:00|submariner.io|operatorhub
+synopsys-operator.2019.4.0|2019.4.0|false|2018-12-14 17:09:00|Synopsys, Inc|operatorhub
+synopsys-operator.2019.8.4|2019.8.4|false|2018-12-14 17:09:00|Synopsys, Inc|certified
+synopsys-operator.2019.8.4|2019.8.4|false|2019-07-22 17:09:00|Synopsys, Inc|operatorhub
+sysdig-operator.v1.7.2|1.7.2|false|2019-03-08T18:30:00Z|Sysdig|operatorhub
+sysdig-operator.v1.8.3|1.8.3|false|2019-03-08 18:30:00|Sysdig|certified
+sysdig-operator.v1.8.3|1.8.3|false|2019-03-08 18:30:00|Sysdig|marketplace
+t8c-operator.v7.21.0|7.21.0|false|2019-07-01T00:00:00.000Z|Turbonomic, Inc.|operatorhub
+t8c-operator.v7.22.9|7.22.9|false|2019-07-01T00:00:00.000Z|Turbonomic, Inc.|certified
+t8c-operator.v7.22.9|7.22.9|false|2019-07-01T00:00:00.000Z|Turbonomic, Inc.|marketplace
+ta-operator.v2.2.0|2.2.0|false|2020-07-01T20:00:00Z|IBM|certified
+ta-operator.v2.3.1|2.3.1|false|2020-10-01T20:00:00Z|IBM|certified
+tektoncd-operator.v0.15.2-1|0.15.2-1|false|2020-08-26T00:00:00Z|The Tekton Authors|operatorhub
+tidb-operator.v1.1.6|1.1.6|false|2020-10-16T07-18-39Z|PingCAP|operatorhub
+tigera-operator.v1.7.3|1.7.3|true|2020-08-07T22:44:11.830728Z|Tigera|certified
+time-machine-operator4.v0.0.4|0.0.4|false|2020-03-26 15:13:59|Solution-Soft|marketplace
+time-machine-operator4.v0.0.4|0.0.4|true|2020-03-26 15:13:59|Solution-Soft|certified
+traefikee-operator.v2.1.1|2.1.1|false|2019-12-12T09:01:00Z|Containous|operatorhub
+traefikee-redhat-certified.v2.0.2|2.0.2|true|2019-12-12T09:01:00Z|Containous|certified
+traefikee-redhat-certified.v2.0.2|2.0.2|true|2019-12-12T09:01:00Z|Containous|marketplace
+uma-operator.v1.0.0|1.0.0|false|2019-10-15T15:23:00Z|Broadcom, Inc.|certified
+uma-operator.v1.0.0|1.0.0|false|2019-10-15T15:23:00Z|Broadcom, Inc.|marketplace
+universalagent-operator.v0.0.2|0.0.1|false|2020-04-14 11:38:00|Stonebranch|certified
+universalagent-operator.v0.0.2|0.0.1|false|2020-04-14 11:38:00|Stonebranch|marketplace
+vaultoperator.v0.4.10|0.4.10|false|2019-03-07T08:00:00Z|Banzai Cloud|operatorhub
+vfunction-server-operator.v1.0.1|1.0.1|Red Hat certified|2020-05-18 20:00:00|vFunction|certified
+vfunction-server-operator.v1.0.1|1.0.1|Red Hat certified|2020-05-18 20:00:00|vFunction|marketplace
+vprotect-operator.v0.0.1|0.0.1|false|2020-04-17T10:40:45Z|Storware|certified
+vprotect-operator.v0.0.1|0.0.1|false|2020-04-17T10:40:45Z|Storware|marketplace
+wavefront-operator.v0.1.0|0.1.0|true|2019-11-26 01:09:59|VMware|certified
+wavefront-operator.v0.1.0|0.1.0|true|2019-11-29T02:09:59Z|VMware|operatorhub
+web-terminal.v1.0.1|1.0.1|false|2020-05-27T05:12:57Z|Red Hat|redhat
+wildfly-operator.v0.4.1|0.4.1|false|2020-09-18T08:00:00Z|WildFly|operatorhub
+wso2am-operator.v1.1.0|1.1.0|false|2020-09-07T03:00:00.000Z|WSO2|operatorhub
+xray-operator.v1.1.1|1.1.1|true|2020-05-22 00:00:00+00:00|JFrog|certified
+xrootd-operator.v0.2.1|0.2.1|true|2020-08-30 17:20:00|Xrootd community|operatorhub
+yugabyte-operator.v0.0.1|0.0.1|true|2020-08-30 17:20:00|YugabyteDB|operatorhub
+yugabyte-operator.v0.9.0|0.9.0|true|2020-03-31 12:00:00|Yugabyte Inc|certified
+zabbix-operator-certified.v0.0.2|0.0.2|true|2020-09-21T08:03:44Z|Zabbix LLC|certified
+zabbix-operator-certified.v0.0.2|0.0.2|true|2020-09-21T08:03:44Z|Zabbix LLC|marketplace
+zoperator.v0.3.6|0.3.6|true|August 26, 2020|Zadara|certified
+zoperator.v0.3.6|0.3.6|true|August 26, 2020|Zadara|operatorhub
+zts-xcrypt-operator.v0.0.11|0.0.11|false|2020-07-07T15:30:13.97Z|Zettaset|certified
+zts-xcrypt-operator.v0.0.11|0.0.11|false|2020-07-07T15:30:13.97Z|Zettaset|marketplace
