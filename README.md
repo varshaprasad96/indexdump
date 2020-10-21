@@ -37,5 +37,19 @@ files.
 
 also...
 
+https://github.com/operator-framework/operator-lifecycle-manager/blob/master/deploy/upstream/manifests/0.16.1/0000_50_olm_17-upstream-operators.catalogsource.yaml#L10
+
 docker login quay.io
 quay.io/operatorhubio/catalog:latest
+
+NOTE:  that image is built as follows...
+
+```
+We use a feature in quay to build it
+
+We configured that repository to have a job that runs whenever a change is committed to the upstream-community-operators folder in the community-operators repo
+
+It points to this dockerfile https://github.com/operator-framework/community-operators/blob/master/upstream.Dockerfile
+
+Which basically just uses an image from the operator-registry to build the catalog
+```
