@@ -6,7 +6,10 @@ import (
 	"fmt"
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/operator-framework/api/pkg/operators/v1alpha1"
+	"io/ioutil"
+	"net/http"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -69,6 +72,50 @@ func dump(db *sql.DB, sourceDescription, ocpVersion string) {
 		repo := csvStruct.ObjectMeta.Annotations["repository"]
 		createdAt := csvStruct.ObjectMeta.Annotations["createdAt"]
 		companyName := csvStruct.Spec.Provider.Name
-		fmt.Printf("%s|%s|%s|%s|%s|%s|%s|%s\n", name, csvStruct.Spec.Version, certified, createdAt, companyName, sourceDescription, repo, ocpVersion)
+		sdkVersion, found := getSDKVersion(repo)
+		if !found {
+			sdkVersion = "not golang sdk"
+		}
+		fmt.Printf("%s|%s|%s|%s|%s|%s|%s|%s|%s\n", name, csvStruct.Spec.Version, certified, createdAt, companyName, sourceDescription, repo, ocpVersion, sdkVersion)
 	}
+}
+
+func getSDKVersion(inURL string) (sdkVersion string, found bool) {
+	//replace github.com with raw.githubusercontent.com
+	URL := strings.Replace(inURL, "github.com", "raw.githubusercontent.com", 1)
+	URL = URL + "/master/go.mod"
+	//URL := "https://raw.githubusercontent.com/3scale/3scale-operator/master/go.mod"
+	//	fmt.Printf("trying URL %s\n", URL)
+	response, err := http.Get(URL) //use package "net/http"
+
+	if err != nil {
+		//fmt.Println("go.mod not found " + err.Error())
+		return "", false
+	}
+
+	defer response.Body.Close()
+
+	// Copy data from the response to standard output
+	body, err1 := ioutil.ReadAll(response.Body) //use package "io" and "os"
+	if err != nil {
+		fmt.Println(err1)
+		return "", false
+	}
+
+	//	fmt.Println("Number of bytes copied to STDOUT:", n)
+	temp := strings.Split(string(body), "\n")
+	for i := 0; i < len(temp); i++ {
+		if strings.Contains(temp[i], "operator-sdk") &&
+			!strings.Contains(temp[i], "=>") &&
+			!strings.Contains(temp[i], "replace") {
+			//fmt.Printf("%s\n", temp[i])
+			sdkVersion := strings.Split(strings.TrimSpace(temp[i]), " ")
+			if len(sdkVersion) > 1 {
+				//fmt.Printf("version [%s]\n", sdkVersion[1])
+				return sdkVersion[1], true
+			}
+		}
+	}
+	return "", false
+
 }
