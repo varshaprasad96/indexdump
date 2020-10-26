@@ -72,15 +72,15 @@ func dump(db *sql.DB, sourceDescription, ocpVersion string) {
 		repo := csvStruct.ObjectMeta.Annotations["repository"]
 		createdAt := csvStruct.ObjectMeta.Annotations["createdAt"]
 		companyName := csvStruct.Spec.Provider.Name
-		sdkVersion, found := getSDKVersion(repo)
+		sdkVersion, found, operatorType := getSDKVersion(repo)
 		if !found {
-			sdkVersion = "not golang sdk"
+			sdkVersion, found, operatorType = getAnsibleHelmVersion(repo)
 		}
-		fmt.Printf("%s|%s|%s|%s|%s|%s|%s|%s|%s\n", name, csvStruct.Spec.Version, certified, createdAt, companyName, sourceDescription, repo, ocpVersion, sdkVersion)
+		fmt.Printf("%s|%s|%s|%s|%s|%s|%s|%s|%s|%s\n", name, csvStruct.Spec.Version, certified, createdAt, companyName, sourceDescription, repo, ocpVersion, sdkVersion, operatorType)
 	}
 }
 
-func getSDKVersion(inURL string) (sdkVersion string, found bool) {
+func getSDKVersion(inURL string) (sdkVersion string, found bool, operatorType string) {
 	//replace github.com with raw.githubusercontent.com
 	URL := strings.Replace(inURL, "github.com", "raw.githubusercontent.com", 1)
 	URL = URL + "/master/go.mod"
@@ -90,7 +90,7 @@ func getSDKVersion(inURL string) (sdkVersion string, found bool) {
 
 	if err != nil {
 		//fmt.Println("go.mod not found " + err.Error())
-		return "", false
+		return "", false, ""
 	}
 
 	defer response.Body.Close()
@@ -99,7 +99,7 @@ func getSDKVersion(inURL string) (sdkVersion string, found bool) {
 	body, err1 := ioutil.ReadAll(response.Body) //use package "io" and "os"
 	if err != nil {
 		fmt.Println(err1)
-		return "", false
+		return "", false, ""
 	}
 
 	//	fmt.Println("Number of bytes copied to STDOUT:", n)
@@ -112,10 +112,66 @@ func getSDKVersion(inURL string) (sdkVersion string, found bool) {
 			sdkVersion := strings.Split(strings.TrimSpace(temp[i]), " ")
 			if len(sdkVersion) > 1 {
 				//fmt.Printf("version [%s]\n", sdkVersion[1])
-				return sdkVersion[1], true
+				return sdkVersion[1], true, "golang"
 			}
 		}
 	}
-	return "", false
+	return "", false, ""
 
+}
+
+//		URL := repoURL + "/blob/master/build/Dockerfile"
+func getAnsibleHelmVersion(inURL string) (sdkVersion string, found bool, operatorType string) {
+	//replace github.com with raw.githubusercontent.com
+	URL := strings.Replace(inURL, "github.com", "raw.githubusercontent.com", 1)
+	URL = URL + "/master/build/Dockerfile"
+	//URL := "https://raw.githubusercontent.com/3scale/3scale-operator/master/go.mod"
+	//	fmt.Printf("trying URL %s\n", URL)
+	response, err := http.Get(URL)
+
+	if err != nil {
+		//fmt.Println("build/Dockerfile not found " + err.Error())
+		return "", false, ""
+	}
+
+	defer response.Body.Close()
+
+	// Copy data from the response to standard output
+	body, err1 := ioutil.ReadAll(response.Body) //use package "io" and "os"
+	if err != nil {
+		fmt.Println(err1)
+		return "", false, ""
+	}
+
+	//	fmt.Println("Number of bytes copied to STDOUT:", n)
+	temp := strings.Split(string(body), "\n")
+	for i := 0; i < len(temp); i++ {
+		if strings.Contains(temp[i], "ansible-operator") &&
+			strings.Contains(temp[i], "operator-framework") {
+			//fmt.Printf("%s\n", temp[i])
+			sdkVersion := strings.Split(strings.TrimSpace(temp[i]), " ")
+			if len(sdkVersion) > 1 {
+				//fmt.Printf("version [%s]\n", sdkVersion[1])
+				return getSDKVersionFromImage(sdkVersion[1]), true, "ansible"
+			}
+		} else if strings.Contains(temp[i], "helm-operator") &&
+			strings.Contains(temp[i], "operator-framework") {
+			sdkVersion := strings.Split(strings.TrimSpace(temp[i]), " ")
+			if len(sdkVersion) > 1 {
+				//fmt.Printf("version [%s]\n", sdkVersion[1])
+				return getSDKVersionFromImage(sdkVersion[1]), true, "helm"
+			}
+		}
+	}
+	return "", false, ""
+
+}
+
+func getSDKVersionFromImage(input string) (output string) {
+	result := strings.Split(input, ":")
+	l := len(result)
+	if l > 0 {
+		return result[l-1]
+	}
+	return ""
 }
