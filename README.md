@@ -13,14 +13,14 @@ operatorname, certified=true/false
 You run the program as follows passing in the sqlite index.db file:
 go run indexdump.go ../tiger/stagetools/index.db.4.5.stage
 
+Column headings are:
+name, csvStruct.Spec.Version, certified, createdAt, companyName, sourceDescription, repo, ocpVersion, sdkVersion, operatorType
+
 Output looks like:
 
 Operator [serverless-operator.v1.10.0] [certified=false]
 Operator [serverless-operator.v1.7.2] [certified=false]
 Operator [service-binding-operator.v0.3.0] [certified=false]
-Operator [service-registry-operator.v1.0.2] [certified=false]
-Operator [servicemeshoperator.v1.1.10] [certified=false]
-Operator [web-terminal.v1.0.1] [certified=false]
 
 ## OperatorHub Indexes
 
