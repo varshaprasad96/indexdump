@@ -8,3 +8,6 @@ oc image extract registry.redhat.io/redhat/community-operator-index:v4.6 --file=
 mv index.db index.db.4.6.community-operators
 oc image extract registry.redhat.io/redhat/redhat-marketplace-index:v4.6 --file=/database/index.db
 mv index.db index.db.4.6.redhat-marketplace-operators
+oc image extract quay.io/operatorhubio/catalog:latest --file=/database/index.db
+mv index.db index.db.operatorhub.io
+

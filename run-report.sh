@@ -6,19 +6,16 @@ if test -f "$SORTEDFILE"; then
     mv $SORTEDFILE $SORTEDFILE.previous
 fi
 echo Column headers are as follows:
-echo operator, version, certified, createdAt, company, source, repo, ocpversion
+echo operator,version,certified,created,company,repos,ocpversion,sdkversion,operatortype,source-redhat,source-community,source-marketplace,source-certified,source-operatorhub
 
-echo "looking at redhat-operators..."
-go run indexdump.go index.db.4.6.redhat-operators redhat 4.6>> $FILE
-echo "looking at community-operators..."
-go run indexdump.go index.db.4.6.community-operators community 4.6>> $FILE
-echo "looking at redhat-marketplace-operators..."
-go run indexdump.go index.db.4.6.redhat-marketplace-operators marketplace 4.6>> $FILE
-echo "looking at certified-operators..."
-go run indexdump.go index.db.4.6.certified-operators certified 4.6>> $FILE
-echo "looking at operatorhub.io operators..."
-go run indexdump.go index.db.operatorhub.io operatorhub 4.6>> $FILE
+go run indexdump.go \
+"index.db.4.6.redhat-operators:redhat:4.6" \
+"index.db.4.6.community-operators:community:4.6" \
+"index.db.4.6.redhat-marketplace-operators:marketplace:4.6" \
+"index.db.4.6.certified-operators:certified:4.6" \
+"index.db.operatorhub.io:operatorhub:4.6" > $FILE
 
+exit
 sort $FILE > $FILE.sorted
 
 echo $FILE.sorted file was created

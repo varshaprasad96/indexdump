@@ -9,30 +9,75 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
+	"sort"
 	"strings"
 )
 
+const source_redhat = "redhat"
+const source_community = "community"
+const source_marketplace = "marketplace"
+const source_certified = "certified"
+const source_operatorhub = "operatorhub"
+
+type ReportColumns struct {
+	Operator          string
+	Version           string
+	Certified         string
+	CreatedAt         string
+	Company           string
+	Repo              string
+	OCPVersion        string
+	SDKVersion        string
+	OperatorType      string
+	SourceRedhat      string
+	SourceCommunity   string
+	SourceMarketplace string
+	SourceCertified   string
+	SourceOperatorHub string
+}
+
+var ReportMap map[string]ReportColumns
+
+type Inputs struct {
+	Path    string
+	Source  string
+	Version string
+}
+
+var InputsList []Inputs
+
 func main() {
+	ReportMap = make(map[string]ReportColumns)
 	args := os.Args[1:]
 	if len(args) == 0 {
 		fmt.Printf("path is a required argument\n")
 		os.Exit(1)
 	}
-	if len(args) != 3 {
-		fmt.Printf("path, sourceDescription, ocpversion are required parameters\n")
-		os.Exit(1)
+	InputsList = make([]Inputs, 0)
+	for i := 0; i < len(args); i++ {
+		//	fmt.Printf("arg %s\n", args[i])
+		v := strings.Split(args[i], ":")
+		input := Inputs{
+			Path:    v[0],
+			Source:  v[1],
+			Version: v[2],
+		}
+		InputsList = append(InputsList, input)
+	}
+	//fmt.Printf("inputsList %+v\n", InputsList)
+
+	for i := 0; i < len(InputsList); i++ {
+		//fmt.Printf("opening %s\n", InputsList[i].Path)
+		db, err := sql.Open("sqlite3", InputsList[i].Path)
+		if err != nil {
+			panic(err)
+		}
+
+		dump(db, InputsList[i].Source, InputsList[i].Version)
 	}
 
-	pathToIndexFile := args[0]
-	db, err := sql.Open("sqlite3", pathToIndexFile)
-	if err != nil {
-		panic(err)
-	}
+	printReport()
 
-	sourceDescription := args[1]
-	ocpVersion := args[2]
-
-	dump(db, sourceDescription, ocpVersion)
 }
 
 func dump(db *sql.DB, sourceDescription, ocpVersion string) {
@@ -52,22 +97,7 @@ func dump(db *sql.DB, sourceDescription, ocpVersion string) {
 		if err != nil {
 			fmt.Printf("error unmarshalling csv %s\n", err.Error())
 		}
-		//fmt.Printf("%s\n", csv)
-		//os.Exit(1)
-		/**
-		for k, v := range csvStruct.ObjectMeta.Labels {
-			fmt.Printf("Label [%s] [%s]\n", k, v)
-		}
-		*/
-		/**
-		for k, v := range csvStruct.ObjectMeta.Annotations {
-			if k == "certified" {
-				//fmt.Printf("Operator [%s] [%s=%s]\n", name, k, v)
-				certified = v
-				break
-			}
-		}
-		*/
+
 		certified := csvStruct.ObjectMeta.Annotations["certified"]
 		repo := csvStruct.ObjectMeta.Annotations["repository"]
 		createdAt := csvStruct.ObjectMeta.Annotations["createdAt"]
@@ -76,7 +106,39 @@ func dump(db *sql.DB, sourceDescription, ocpVersion string) {
 		if !found {
 			sdkVersion, found, operatorType = getAnsibleHelmVersion(repo)
 		}
-		fmt.Printf("%s|%s|%s|%s|%s|%s|%s|%s|%s|%s\n", name, csvStruct.Spec.Version, certified, createdAt, companyName, sourceDescription, repo, ocpVersion, sdkVersion, operatorType)
+
+		f, ok := ReportMap[name]
+		if ok {
+			//update the entry's source columns
+			//fmt.Printf("Jeff - update an entry %s\n", name)
+		} else {
+			ReportMap[name] = ReportColumns{
+				Operator:     name,
+				Version:      csvStruct.Spec.Version.String(),
+				Certified:    certified,
+				CreatedAt:    createdAt,
+				Company:      companyName,
+				Repo:         repo,
+				OCPVersion:   ocpVersion,
+				SDKVersion:   sdkVersion,
+				OperatorType: operatorType,
+			}
+			f = ReportMap[name]
+		}
+		switch sourceDescription {
+		case source_redhat:
+			f.SourceRedhat = "yes"
+		case source_community:
+			f.SourceCommunity = "yes"
+		case source_marketplace:
+			f.SourceMarketplace = "yes"
+		case source_certified:
+			f.SourceCertified = "yes"
+		case source_operatorhub:
+			f.SourceOperatorHub = "yes"
+		}
+		ReportMap[name] = f
+
 	}
 }
 
@@ -174,4 +236,34 @@ func getSDKVersionFromImage(input string) (output string) {
 		return result[l-1]
 	}
 	return ""
+}
+
+func printReport() {
+	keys := make([]string, 0, len(ReportMap))
+	for k := range ReportMap {
+		keys = append(keys, k)
+	}
+
+	sort.Strings(keys)
+
+	// print the 1st row which acts as the spreadsheet header
+	fmt.Println("operator|version|certified|created|company|repos|ocpversion|sdkversion|operatortype|source-redhat|source-community|source-marketplace|source-certified|source-operatorhub")
+	for _, k := range keys {
+		f := ReportMap[k]
+		fmt.Printf("%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s\n",
+			f.Operator,
+			f.Version,
+			f.Certified,
+			f.CreatedAt,
+			f.Company,
+			f.Repo,
+			f.OCPVersion,
+			f.SDKVersion,
+			f.OperatorType,
+			f.SourceRedhat,
+			f.SourceCommunity,
+			f.SourceMarketplace,
+			f.SourceCertified,
+			f.SourceOperatorHub)
+	}
 }
