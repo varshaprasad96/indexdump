@@ -1,355 +1,356 @@
-operator|version|certified|created|company|repos|ocpversion|sdkversion|operatortype|source-redhat|source-community|source-marketplace|source-certified|source-operatorhub
-3scale-operator.v0.3.0|0.3.0|false|2019-05-30T22:40:00Z|Red Hat|https://github.com/3scale/3scale-operator|4.6|v0.16.0|golang|yes||||
-3scale-operator.v0.4.2|0.4.1|false|2019-05-30T22:40:00Z|Red Hat|https://github.com/3scale/3scale-operator|4.6|v0.16.0|golang|yes||||
-3scale-operator.v0.5.5|0.5.5|false|2019-05-30T22:40:00Z|Red Hat|https://github.com/3scale/3scale-operator|4.6|v0.16.0|golang|yes||||
-3scale-operator.v0.6.1|0.6.1|false|2019-05-30T22:40:00Z|Red Hat|https://github.com/3scale/3scale-operator|4.6|v0.16.0|golang|yes||||
-aci-containers-operator.v1.0.0|1.0.0|false|2020-01-09T12:00:00Z|Cisco Systems Inc|https://github.com/noironetworks/aci-containers|4.6|||||yes|yes|
-advanced-cluster-management.v2.0.4|2.0.4|true|2020-10-14T13:38:14Z|Red Hat|https://github.com/3scale/3scale-operator|4.6|v0.16.0|golang|yes||||
-akka-cluster-operator-certified.v1.0.0|1.0.0|true|2019-06-28T15:23:00Z|Lightbend, Inc.|https://github.com/lightbend/akka-cluster-operator|4.6|v0.6.1-0.20190322190857-b7dd8232e32c|golang|||yes|yes|
-akka-cluster-operator.v1.0.0|1.0.0|false|2019-06-28T15:23:00Z|Lightbend, Inc.|https://github.com/lightbend/akka-cluster-operator|4.6|v0.6.1-0.20190322190857-b7dd8232e32c|golang|||||yes
-alcide-kaudit-operator.v0.0.3|0.0.3|true|2020-04-07 12:59:59|Alcide|https://github.com/lightbend/akka-cluster-operator|4.6|v0.6.1-0.20190322190857-b7dd8232e32c|golang||||yes|
-amq-broker-operator.v0.13.0|0.13.0|false|2020-03-11T08:16:32Z|Red Hat|https://github.com/rh-messaging/activemq-artemis-operator|4.6|v0.8.2|golang|yes||||
-amq-broker-operator.v0.15.0|0.15.0|false|2020-06-10T14:18:22Z|Red Hat|https://github.com/rh-messaging/activemq-artemis-operator|4.6|v0.8.2|golang|yes||||
-amq-broker-operator.v0.9.1|0.9.1|false|2019-12-09T08:16:32Z|Red Hat, Inc.|https://github.com/rh-messaging/amq-broker-operator|4.6|v0.8.2|golang|yes||||
-amq-broker-operator.v0.9.3|0.9.3|false|2020-03-25T08:16:32Z|Red Hat|https://github.com/rh-messaging/activemq-artemis-operator|4.6|v0.8.2|golang|yes||||
-amq-online.1.6.0|1.6.0|false|2019-02-19T00:00:00Z|Red Hat, Inc||4.6|||yes||||
-amq7-interconnect-operator.v1.2.1|1.2.1|false|2019-06-28T22:00:00Z|Red Hat|https://github.com/interconnectedcloud/qdr-operator|4.6|||yes||||
-amqstreams.v1.5.3|1.5.3|false|2020-05-25T10:00:00Z|Red Hat|https://github.com/strimzi/strimzi-kafka-operator|4.6|||yes||||
-anaconda-team-edition.v6.1.3|6.1.3|false|2020-08-27T04:49:49Z|Anaconda, Inc.|github.com/anaconda|4.6|||||yes|yes|
-anchore-engine-operator.v0.1.11|0.1.11|true|2019-12-13T07:00:00Z|Anchore Inc.|https://github.com/anchore/engine-operator|4.6|v1.1.0|helm||||yes|
-anchore-engine-operator.v0.1.3|0.1.3|true|2019-12-13T07:00:00Z|Anchore Inc.|https://github.com/anchore/engine-operator|4.6|v1.1.0|helm|||||yes
-anzograph-operator.v1.3.400|1.3.4|true|2020-10-15|Cambridge Semantics||4.6|||||yes|yes|
-api-operator.v1.2.2|1.2.2|false|2020-10-23T03:00:00.000Z|WSO2|https://github.com/wso2/k8s-api-operator|4.6|||||||yes
-apicast-community-operator.v0.2.1|0.2.1|false|2019-10-27T22:40:00Z|Red Hat|https://github.com/3scale/apicast-operator|4.6|v0.15.2|golang|||||yes
-apicast-operator.v0.2.4|0.2.4|false|2019-10-27T22:40:00Z|Red Hat|https://github.com/3scale/apicast-operator|4.6|v0.15.2|golang|yes||||
-apicast-operator.v0.3.1|0.3.1|false|2019-10-27T22:40:00Z|Red Hat|https://github.com/3scale/apicast-operator|4.6|v0.15.2|golang|yes||||
-apicurio-registry.v0.0.3-v1.2.3.final|0.0.3-v1.2.3.final|false|2020-07-08|Apicurio|https://github.com/Apicurio/apicurio-registry-operator|4.6|v0.17.0|golang|||||yes
-apicuritooperator.v7.7.1|7.7.1|false|2020-06-09 10:50:34|Red Hat|https://github.com/Apicurio/apicurio-operators/tree/master/apicurito|4.6|||yes||||
-appdynamics-operator.v0.4.1|0.4.1|false|2019-11-30 12:00:00|AppDynamics LLC|https://github.com/Appdynamics/appdynamics-operator|4.6|||||||yes
-appdynamics-operator.v0.4.3|0.4.3|true|2020-03-26 12:00:00|AppDynamics LLC|https://github.com/Appdynamics/appdynamics-operator|4.6||||||yes|
-appranix.v2.3.0|2.3.0|true|2020-02-18 10:47:57|Appranix, Inc|https://github.com/operator-framework/community-operators/tree/master/upstream-community-operators/appranix|4.6|||||yes|yes|
-appranix.v2.4.0|2.4.0|true|2020-03-04 12:34:42|Appranix, Inc|https://github.com/operator-framework/community-operators/tree/master/upstream-community-operators/appranix|4.6|||||yes|yes|
-appsody-operator.v0.6.0|0.6.0|true|2020-05-21 09:00:00|Appsody|https://github.com/appsody/appsody-operator|4.6|v0.15.2|golang|||||yes
-appsody-operator.v0.6.1|0.6.1|true|2020-06-26 09:00:00|Appsody|https://github.com/appsody/appsody-operator|4.6|v0.15.2|golang||||yes|
-aqua-operator.v1.0.2|1.0.2|false|2020-03-25T08:00:00Z|Aqua Security, Inc.|https://github.com/aquasecurity/aqua-operator|4.6|v0.15.1|golang|||||yes
-aqua-operator.v1.0.4|1.0.4|true|2020-03-25T08:00:00Z|Aqua Security, Inc.|https://github.com/aquasecurity/aqua-operator|4.6|v0.15.1|golang|||yes|yes|
-argocd-operator-helm.v0.0.7|0.0.7|false|2020-07-07 01:01:01|Disposable Zone|https://github.com/disposab1e/argocd-operator-helm.git|4.6|||||||yes
-argocd-operator.v0.0.14|0.0.14|false|2020-10-09 15:19:40|Argo CD Community|https://github.com/argoproj-labs/argocd-operator|4.6|v0.18.0|golang|||||yes
-artifactory-ha-operator.v1.1.2|1.1.2|true|2020-03-25 00:00:00+00:00|JFrog|https://github.com/jfrog/JFrog-Cloud-Installers/tree/openshift4/Openshift4|4.6||||||yes|
-atlasmap-operator.v0.3.0|0.3.0|false|2019-06-10T06:42:43Z|AtlasMap|https://github.com/atlasmap/atlasmap-operator|4.6|v0.15.1|golang|||||yes
-atomicorp-helm-operator.v0.0.1|0.0.1|false|2020-05-05T12:00:00Z|Atomicorp|N/A|4.6|||||yes|yes|
-aws-sources-operator.v0.2.0|0.2.0|false|2020-07-18T12:00:00Z|TriggerMesh Inc.|https://github.com/triggermesh/aws-event-sources|4.6|||||yes|yes|
-awss3operator.v1.0.0|1.0.0|false|2019-05-02 16:12:00|Red Hat|https://github.com/yard-turkey/aws-s3-operator|4.6|||||||yes
-awss3operator.v1.0.1|1.0.1|false|2019-05-02 16:12:00|Community|https://github.com/yard-turkey/aws-s3-provisioner|4.6|||||||yes
-ax-cps-operator.v1.0.0|1.0.0|true|2020-01-30T12:45:55+05:30|Appranix, Inc|https://github.com/operator-framework/community-operators/tree/master/upstream-community-operators/appranix|4.6|||||||yes
-ax-cps-operator.v2.3.0|2.3.0|true|2020-02-10T13:27:50+05:30|Appranix, Inc|https://github.com/operator-framework/community-operators/tree/master/upstream-community-operators/appranix|4.6|||||||yes
-azure-service-operator.v0.37.0|0.37.0|false|2020-08-20 12:00:00|Microsoft|https://github.com/Azure/azure-service-operator|4.6|||||||yes
-banzaicloud-kafka-operator.0.3.1|0.3.1|false|2019-05-28T08:00:00Z|Banzai Cloud|https://github.com/banzaicloud/kafka-operator/tree/master|4.6|||||||yes
-banzaicloud-kafka-operator.0.6.1|0.6.1|false|2019-10-15T08:00:00Z|Banzai Cloud|https://github.com/banzaicloud/kafka-operator/tree/master|4.6|||||||yes
-businessautomation-operator.7.8.1|7.8.1|true|2020-09-07 08:37:06|Red Hat|https://github.com/kiegroup/kie-cloud-operator|4.6|v0.19.2|golang|yes||||
-camel-k-operator.v1.2.0|1.2.0|false|2020-10-12T02:45:00Z|The Apache Software Foundation|https://github.com/apache/camel-k|4.6|||||||yes
-can-operator.v0.0.2|0.0.2|false|2020-10-15T10:18:00Z|Avanseus Technologies Pvt. Ltd.|N/A|4.6|||||yes|yes|
-cass-operator.v1.0.0|1.0.0|true|2020-03-31|DataStax|https://github.com/datastax/cass-operator|4.6|v0.17.0|golang|||yes|yes|
-cassandra-operator.v2.0.0|2.0.0|false|2019-09-04 12:00:00|Instaclustr|https://github.com/instaclustr/cassandra-operator|4.6|v0.16.0|golang|||||yes
-cert-manager-operator.v0.15.2|0.15.2|true|2020-05-04T12:00:00Z|Jetstack|https://github.com/jetstack/cert-manager|4.6|||||yes|yes|
-chaosblade-operator.v0.5.1|0.5.1|false|2020-02-11T15:40:00Z|Alibaba Cloud|https://github.com/chaosblade-io/chaosblade-operator|4.6|v0.17.0|golang|||||yes
-chaosoperator.v0.1.0|0.1.0|false|2019-07-15 10:28:08|MayaData|https://github.com/litmuschaos/chaos-operator|4.6|v0.15.2|golang|||||yes
-chaosoperator.v1.3.0|1.3.0|false|2020-04-16T02:45:37Z|MayaData|https://github.com/litmuschaos/chaos-operator|4.6|v0.15.2|golang|||||yes
-cic-operator.v1.7.6|1.7.6|false|2020-02-06|Citrix|https://github.com/citrix/citrix-k8s-ingress-controller|4.6||||||yes|
-citrix-adc-istio-ingress-gateway-operator.v1.0.1|1.0.1|false|2019-12-03 14:16:17|Citrix|https://github.com/citrix/citrix-istio-adaptor|4.6||||||yes|
-citrix-api-gateway-operator.v0.0.1|1.8.19|false|06-26-2020|Citrix|https://github.com/citrix/citrix-k8s-ingress-controller|4.6|||||yes|yes|
-clickhouse-operator.v0.10.0|0.10.0|false|2019-11-11T10:00:00Z|Altinity|https://github.com/altinity/clickhouse-operator|4.6|||||||yes
-cloud-native-postgresql.v0.3.0|0.3.0|true|2020-09-01T11:43:00Z|2ndQuadrant|https://github.com/citrix/citrix-k8s-ingress-controller|4.6||||||yes|
-cluster-manager.v0.2.0|0.2.0|false|2020-10-13T20:00:31Z|Red Hat, Inc.|https://github.com/open-cluster-management/registration-operator|4.6|||||||yes
-clusterkubedescheduleroperator.4.6.0-202010200139.p0|4.6.0-202010200139.p0|false|2020/04/18|Red Hat, Inc.|https://github.com/openshift/cluster-kube-descheduler-operator|4.6|||yes||||
-clusterlogging.4.6.0-202010201329.p0|4.6.0-202010201329.p0|false|2018-08-01T08:00:00Z|Red Hat|https://github.com/openshift/cluster-kube-descheduler-operator|4.6|||yes||||
-clusterresourceoverride-operator.4.6.0-202010201329.p0.3|4.6.0-202010200139.p0|false|2019/11/15|Red Hat|https://github.com/openshift/cluster-resource-override-operator|4.6|||yes||||
-cnvrg-operator.v0.352.0|0.352.0|true|2020-06-11T12:59:59.000Z|cnvrg.io/new|https://github.com/accessibleAI/cnvrg-operator|4.6|||||yes|yes|
-cockroach-operator.v1.0.1|1.0.1|true|2020-09-03T19:29:26Z|Cockroach Labs|https://github.com/cockroachdb/cockroach-operator|4.6|||||yes|yes|
-cockroachdb.v2.1.11|2.1.11|false|2019-01-24T15-33-43Z|Helm Community|https://github.com/dmesser/cockroachdb-operator|4.6|v0.18.1|helm|||||yes
-cockroachdb.v3.0.7|3.0.7|false|2020-06-22T15-00-00Z|Helm Community|https://github.com/dmesser/cockroachdb-operator|4.6|v0.18.1|helm|||||yes
-compliance-operator.v0.1.17|0.1.17|false|2019/11/15|Red Hat Inc.|https://github.com/openshift/cluster-resource-override-operator|4.6|||yes||||
-composable-operator.v0.1.3|0.1.3|false|2019-11-16T20:39:31Z|IBM|https://github.com/IBM/composable|4.6|||||||yes
-container-security-operator.v3.3.1|3.3.1|false|2020-05-20 17:15:55|Red Hat|https://github.com/quay/container-security-operator|4.6|||yes||||
-conversational-hub-operator.v2.1.0|2.1.0|true|2020-04-20 12:59:59|EscalateAI Conversation Hub Team|https://github.com/cockroachdb/cockroach-operator|4.6||||||yes|
-coralogix-operator.v1.0.0|1.0.0|false|2020-09-08T07:15:53Z|Coralogix Ltd.|https://github.com/coralogix/coralogix-operator|4.6||||||yes|
-cortex-certifai-operator.v1.3.4|1.3.4|true|2020-1-23T12:03:45Z|CognitiveScale|https://github.com/cockroachdb/cockroach-operator|4.6|||||yes|yes|
-cortex-certifai-operator.v1.3.5-rc.2|1.3.5-rc.2|false|2020-1-23T12:03:45Z|CognitiveScale|https://github.com/coralogix/coralogix-operator|4.6||||||yes|
-cortex-fabric-operator.v1.0.0|1.0.0|false|2020-5-01T12:03:45Z|CognitiveScale|https://github.com/cognitivescale/cortex-fabric|4.6|||||yes|yes|
-cortex-healthcare-hub-operator.v0.0.25|0.0.25|false|2020-5-01T12:03:45Z|CognitiveScale|https://github.com/CognitiveScale/cortex-healthcare-hub-operator|4.6|||||yes|yes|
-cortex-hub-operator.v0.0.25|0.0.25|false|2020-5-01T12:03:45Z|CognitiveScale|https://github.com/CognitiveScale/cortex-hub-operator|4.6|||||yes|yes|
-cos-bucket-operator.v0.1.0|0.1.0|false|2019-08-23T12:38:36Z|IBM|https://github.com/IBM/cos-bucket-operator|4.6|||||||yes
-couchbase-operator.v1.0.0|1.0.0|false|2019-02-25T12:24:59Z|Couchbase|https://github.com/IBM/cos-bucket-operator|4.6|||||||yes
-couchbase-operator.v1.2.2|1.2.2|true|2019/08/30|Couchbase|https://github.com/CognitiveScale/cortex-hub-operator|4.6|||||yes|yes|
-couchbase-operator.v2.0.2|2.0.2|true|2020/08/13|Couchbase|https://github.com/IBM/cos-bucket-operator|4.6|||||||yes
-couchdb-operator.v1.0.13|1.0.13|true|2020-05-29T12:00:00Z|IBM|https://github.com/IBM/cos-bucket-operator|4.6|||||||yes
-couchdb-operator.v1.0.14|1.0.14|true|2020-08-06T12:00:00Z|IBM|https://github.com/CognitiveScale/cortex-hub-operator|4.6||||||yes|
-couchdb-operator.v1.1.0|1.1.0|true|2020-09-08T12:00:00Z|IBM|https://github.com/CognitiveScale/cortex-hub-operator|4.6||||||yes|
-couchdb-operator.v1.2.1|1.2.1|true|2020-09-15T18:00:00Z|IBM|https://github.com/CognitiveScale/cortex-hub-operator|4.6||||||yes|
-couchdb-operator.v1.3.0|1.3.0|true|2020-10-22T18:00:00Z|IBM|https://github.com/CognitiveScale/cortex-hub-operator|4.6|||||yes||
-couchdb-operator.v1.3.1|1.3.1|true|2020-10-22T18:00:00Z|IBM|https://github.com/CognitiveScale/cortex-hub-operator|4.6||||||yes|
-cpx-cic-operator.v130.47.103|130.47.103|false|2020-02-06|Citrix|https://github.com/citrix/citrix-k8s-ingress-controller|4.6|||||yes|yes|
-credstash-operator.v1.13.0|1.13.0|false|2020-07-20 01:01:01|Ouzi|https://github.com/ouzi-dev/credstash-operator|4.6|v0.19.0|golang|||||yes
-crossplane.v0.11.0|0.11.0|false|2020-05-26T00:20:38.159772+00:00|Upbound|https://github.com/crossplane/crossplane|4.6|||||||yes
-crwoperator.v2.4.0|2.4.0|true|2020-09-24T13:43:48+00:00|Red Hat|https://github.com/redhat-developer/codeready-workspaces-operator/|4.6|||yes||||
-cyberarmor-operator.0.0.1|0.0.1|false|26-05-2020|Cyber Armor Ltd|https://github.com/citrix/citrix-k8s-ingress-controller|4.6|||||yes|yes|
-datadog-operator.v0.3.0|0.3.0|true|2020-008-31 17:01:40|Datadog|https://github.com/DataDog/datadog-operator|4.6|||||yes|yes|
-datadog-operator.v0.3.2|0.3.2|true|2020-009-16 14:14:02|Datadog|https://github.com/DataDog/datadog-operator|4.6|||||||yes
-datagrid-operator.v8.0.3|8.0.3|false|2020-08-07T16:26:17Z|Red Hat|https://github.com/infinispan/infinispan-operator|4.6|v0.15.2|golang|yes||||
-datagrid-operator.v8.1.1|8.1.1|false|2020-10-06T20:33:23Z|Red Hat|https://github.com/infinispan/infinispan-operator|4.6|v0.15.2|golang|yes||||
-dell-csi-operator.v1.0.0|1.0.0|Yes|2020-03-03T11:30:59Z|Dell EMC|https://github.com/dell/dell-csi-operator|4.6|||||||yes
-dell-csi-operator.v1.1.0|1.1.0|true|2020-03-03T11:30:59Z|Dell EMC|https://github.com/dell/dell-csi-operator|4.6|||||yes|yes|
-densify-operator.v0.0.2|0.0.2|false|2020-08-19T:12:00:00Z|Densify|https://github.com/densify-dev/Container-Optimization-Data-Forwarder|4.6|||||yes|yes|
-deployment-validation-operator.v0.0.10|0.0.10|false|08/25/2020|Red Hat|https://github.com/app-sre/dv-operator|4.6|v0.17.0|golang|||||yes
-ditto-operator.v0.1.1|0.1.1|false|2020-07-19T19:15:00Z|Jens Reimann|https://github.com/ctron/ditto-operator|4.6|||||||yes
-dynatrace-monitoring.v0.8.2|0.8.2|false|2020-08-24T15:00:00Z|Dynatrace LLC|https://github.com/Dynatrace/dynatrace-oneagent-operator|4.6|v0.17.0|golang|||yes|yes|yes
-eap-operator.v2.0.0|2.0.0|false|2020-09-17T08:00:00Z|Red Hat|https://github.com/wildfly/wildfly-operator|4.6|v0.17.2|golang|yes||||
-eclipse-che.v7.19.2|7.19.2|false|2020-09-30T14:30:51Z|Eclipse Foundation|https://github.com/eclipse/che-operator|4.6|v0.0.0-00010101000000-000000000000|golang|||||yes
-eddi-operator.v1.0.2|1.0.2|false|2020-05-26|LABS.AI|https://github.com/labsai/EDDI-operator/|4.6|v0.18.1|ansible|||yes|yes|
-elastic-cloud-eck.v1.2.1|1.2.1|false|2020-08-12 07:39:56|Elastic|https://github.com/elastic/cloud-on-k8s|4.6|||||||yes
-elasticsearch-operator.4.6.0-202010200139.p0.2|4.6.0-202010200139.p0|false|2019-02-20T08:00:00Z|Red Hat, Inc|https://github.com/wildfly/wildfly-operator|4.6|v0.17.2|golang|yes||||
-ember-csi-operator.v0.9.1|0.9.1|false|2020-06-25:16:07:00|Red Hat|https://github.com/embercsi/ember-csi-operator|4.6|||||||yes
-enc-key-sync-operator.v0.0.1|0.0.1|false|2020-07-21 20:00:00|IBM|https://github.com/IBM/k8s-enc-image-operator|4.6|||||||yes
-enmasse.0.32.2|0.32.2|false|2019-02-19T00:00:00Z|EnMasse|https://github.com/EnMasseProject/enmasse|4.6|Replacements|golang|||||yes
-esindex-operator.v0.1.0|0.1.0|false|2019-08-09T09:40:38Z|IBM|https://github.com/IBM/esindex-operator|4.6|||||||yes
-etcdoperator-community.v0.6.1|0.6.1|false|2019-08-09T09:40:38Z|CoreOS, Inc|https://github.com/IBM/esindex-operator|4.6|||||||yes
-etcdoperator.v0.9.4|0.9.4|false|2019-02-28 01:03:00|CNCF|https://github.com/coreos/etcd-operator|4.6|||||||yes
-etcdoperator.v0.9.4-clusterwide|0.9.4-clusterwide|false|2019-02-28 01:03:00|CNCF|https://github.com/coreos/etcd-operator|4.6|||||||yes
-eunomia.v0.1.7|0.1.7|false|11/18/2019|Kohl's Technology|https://github.com/KohlsTechnology/eunomia|4.6|v0.12.1-0.20191112211508-82fc57de5e5b|golang|||||yes
-event-streams-topic.v0.1.1|0.1.1|false|2019-10-29T13:52:40Z|IBM|https://github.com/IBM/event-streams-topic|4.6|||||||yes
-ext-postgres-operator.v0.4.1|0.4.1|false|2019-12-19T14:12:00Z|movetokube.com|https://github.com/movetokube/postgres-operator|4.6|v0.17.1|golang|||||yes
-f5-bigip-ctlr-operator.v1.2.0|1.2.0|false|2020-08-21|F5 Networks Inc.|https://github.com/F5Networks/k8s-bigip-ctlr|4.6||||||yes|
-falco-operator.v0.7.6|0.7.6|false|2019-03-12T18:30:00Z|Sysdig|https://github.com/falcosecurity/falco-operator/tree/helm-based-operator|4.6|||||||yes
-falco-operator.v1.2.0|1.2.0|false|2020-07-07 18:30:00|Sysdig|https://github.com/sysdiglabs/falco-operator/|4.6||||||yes|
-federatorai.v4.2.603|4.2.603|true|2019-10-07T18:00:00Z|ProphetStor Data Services, Inc.|https://access.redhat.com/containers/#/registry.connect.redhat.com/prophetstor/federatorai-operator|4.6||||yes|||
-federatorai.v4.3.958|4.3.958|true|2020-09-18T13:00:00Z|ProphetStor Data Services, Inc.|https://access.redhat.com/containers/#/registry.connect.redhat.com/prophetstor/federatorai-operator|4.6||||||yes|yes
-file-integrity-operator.v0.1.6|0.1.6|false|2019-02-20T08:00:00Z|Red Hat|https://github.com/wildfly/wildfly-operator|4.6|v0.17.2|golang|yes||||
-fp-predict-plus-operator.v0.0.4|0.0.4|true|2020-05-16 00:00:00|Findability Sciences, LLC|https://access.redhat.com/containers/#/registry.connect.redhat.com/prophetstor/federatorai-operator|4.6||||||yes|
-fuse-console.v7.7.1|7.7.1|false|2020-06-03T15:17:00Z|Red Hat|https://github.com/hawtio/hawtio-operator|4.6|||yes||||
-fuse-online-operator.v7.7.1|7.7.1|false|2020-06-04T16:12:00Z|Red Hat|https://github.com/syndesisio/syndesis/|4.6|||yes||||
-gitlab-operator.v0.1.12|0.1.12|false|2020-03-11T13:29:00Z|GitLab, Inc|https://gitlab.com/ochienged/gitlab-operator|4.6||||||yes|
-gpu-operator-certified.v1.1.7-r2|1.1.7-r2|false|2019-02-27T00:21:25Z|NVIDIA Corporation|http://github.com/NVIDIA/gpu-operator|4.6|v0.17.0|golang||||yes|
-grafana-operator.v2.0.0|2.0.0|False|2019-07-23 00:00:00|Red Hat|https://github.com/integr8ly/grafana-operator|4.6|v0.18.2|golang|||||yes
-grafana-operator.v3.2.0|3.2.0|False|2020-04-20 00:00:00|Red Hat|https://github.com/integr8ly/grafana-operator|4.6|v0.18.2|golang|||||yes
-growth-stack-operator.v1.0.0|1.0.0|true|2020-09-19T16:00:00Z|IBM Digital Growth and Commerce|https://github.ibm.com/IBM-Analytics-Services/instrumentation-hybrid|4.6|||||yes|yes|
-halkyon.v0.1.8|0.1.8|false|2019-08-21|Snowdrop Team|https://github.com/halkyonio/operator|4.6|v0.8.2|golang|||||yes
-ham-deploy.v0.1.0|0.1.0|false|2020-05-12 00:00:00|IBM|https://github.com/hybridapp-io/ham-deploy|4.6|v0.18.0|golang|||||yes
-hawkbit-operator.v0.1.4|0.1.4|false|2020-09-07T16:23:00Z|Jens Reimann|https://github.com/ctron/hawkbit-operator|4.6|||||||yes
-hazelcast-enterprise-operator.v0.3.3|0.3.3|true|2020-10-23T11:59:59Z|Hazelcast, Inc|https://github.com/hazelcast/hazelcast-operator|4.6|||||yes|yes|yes
-hazelcast-jet-enterprise-operator.v0.2.0|0.2.0|true|2020-04-16 11:59:59|Hazelcast Inc.|https://github.com/hazelcast/hazelcast-jet-operator|4.6|||||yes|yes|
-hazelcast-jet-enterprise-operator.v0.3.0|0.3.0|false|2020-10-26T11:59:59Z|Hazelcast Inc.|https://github.com/hazelcast/hazelcast-jet-operator|4.6|||||||yes
-hazelcast-jet-operator.v0.3.0|0.3.0|false|2020-10-26T11:59:59Z|Hazelcast Inc.|https://github.com/hazelcast/hazelcast-jet-operator|4.6|||||||yes
-hazelcast-operator.v0.3.3|0.3.3|false|2020-10-22T11:59:59Z|Hazelcast, Inc|https://github.com/hazelcast/hazelcast-operator|4.6|||||||yes
-hive-operator.v1.0.11|1.0.11|false|2020-10-07T11:48:51Z|Red Hat|https://github.com/openshift/hive|4.6|||||||yes
-hive-operator.v1.0.3-7-gba4793f|1.0.3-7-gba4793f|false|2020-05-08T15:03:21Z|Red Hat|https://github.com/openshift/hive|4.6|||||||yes
-hive-operator.v1.0.5|1.0.5|false|2020-06-22T15:46:24Z|Red Hat|https://github.com/openshift/hive|4.6|||||||yes
-hls-service-operator.v0.0.1|0.0.1|true|2020-03-24|HERE Technologies|https://github.com/heremaps/here-hls-service-broker|4.6||||||yes|
-hpa-operator.v0.1.6|0.1.6|false|2019-04-09T08:00:00Z|Banzai Cloud|https://github.com/banzaicloud/hpa-operator|4.6|||||||yes
-hpe-csi-operator.v1.2.0|1.2.0|true|Mon Jun  1 12:54:27 PDT 2020|HPE|https://github.com/hpe-storage/co-deployments|4.6|||||||yes
-hpe-csi-operator.v1.3.0|1.3.0|true|Tue Aug 18 13:26:38 PDT 2020|HPE|https://github.com/hpe-storage/co-deployments|4.6||||||yes|
-ibm-application-gateway-operator.v0.9.0|0.9.0|false|2020-09-04T21:30:05Z|IBM|https://github.com/IBM-Security/ibm-application-gateway-operator|4.6|v0.16.0|golang|||||yes
-ibm-block-csi-operator.v1.3.0|1.3.0|true|2020-08-30T15:15:00Z|IBM|https://github.com/IBM/ibm-block-csi-operator|4.6|v0.11.1-0.20191012024916-f419ad3f3dc5|golang|||yes|yes|yes
-ibm-quantum-operator.v0.1.0|0.1.0|false|2020-008-28 22:25:53|IBM Quantum|https://github.com/redhat-et/ibm-quantum-operator|4.6|||||||yes
-ibm-spectrum-scale-csi-operator.v2.0.0|2.0.0|false|Tue Jun  9 11:18:01 EDT 2020|IBM|https://github.com/IBM/ibm-spectrum-scale-csi/|4.6||||||yes|yes
-ibm-spectrum-symphony-operator.v1.0.0|1.0.0|true|Mon  6 Apr 2020 11:00:00 EDT|IBM|https://github.com/IBM/ibm-spectrum-symphony-operator|4.6||||||yes|
-ibmcloud-iam-operator.v0.1.0|0.1.0|false|2020-08-12T13:36:55Z|IBM|https://github.com/IBM/ibmcloud-iam-operator|4.6|v0.13.0|golang|||||yes
-ibmcloud-operator.v0.1.11|0.1.11|false|2020-06-25T20:38:46Z|IBM|https://github.com/IBM/cloud-operators|4.6|||||||yes
-ibmcloud-operator.v1.0.0|1.0.0|false|2020-09-23T23:57:03Z|IBM|https://github.com/IBM/cloud-operators|4.6|||||||yes
-infinibox-operator.v0.0.1|0.0.1|false|2020-03-11 10:20:01|Infinidat|https://github.com/Infinidat/infinibox-csi-driver|4.6||||||yes|
-infinispan-operator.v1.1.2|1.1.2|false|2020-05-15T08:42:04Z|Infinispan|https://github.com/infinispan/infinispan-operator|4.6|v0.15.2|golang|||||yes
-infinispan-operator.v2.0.4|2.0.4|false|2020-10-09T15:00:00Z|Infinispan|https://github.com/infinispan/infinispan-operator|4.6|v0.15.2|golang|||||yes
-insightedge-enterprise-operator.v15.0.1|15.0.1|true|2020-04-17 14:59:59|Gigaspaces|https://github.com/IBM/ibm-block-csi-operator|4.6|v0.11.1-0.20191012024916-f419ad3f3dc5|golang|||yes|yes|
-instana-agent-operator.v0.3.6|0.3.6|false|2020-09-09T19:33:54Z|Instana|https://github.com/instana/instana-agent-operator|4.6|||||yes|yes|yes
-iot-simulator.0.1.0|0.1.0|false|2019-03-19 00:00:00|Jens Reimann|https://github.com/ctron/iot-simulator-operator|4.6|v0.3.0|golang|||||yes
-istio-operator.0.1.6|0.1.6|false|2019-04-01T08:00:00Z|Banzai Cloud|https://github.com/banzaicloud/istio-operator/tree/release-1.1|4.6|||||||yes
-ivory-server-operator.v1.0.0|1.0.0|false|2019-09-01 12:00:00|GT Software, Inc.|https://github.com/instana/instana-agent-operator|4.6|||||yes|yes|
-jaeger-operator.v1.13.2-1|1.13.2-1|false|2019-07-05T11:16:15+00:00|Red Hat, Inc.|https://github.com/jaegertracing/jaeger-operator|4.6|v0.18.2|golang|yes||||
-jaeger-operator.v1.17.6|1.17.6|false|2020-07-27T00:00:00+00:00|Red Hat|N/A|4.6|||yes||||
-jaeger-operator.v1.20.0|1.20.0|false|2019-09-04T13:28:40+00:00|CNCF|https://github.com/jaegertracing/jaeger-operator|4.6|v0.18.2|golang|||||yes
-jenkins-operator.v0.3.0|0.3.0|false|2019-09-04T13:28:40+00:00|VirtusLab|https://github.com/jenkinsci/kubernetes-operator|4.6|v0.17.0|golang|||||yes
-joget-dx-openshift-operator.v0.0.2|0.0.1|true|2019-07-23 12:59:59|Joget, Inc|https://github.com/instana/instana-agent-operator|4.6|||||yes|yes|
-joget-openshift-operator.v0.0.4|0.0.4|true|2019-07-23 12:59:59|Joget, Inc|github.com/jogetworkflow/jw-community|4.6|||||yes|yes|
-k10-helm-operator.2.5.18|2.5.18|true|2020-04-22 23:00:00|Kasten, Inc.|github.com/jogetworkflow/jw-community|4.6|||||yes|yes|
-k8s-triliovault-cluster.v1.1.1|1.1.1|false|2020-04-27 17:12:00|Trilio|https://github.com/triliovault-k8s-issues/triliovault-k8s-issues|4.6|||||yes|yes|
-k8s-triliovault-namespaced.v1.1.1|1.1.1|false|2020-04-27 17:12:00|Trilio|https://github.com/triliovault-k8s-issues/triliovault-k8s-issues|4.6|||||yes|yes|
-keda.v1.5.0|1.5.0|false|2020-07-08T00:00:00.000Z|KEDA Community|https://github.com/kedacore/keda-olm-operator|4.6|||||||yes
-keycloak-operator.v11.0.0|11.0.0|False|2020-07-24 00:00:00|Red Hat|https://github.com/keycloak/keycloak-operator|4.6|v0.18.2|golang|||||yes
-kiali-operator.v1.12.16|1.12.16|false|2020-08-05T00:00:00Z|Red Hat|https://github.com/kiali/kiali|4.6|||yes||||
-kiali-operator.v1.25.0|1.25.0|false|2020-10-09T00:00:00Z|Kiali|https://github.com/kiali/kiali|4.6|||||||yes
-klusterlet.v0.2.0|0.2.0|false|2020-10-15T12:00:31Z|Red Hat, Inc.|https://github.com/open-cluster-management/registration-operator|4.6|||||||yes
-knative-eventing-operator.v0.13.1|0.13.1|false|2020-03-27T10:00:00Z|The Knative Authors|https://github.com/knative/eventing-operator|4.6|||||||yes
-knative-operator.v0.18.1|0.18.1|false|2020-10-27T00:00:00Z|The Knative Authors|https://github.com/knative/operator|4.6|||||||yes
-knative-serving-operator.v0.13.1|0.13.1|false|2020-03-04T00:00:00Z|The Knative Authors|https://github.com/knative/serving-operator|4.6|||||||yes
-kogito-operator.v0.16.0|0.16.0|false|2019-08-22T13:12:22Z|Red Hat|https://github.com/kiegroup/kogito-cloud-operator|4.6|v0.18.2|golang|||||yes
-kong.v0.3.0|0.3.0|true|2020-04-10T17:26:45Z|Kong Inc|https://github.com/kong/kong-operator|4.6|v0.16.0|helm|||yes|yes|
-kong.v0.5.0|0.5.0|false|2020-08-05T16:07:00Z|Kong Inc.|https://github.com/kong/kong-operator|4.6|v0.16.0|helm|||||yes
-kube-arangodb.v1.0.1|1.0.1|true|2019-11-30 22:40:00|ArangoDB GmbH|https://github.com/arangodb/kube-arangodb|4.6||||||yes|
-kube-arangodb.v1.0.2|1.0.1|true|2019-11-30 22:40:00|ArangoDB GmbH|https://github.com/arangodb/kube-arangodb|4.6|||||||yes
-kubefed-operator.v0.1.0|0.1.0|false|2019-06-14T00:00:00Z|Red Hat|https://github.com/openshift/kubefed-operator|4.6|||||||yes
-kubeflow.v1.0.0|1.0.0|False|2020-03-19T00:00:00Z|Kubeflow|https://github.com/kubeflow/kfctl|4.6|v0.13.0|golang|||||yes
-kubemod.v0.6.0|0.6.0|false|2020-10-16T12:00:00+00:00|KubeMod|https://github.com/kubemod/kubemod|4.6|||||||yes
-kubemq-operator.v0.3.2|0.3.2|false|2020-02-16T18:00:00.000Z|Kubemq.io|https://github.com/kubemq-io/kubemq-operator|4.6|||||||yes
-kubemq-operator.v0.5.1|0.5.1|false|2020-03-11T12:00:00.000Z|Kubemq.io|https://github.com/kubemq-io/kubemq-operator|4.6|||||||yes
-kubemq-operator.v1.1.0|1.1.0|false|2020-03-11 12:00:00+00:00|Kubemq.io|https://github.com/kong/kong-operator|4.6|v0.16.0|helm|||yes|yes|
-kubernetes-imagepuller-operator.v0.0.3|0.0.3|false||Red Hat, Inc.|https://github.com/che-incubator/kubernetes-image-puller-operator|4.6|v0.15.2|golang|||||yes
-kubestone.v0.4.0|0.4.0|false|2019-10-18T12:32:00Z|xridge.io|https://github.com/xridge/kubestone|4.6|||||||yes
-kubeturbo-operator.v7.21.0|7.21.0|false|2019-05-01T00:00:00.000Z|Turbonomic, Inc.|https://github.com/turbonomic/kubeturbo/tree/master/deploy/kubeturbo-operator|4.6|||||||yes
-kubeturbo-operator.v8.0.0|8.0.0|false|2019-05-01T00:00:00Z|Turbonomic, Inc.|https://github.com/turbonomic/kubeturbo/tree/master/deploy/kubeturbo-operator|4.6|||||yes|yes|yes
-kubevirt-hyperconverged-operator.v2.1.0|2.1.0|false|2019-10-17 09:34:37|KubeVirt project|https://github.com/kubevirt/hyperconverged-cluster-operator|4.6|v0.19.1|golang|yes||||
-kubevirt-hyperconverged-operator.v2.2.0|2.2.0|false|2020-01-26 16:24:03|KubeVirt project|https://github.com/kubevirt/hyperconverged-cluster-operator|4.6|v0.19.1|golang|yes||||
-kubevirt-hyperconverged-operator.v2.3.0|2.3.0|true|2020-04-27 14:59:35|Red Hat|https://github.com/kubevirt/hyperconverged-cluster-operator|4.6|v0.19.1|golang|yes||||
-kubevirt-hyperconverged-operator.v2.4.2|2.4.2|true|2020-09-29 09:20:17|Red Hat|https://github.com/kubevirt/hyperconverged-cluster-operator|4.6|v0.19.1|golang|yes||||
-kubevirtoperator.0.18.1|0.18.1|false|2019-06-13 10:28:08|KubeVirt project|https://github.com/kubevirt/kubevirt|4.6|||||||yes
-lib-bucket-provisioner.v1.0.0|1.0.0|false|2014-07-19 07:02:32.267701|Red Hat|https://github.com/kube-object-storage/lib-bucket-provisioner|4.6|||||||yes
-lightbend-console-operator.v0.0.1|0.0.1|false|2019-09-18T00:00:00Z|Lightbend, Inc.|https://github.com/lightbend/console-charts/tree/master/operator|4.6|||||||yes
-linstor-operator.v1.0.0-dev4-ef10773|1.0.0-dev4+ef10773|true|2019-05-01T00:00:00Z|LINBIT|https://github.com/piraeusdatastore/piraeus-operator|4.6|v0.16.0|golang|||yes||
-linstor-operator.v1.0.0-dev9.bc86329|1.0.0-dev9.bc86329|true|2020-10-13T14:46:07+00:00|LINBIT|https://github.com/piraeusdatastore/piraeus-operator|4.6|v0.16.0|golang||||yes|
-linstor-operator.v1.1.0|1.1.0|true|2020-10-14T13:16:20+00:00|LINBIT|https://github.com/piraeusdatastore/piraeus-operator|4.6|v0.16.0|golang|||yes|yes|
-local-storage-operator.4.6.0-202010200139.p0.2|4.6.0-202010200139.p0|true|2019-08-14T00:00:00Z|Red Hat|https://github.com/openshift/local-storage-operator|4.6|v0.16.0|golang|yes||||
-logging-operator.v0.2.0|0.2.0|false|9-07-2020|Opstree Solutions|https://github.com/OT-CONTAINER-KIT/logging-operator|4.6|||||||yes
-mariadb-operator.v0.0.4|0.0.4|true|2020-04-07T11:17:00Z|Manoj Dhanorkar|https://github.com/abalki001/mariadb-operator|4.6|v0.16.1-0.20200402040752-a0a5778d9957|golang|||||yes
-mattermost-operator.v0.5.0|0.5.0|false|2019-07-18 09:42:00|Mattermost|https://github.com/mattermost/mattermost-operator|4.6|||||||yes
-mcad-operator.v0.1.9|0.1.9|false|2019-07-18 09:42:00|IBM|https://github.com/mattermost/mattermost-operator|4.6|||||||yes
-memsql-operator.v1.2.1|1.2.1|true|2020-08-19 21:52:47.341572+00:00|MemSQL|https://github.com/piraeusdatastore/piraeus-operator|4.6|v0.16.0|golang|||yes|yes|
-metering-operator-upstream.v4.2.0|4.2.0|false|2019-01-01 11:59:59|Red Hat|https://github.com/operator-framework/operator-metering|4.6|||||||yes
-metering-operator.4.6.0-202010200139.p0.2|4.6.0-202010200139.p0|false|2019-01-01T11:59:59Z|Red Hat|https://github.com/kube-reporting/metering-operator|4.6|||yes||||
-microcks-operator.v0.3.0|0.3.0|false|2020-04-07T19:21:00Z|Microcks.io|https://github.com/microcks/microcks-ansible-operator|4.6|v0.16.0|ansible|||||yes
-microcks-operator.v1.1.0|1.1.0|false|2020-10-26T07:57:11Z|Microcks.io|https://github.com/microcks/microcks-ansible-operator|4.6|v0.16.0|ansible|||||yes
-minio-operator.v1.0.3|1.0.3|false|2019-10-21T00:00:00.000Z|MinIO, Inc.|https://github.com/minio/minio-operator|4.6|||||||yes
-mongodb-enterprise-advanced-ibm.v1.6.3|1.6.3|true|2020-07-06T10:00:00Z|IBM|https://github.com/mongodb/mongodb-enterprise-kubernetes|4.6|||||yes|yes|
-mongodb-enterprise.v1.8.0|1.8.0|true|2020-09-02T15:33:27Z|MongoDB, Inc|https://github.com/mongodb/mongodb-enterprise-kubernetes|4.6|||||yes|yes|yes
-mtc-operator.v1.2.5|1.2.5|false|2019-07-25T10:21:00Z|Red Hat|https://github.com/konveyor/mig-operator|4.6|latest|ansible|yes||||
-mtc-operator.v1.3.1|1.3.1|false|2019-07-25T10:21:00Z|Red Hat|https://github.com/konveyor/mig-operator|4.6|latest|ansible|yes||||
-multicluster-operators-subscription.v0.1.2|0.1.2|false|2020-03-24T17:00:00Z|Red Hat|https://github.com/open-cluster-management/multicloud-operators-subscription|4.6|v0.18.0|golang|||||yes
-myvirtualdirectory.1.0.0|1.0.0|false|2019-04-15|Tremolo Security, Inc.|https://github.com/TremoloSecurity/|4.6|||||||yes
-neuvector-operator.v1.0.0|1.0.0|false|2019-11-18T02:09:59Z|NeuVector|https://github.com/neuvector/neuvector-operator|4.6|v0.12.0|helm|||||yes
-neuvector-operator.v1.0.1|1.0.1|false|2019-11-18 02:09:59|NeuVector|https://github.com/neuvector/neuvector-operator|4.6|v0.12.0|helm|||yes|yes|
-nexus-operator.v0.3.0|0.3.0|false|2019-11-16T13:12:22Z|m88i Labs|https://github.com/m88i/nexus-operator|4.6|||||||yes
-nfd-operator.v0.1.0|0.1.0|false|2019-05-30T00:00:00Z|Red Hat|https://github.com/kubernetes-sigs/node-feature-discovery-operator|4.6|v0.4.1-0.20190129222657-43d37ce85826|golang|||||yes
-nginx-ingress-operator.v0.0.4|0.0.4|true|2020-03-03 12:59:59+00:00|NGINX Inc|https://github.com/nginxinc/nginx-ingress-operator|4.6|v0.17.2|golang||||yes|
-node-red-operator.v0.0.2|0.0.2|false|2020-05-29T12:00:00Z|IBM-Edge|https://github.com/rhm-samples/node-red-operator/|4.6|||||yes|yes|
-noobaa-operator.v2.1.1|2.1.1|false|2019-07-08T13:10:20.940Z|NooBaa|https://github.com/noobaa/noobaa-operator|4.6|v0.17.0|golang|||||yes
-noobaa-operator.v2.3.0|2.3.0|false|2019-07-08T13:10:20.940Z|NooBaa|https://github.com/noobaa/noobaa-operator|4.6|v0.17.0|golang|||||yes
-nsm-operator.v0.0.1|0.0.1|false|2020-01-28T10:45:31.000Z|networkservicemesh.io|https://github.com/acmenezes/nsm-operator|4.6|v0.12.0|golang|||||yes
-nsx-container-plugin-operator.v0.1.0|0.1.0|True|2020-05-29T12:00:00Z|VMware|https://github.com/vmware/nsx-container-plugin/operator|4.6||||||yes|
-nuodb-operator.v2.0.2|2.0.2|true|2019-06-06 12:59:59|NuoDB, Inc.|https://github.com/nuodb/nuodb-operator|4.6|v0.9.1-0.20190806200632-6c7039c37324|golang|||yes||
-nuodb-operator.v2.0.3|2.0.3|true|2019-06-06 12:59:59|NuoDB, Inc.|https://github.com/nuodb/nuodb-operator|4.6|v0.9.1-0.20190806200632-6c7039c37324|golang||||yes|yes
-nuxeo-operator.v0.7.1|0.7.1|false|2020-09-26T00:00:00Z|Eric Ace|https://github.com/aceeric/nuxeo-operator|4.6|||||||yes
-nxiq-operator-certified.v1.99.0-1|1.99.0-1|true|2020-07-20|Sonatype|https://github.com/sonatype/operator-iq|4.6|v0.17.0|helm||||yes|
-nxrm-operator-certified.v3.26.1-1|3.26.1-1|true|2020-07-17|Sonatype|https://github.com/sonatype/operator-nxrm3|4.6|v0.16.0|helm||||yes|
-ocs-operator.v4.3.0|4.3.0|false|2020-04-06 21:53:38|Red Hat, Inc|https://github.com/openshift/ocs-operator|4.6|v0.17.0|golang|yes||||
-ocs-operator.v4.4.2|4.4.2|false|2020-07-29 18:34:25|Red Hat, Inc|https://github.com/openshift/ocs-operator|4.6|v0.17.0|golang|yes||||
-ocs-operator.v4.5.1|4.5.1|false|2020-10-13 13:58:20|Red Hat|https://github.com/openshift/ocs-operator|4.6|v0.17.0|golang|yes||||
-open-liberty-0.0.1|0.0.1|false|2019-05-16T12:00:00.000-0500|IBM|https://github.com/OpenLiberty/open-liberty-operator|4.6|v0.15.2|golang|||||yes
-open-liberty-operator.v0.7.0|0.7.0|true|2020-07-22 09:00:00|IBM|https://github.com/OpenLiberty/open-liberty-operator|4.6|v0.15.2|golang|||||yes
-openebsoperator.v1.5.0|1.5.0|false|2020-01-11T15:52:12Z|MayaData|https://github.com/openebs/helm-operator|4.6|v0.7.0|helm|||||yes
-openshift-pipelines-operator.v1.0.1|1.0.1|false|2020-05-07T05:39:25Z|Red Hat|https://github.com/openshift/tektoncd-pipeline-operator|4.6|v0.17.2|golang|yes||||
-openshift-pipelines-operator.v1.1.1|1.1.1|false|2020-05-07T05:39:25Z|Red Hat|https://github.com/openshift/tektoncd-pipeline-operator|4.6|v0.17.2|golang|yes||||
-openshift-qiskit-operator.v0.1.0|0.1.0|false|2020-006-28 22:25:53|IBM Quantum|https://github.com/qiskit-community/openshift-quantum-operators/tree/master/operators-examples/openshift-qiskit-operator|4.6|||||||yes
-openunison.1.0.0|1.0.0|true|2020-01-08|Tremolo Security, Inc.|https://github.com/TremoloSecurity/openunison-k8s-operator|4.6|||||yes|yes|
-opsmx-spinnaker-operator.v1.20.3|1.20.3|false|2019-04-08 19:49:35|OpsMx|https://github.com/qiskit-community/openshift-quantum-operators/tree/master/operators-examples/openshift-qiskit-operator|4.6|||||||yes
-orca-operator.v1.0.197|1.0.197|true||Tufin|https://github.com/Tufin/orca-operator|4.6|||||yes|yes|
-perceptilabs-operator.v1.0.16|1.0.16|false|2019-10-02T12:00:00Z|PerceptiLabs|https://github.com/Tufin/orca-operator|4.6|||||yes|yes|
-percona-server-mongodb-operator.v1.3.0|1.3.0|false|2019-12-11T11:35:26.000Z|Percona|https://github.com/percona/percona-server-mongodb-operator|4.6|v0.17.1|golang|||||yes
-percona-server-mongodb-operator.v1.4.0|1.4.0|true|2020-03-10T10:35:26Z|Percona|https://github.com/percona/percona-server-mongodb-operator|4.6|v0.17.1|golang||||yes|
-percona-server-mongodb-operator.v1.5.0|1.5.0|true|2020-09-10T10:35:26.000Z|Percona|https://github.com/percona/percona-server-mongodb-operator|4.6|v0.17.1|golang|||||yes
-percona-xtradb-cluster-operator.v1.5.0|1.5.0|true|2020-05-08T19:11:44.000Z|Percona|https://github.com/percona/percona-xtradb-cluster-operator|4.6|v0.17.1|golang||||yes|
-percona-xtradb-cluster-operator.v1.6.0|1.6.0|true|2020-10-15T10:11:44.000Z|Percona|https://github.com/percona/percona-xtradb-cluster-operator|4.6|v0.17.1|golang|||||yes
-performance-addon-operator.v4.4.1|4.4.1|false|2020-05-07T05:39:25Z|Red Hat|https://github.com/operator-kni/performance-addon-operators|4.6|||yes||||
-performance-addon-operator.v4.5.1|4.5.1|false|2020-05-07T05:39:25Z|Red Hat|https://github.com/operator-kni/performance-addon-operators|4.6|||yes||||
-performance-addon-operator.v4.6.0|4.6.0|false|2020-05-07T05:39:25Z|Red Hat|https://github.com/operator-kni/performance-addon-operators|4.6|||yes||||
-planetscale-operator.v0.1.8|0.1.8|False|2019-03-06 21:40:00|PlanetScale|https://github.com/percona/percona-xtradb-cluster-operator|4.6|v0.17.1|golang|||||yes
-pmem-csi-operator.v0.8.0|0.8.0|false|2020-10-13T17:41:44Z|Intel® Corporation|https://github.com/intel/pmem-csi/tree/release-0.8|4.6|||||||yes
-portshift-operator.v0.1.6|0.1.6|true|2020-02-11 01:00:00+00:00|Portshift|https://github.com/Tufin/orca-operator|4.6|||||yes|yes|
-portworx-essentials.v1.3.3|1.3.3|false|2020-08-04T08:00:00Z|Portworx|https://github.com/libopenstorage/operator|4.6|||||||yes
-portworx-operator.v1.4.0|1.4.0|true|2020-09-24T08:00:00Z|Portworx|https://github.com/libopenstorage/operator|4.6|||||yes|yes|yes
-postgres-operator.v1.3.0|1.3.0|false|2019-07-24 10:30:00|Zalando SE|https://github.com/zalando/postgres-operator|4.6|||||||yes
-postgresoperator.v4.0.1|4.0.1|false|07/04/2019|CrunchyData.com|https://github.com/CrunchyData/postgres-operator|4.6|||||||yes
-postgresoperator.v4.1.0|4.1.0|false|10/29/2019|CrunchyData.com|https://github.com/CrunchyData/postgres-operator|4.6|||||||yes
-postgresoperator.v4.2.2|4.2.2|false|2019-12-31 19:40Z|Crunchy Data|https://github.com/CrunchyData/postgres-operator|4.6|||||||yes
-postgresoperator.v4.3.2|4.3.2|false|2019-12-31 19:40Z|Crunchy Data|https://github.com/CrunchyData/postgres-operator|4.6|||||||yes
-postgresoperator.v4.5.0|4.5.0|false|2019-12-31 19:40Z|Crunchy Data|https://github.com/CrunchyData/postgres-operator|4.6|||||yes|yes|yes
-postgresql-operator.v0.0.1|0.0.1|true|2019-12-13 09:00:00|Openlabs|https://github.com/janepelladinesh/postgresql-operator|4.6|||||||yes
-postgresql-operator.v0.1.1|0.1.1|false|2019-09-08T08:00:00Z|Dev4Devs.com|https://github.com/dev4devs-com/postgresql-operator|4.6|v0.18.1|golang|||||yes
-presto-operator.0.32.0|0.32.0|true|2020-07-23T01:49:01Z|Starburst Data|https://github.com/CrunchyData/postgres-operator|4.6|||||yes|yes|
-prisma-cloud-compute-console-operator.v1.0.0|1.0.0|false|2019-04-01 00:00:00|Palo Alto Networks|https://github.com/twistlock/sample-code/tree/master/operators/twistlock-console-helm-operator|4.6|||||||yes
-project-quay-container-security-operator.v1.0.6|1.0.6|false|2020-04-13 00:00:00|Project Quay|https://github.com/quay/container-security-operator|4.6|||||||yes
-project-quay.v1.1.2|1.1.2|false|2020-07-01|Project Quay|https://github.com/redhat-cop/quay-operator|4.6|||||||yes
-prometheus-exporter-operator.v0.2.0|0.2.0|false|2020-06-08 00:00:00|Red Hat|https://github.com/3scale/prometheus-exporter-operator|4.6|v0.18.1|ansible|||||yes
-prometheusoperator.0.37.0|0.37.0|false|2019-09-04 12:00:00|Red Hat|https://github.com/coreos/prometheus-operator|4.6|||||||yes
-ptp-operator.4.6.0-202010200139.p0.8|4.6.0-202010200139.p0|false|2019-10-14|Red Hat|https://github.com/openshift/ptp-operator|4.6|v0.18.1|golang|yes||||
-pystol.v0.8.17|0.8.17|false|2020-06-11 10:00:00|Pystol|https://github.com/pystol/pystol|4.6|||||||yes
-quay-bridge-operator.v3.3.1|3.3.1|false|2020-03-18 01:03:00|Red Hat|https://github.com/redhat-cop/quay-openshift-registry-operator|4.6|v0.8.1-0.20190607203525-cf3aaf10d465|golang|yes||||
-rapidbiz-operator.v0.0.1|0.0.1|Red Hat certified|2020-02-04T16:00:00Z|Vacava|https://access.redhat.com/containers/#/registry.connect.redhat.com/vacava/rapidbiz-operator|4.6|||||yes|yes|
-red-hat-quay.v3.3.2-20200903|3.3.2-20200903|false|2020-06-08|Red Hat|https://github.com/redhat-cop/quay-operator|4.6|||yes||||
-redhat-marketplace-operator.v1.0.4|1.0.4|true|2020-10-16T03:24:13Z|Red Hat Marketplace|https://github.com/redhat-marketplace/redhat-marketplace-operator|4.6|v0.19.2|golang||||yes|
-redis-enterprise-operator-preview.v6.0.8-1|6.0.8-1|true|2020-10-16T03:24:13Z|Redis Labs|https://github.com/redhat-marketplace/redhat-marketplace-operator|4.6|v0.19.2|golang||||yes|
-redis-enterprise-operator.v0.0.1|0.0.1|false|2019-02-24 11:35:59|Redis Labs, Inc|https://github.com/pystol/pystol|4.6|||||||yes
-redis-enterprise-operator.v5.4.14-7|5.4.14-7|true|2020-10-16T03:24:13Z|Redis Labs|https://github.com/redhat-marketplace/redhat-marketplace-operator|4.6|v0.19.2|golang||||yes|
-redis-enterprise-operator.v6.0.6-24|6.0.6-24|true|2020-10-16T03:24:13Z|Redis Labs|https://github.com/redhat-marketplace/redhat-marketplace-operator|4.6|v0.19.2|golang||||yes|
-redis-enterprise-operator.v6.0.8-1|6.0.8-1|true|2020-10-16T03:24:13Z|Redis Labs|https://github.com/redhat-marketplace/redhat-marketplace-operator|4.6|v0.19.2|golang||||yes|
-redis-operator.v0.2.0|0.2.0|false|8-1-2020|Opstree Solutions|https://github.com/ot-container-kit/redis-operator|4.6|v0.15.2|golang|||||yes
-rhsso-operator.7.4.2|7.4.2|False|2020-05-04 00:00:00|Red Hat|https://github.com/keycloak/keycloak-operator|4.6|v0.18.2|golang|yes||||
-ripsaw.v0.1.0|0.1.0|false|2019-06-28 06:42:43|Red Hat Performance|https://github.com/cloud-bulldozer/ripsaw/|4.6|v0.17.1|ansible|||||yes
-robin-operator.v5.3.2-52|5.3.2-52|true||Robin.io|https://access.redhat.com/containers/#/registry.connect.redhat.com/vacava/rapidbiz-operator|4.6|||||yes|yes|
-robin-operator.v5.3.2-55|5.3.2-55|true|2020-10-27-T12:59:59Z|Robin.io|https://github.com/cloud-bulldozer/ripsaw/|4.6|v0.17.1|ansible|||||yes
-rocketchat-operator.v0.1.0|0.1.0|true|2020-03-26T04:07:54+00:00|Rocket.Chat|github.com/jsm84/rocketchat-operator|4.6|||||yes|yes|
-rocketmq-operator.0.2.1|0.2.1|False|2019-11-8 16:06:00|the Apache Software Foundation|https://github.com/apache/rocketmq-operator|4.6|v0.6.0|golang|||||yes
-rook-ceph.v1.1.1|1.1.1|false|2019-09-23T11-51-58Z|The Rook Authors|https://github.com/rook/rook|4.6|||||||yes
-rook-edgefs.v1.0.1|1.0.1|false|2019-05-16T22-53-57Z|The Rook Authors|https://github.com/rook/rook|4.6|||||||yes
-rqlite-operator.v0.0.1|0.0.1|false||Jeff McCormick|https://github.com/rook/rook|4.6|||||||yes
-runtime-component-operator.v0.7.0|0.7.0|true|2020-07-16 09:00:00|Community|https://github.com/application-stacks/runtime-component-operator|4.6|v0.15.2|golang|||yes|yes|yes
-sealed-secrets-operator-helm.v0.0.2|0.0.2|false|2020-07-08 01:01:01|Disposable Zone|https://github.com/disposab1e/sealed-secrets-operator-helm.git|4.6|||||||yes
-seldon-deploy-operator.v0.7.0|0.7.0|false|2020-05-21 15:00:00|Seldon Technologies|https://github.com/SeldonIO/seldon-core|4.6|||||yes|yes|
-seldon-operator.v1.2.2|1.2.2|false|2019-05-21 15:00:00|Seldon Technologies|https://github.com/SeldonIO/seldon-core|4.6|||||yes|yes|yes
-sematext-operator.v1.0.9|1.0.9|false|2019-06-13 08:00:00|Sematext|https://github.com/sematext/sematext-operator|4.6|v0.12.0|helm||||yes|yes
-serverless-operator.v1.10.0|1.10.0|false|2020-04-20T17:00:00Z|Red Hat|https://github.com/openshift-knative/serverless-operator|4.6|||yes||||
-serverless-operator.v1.7.2|1.7.2|false|2020-04-20T17:00:00Z|Red Hat, Inc.|https://github.com/openshift-knative/serverless-operator|4.6|||yes||||
-service-binding-operator.v0.3.0|0.3.0|false|2020-10-05T10:38:22Z|Red Hat|https://github.com/redhat-developer/service-binding-operator|4.6|v0.16.0|golang|yes||||
-service-registry-operator.v1.0.2|1.0.2|false|2020-06-04|Red Hat|https://github.com/Apicurio/apicurio-registry-operator|4.6|v0.17.0|golang|yes||||
-servicemeshoperator.v1.1.10|1.1.10-0|false|2020-10-09T23:28:18UTC|Red Hat, Inc.|https://github.com/maistra/istio-operator|4.6|||yes||||
-siddhi-operator.v0.2.2|0.2.2|false|2020-01-02T16:45:00Z|Siddhi|https://github.com/siddhi-io/siddhi-operator/|4.6|||||||yes
-skydive-operator.v0.0.12|0.0.12|false|Jan 14, 2020 11:40 am|Skydive Community|https://github.com/skydive-project/skydive-operator|4.6|v0.13.0|helm|||||yes
-snapscheduler.v1.1.1|1.1.1|false||Backube|https://github.com/backube/snapscheduler|4.6|||||||yes
-snyk-operator.v1.33.0|1.33.0|false|2020-10-03T05:05:45Z|Snyk Ltd.|https://github.com/snyk/kubernetes-monitor|4.6|||||||yes
-sparkoperator.v1.0.2|1.0.2|false|2019-01-17 12:00:00|radanalytics.io|https://github.com/radanalyticsio/spark-operator|4.6|||||||yes
-sparkoperator.v2.4.0|2.4.0|False|2019-01-17 12:00:00|GoogleCloudPlatform|https://github.com/GoogleCloudPlatform/spark-on-k8s-operator|4.6|||||||yes
-spinnaker-operator.v1.20.3|1.20.3|false|2019-04-29 19:49:35|OpsMx|https://github.com/GoogleCloudPlatform/spark-on-k8s-operator|4.6|||||||yes
-splunk.v0.1.0|0.1.0|false|2019-12-18|Splunk Inc.||4.6||||||yes|yes
-sriov-network-operator.4.6.0-202010200139.p0|4.6.0-202010200139.p0|false|2019/04/30|Red Hat|https://github.com/openshift/sriov-network-operator|4.6|||yes||||
-starboard-operator.v0.6.0|0.6.0|false|2020-09-15T08:00:00Z|Aqua Security|https://github.com/aquasecurity/starboard|4.6|||||||yes
-storageosoperator.v2.2.0|2.2.0|true|2020-09-01T22:31:18Z|StorageOS, Inc|https://github.com/storageos/cluster-operator|4.6|v0.18.1|golang|||yes|yes|
-storageosoperator.v2.3.0|2.3.0|false|2020-10-26T15:39:45Z|StorageOS, Inc|https://github.com/storageos/cluster-operator|4.6|v0.18.1|golang|||||yes
-strimzi-cluster-operator.v0.19.0|0.19.0|false|2020-07-27 22:49:00|Strimzi|https://github.com/strimzi/strimzi-kafka-operator|4.6|||||||yes
-submariner.v0.6.1|0.6.1|false|2020-07-20 07:00:00|submariner.io|https://github.com/submariner-io/submariner-operator|4.6|v0.17.0|golang|||||yes
-synopsys-operator.2019.4.0|2019.4.0|false|2018-12-14 17:09:00|Synopsys, Inc|https://github.com/blackducksoftware/synopsys-operator|4.6|||||||yes
-synopsys-operator.2019.8.4|2019.8.4|false|2018-12-14 17:09:00|Synopsys, Inc|https://github.com/blackducksoftware/synopsys-operator|4.6||||||yes|yes
-sysdig-operator.v1.7.2|1.7.2|false|2019-03-08T18:30:00Z|Sysdig|https://github.com/sysdiglabs/sysdig-operator/|4.6|||||||yes
-sysdig-operator.v1.8.3|1.8.3|false|2019-03-08 18:30:00|Sysdig|https://github.com/sysdiglabs/sysdig-operator/|4.6|||||yes|yes|
-t8c-operator.v7.21.0|7.21.0|false|2019-07-01T00:00:00.000Z|Turbonomic, Inc.|https://github.com/turbonomic/t8c-install/tree/master/operator|4.6|||||||yes
-t8c-operator.v7.22.9|7.22.9|false|2019-07-01T00:00:00.000Z|Turbonomic, Inc.|https://github.com/turbonomic/t8c-install/tree/master/operator|4.6|||||yes|yes|
-ta-operator.v2.2.0|2.2.0|false|2020-07-01T20:00:00Z|IBM|N/A|4.6||||||yes|
-ta-operator.v2.3.1|2.3.1|false|2020-10-01T20:00:00Z|IBM|N/A|4.6||||||yes|
-tektoncd-operator.v0.15.2-1|0.15.2-1|false|2020-08-26T00:00:00Z|The Tekton Authors|https://github.com/tektoncd/operator|4.6|v0.17.0|golang|||||yes
-tidb-operator.v1.1.6|1.1.6|false|2020-10-16T07-18-39Z|PingCAP|https://github.com/pingcap/tidb-operator|4.6|||||||yes
-tigera-operator.v1.7.3|1.7.3|true|2020-08-07T22:44:11.830728Z|Tigera|https://github.com/tigera/operator|4.6|v1.0.1|golang||||yes|
-time-machine-operator4.v0.0.4|0.0.4|false|2020-03-26 15:13:59|Solution-Soft|https://github.com/turbonomic/t8c-install/tree/master/operator|4.6|||||yes|yes|
-traefikee-operator.v2.1.1|2.1.1|false|2019-12-12T09:01:00Z|Containous|https://github.com/pingcap/tidb-operator|4.6|||||||yes
-traefikee-redhat-certified.v2.0.2|2.0.2|true|2019-12-12T09:01:00Z|Containous|https://github.com/turbonomic/t8c-install/tree/master/operator|4.6|||||yes|yes|
-uma-operator.v1.0.0|1.0.0|false|2019-10-15T15:23:00Z|Broadcom, Inc.|https://github.gwd.broadcom.net/BROADCOM/uma-operator|4.6|||||yes|yes|
-universalagent-operator.v0.0.2|0.0.1|false|2020-04-14 11:38:00|Stonebranch|registry.marketplace.redhat.com/rhm/stonebranch/stonebranch-operator@sha256:a99b1c14a08cbaa2facd56c2a3125eefd59349ab59d98f56b58e9cbc167131a2|4.6|||||yes|yes|
-vaultoperator.v0.4.10|0.4.10|false|2019-03-07T08:00:00Z|Banzai Cloud|https://github.com/banzaicloud/bank-vaults/tree/master/operator|4.6|||||||yes
-verticalpodautoscaler.4.6.0-202010200139.p0.3|4.6.0-202010200139.p0|false|2019-10-14T12:17:13Z|Red Hat|https://github.com/openshift/vertical-pod-autoscaler-operator|4.6|||yes||||
-vfunction-server-operator.v1.0.1|1.0.1|Red Hat certified|2020-05-18 20:00:00|vFunction|registry.marketplace.redhat.com/rhm/stonebranch/stonebranch-operator@sha256:a99b1c14a08cbaa2facd56c2a3125eefd59349ab59d98f56b58e9cbc167131a2|4.6|||||yes|yes|
-vprotect-operator.v0.0.1|0.0.1|false|2020-04-17T10:40:45Z|Storware||4.6|||||yes|yes|
-wavefront-operator.v0.1.0|0.1.0|true|2019-11-26 01:09:59|VMware|https://github.com/wavefrontHQ/wavefront-operator|4.6|v0.10.1-0.20190912163340-c0e167d4f396|golang||||yes|yes
-web-terminal.v1.0.1|1.0.1|false|2020-05-27T05:12:57Z|Red Hat|https://github.com/devfile/devworkspace-operator|4.6|v0.17.0|golang|yes||||
-wildfly-operator.v0.4.1|0.4.1|false|2020-09-18T08:00:00Z|WildFly|https://github.com/wildfly/wildfly-operator|4.6|v0.17.2|golang|||||yes
-wso2am-operator.v1.1.0|1.1.0|false|2020-09-07T03:00:00.000Z|WSO2|https://github.com/wso2/k8s-wso2am-operator|4.6|||||||yes
-xray-operator.v1.1.4|1.1.4|true|2020-05-22 00:00:00+00:00|JFrog|https://github.com/jfrog/JFrog-Cloud-Installers/tree/openshift4/Openshift4|4.6||||||yes|
-xrootd-operator.v0.2.1|0.2.1|true|2020-08-30 17:20:00|Xrootd community|https://github.com/xrootd/xrootd-k8s-operator|4.6|||||||yes
-yugabyte-operator.v0.0.1|0.0.1|true|2020-08-30 17:20:00|YugabyteDB|https://github.com/yugabyte/yugabyte-operator|4.6|v0.17.1|golang|||||yes
-yugabyte-operator.v0.9.0|0.9.0|true|2020-03-31 12:00:00|Yugabyte Inc|https://github.com/yugabyte/yugabyte-operator|4.6|v0.17.1|golang||||yes|
-zabbix-operator-certified.v0.0.2|0.0.2|true|2020-09-21T08:03:44Z|Zabbix LLC||4.6|||||yes|yes|
-zoperator.v0.3.6|0.3.6|true|August 26, 2020|Zadara|https://github.com/zadarastorage/zadara-operator|4.6||||||yes|yes
-zts-xcrypt-operator.v0.0.11|0.0.11|false|2020-07-07T15:30:13.97Z|Zettaset||4.6|||||yes|yes|
+operator|version|certified|created|company|repos|ocpversion|sdkversion|operatortype|source-redhat|source-community|source-marketplace|source-certified|source-operatorhub|channel|default-channel
+3scale-operator.v0.3.0|0.3.0|false|2019-05-30T22:40:00Z|Red Hat|https://github.com/3scale/3scale-operator|4.6|v0.16.0|golang|yes|||||alpha|alpha
+3scale-operator.v0.4.2|0.4.1|false|2019-05-30T22:40:00Z|Red Hat|https://github.com/3scale/3scale-operator|4.6|v0.16.0|golang|yes|||||alpha|alpha
+3scale-operator.v0.5.5|0.5.5|false|2019-05-30T22:40:00Z|Red Hat|https://github.com/3scale/3scale-operator|4.6|v0.16.0|golang|yes|||||alpha|alpha
+3scale-operator.v0.6.1|0.6.1|false|2019-05-30T22:40:00Z|Red Hat|https://github.com/3scale/3scale-operator|4.6|v0.16.0|golang|yes|||||alpha|alpha
+aci-containers-operator.v1.0.0|1.0.0|false|2020-01-09T12:00:00Z|Cisco Systems Inc|https://github.com/noironetworks/aci-containers|4.6|||||yes|yes|||
+advanced-cluster-management.v2.0.4|2.0.4|true|2020-10-14T13:38:14Z|Red Hat|https://github.com/3scale/3scale-operator|4.6|v0.16.0|golang|yes|||||alpha|alpha
+akka-cluster-operator-certified.v1.0.0|1.0.0|true|2019-06-28T15:23:00Z|Lightbend, Inc.|https://github.com/lightbend/akka-cluster-operator|4.6|v0.6.1-0.20190322190857-b7dd8232e32c|golang|||yes|yes||alpha|alpha
+akka-cluster-operator.v1.0.0|1.0.0|false|2019-06-28T15:23:00Z|Lightbend, Inc.|https://github.com/lightbend/akka-cluster-operator|4.6|v0.6.1-0.20190322190857-b7dd8232e32c|golang|||||yes|alpha|alpha
+alcide-kaudit-operator.v0.0.3|0.0.3|true|2020-04-07 12:59:59|Alcide|https://github.com/lightbend/akka-cluster-operator|4.6|v0.6.1-0.20190322190857-b7dd8232e32c|golang||||yes||alpha|alpha
+amq-broker-operator.v0.13.0|0.13.0|false|2020-03-11T08:16:32Z|Red Hat|https://github.com/rh-messaging/activemq-artemis-operator|4.6|v0.8.2|golang|yes|||||current|current
+amq-broker-operator.v0.15.0|0.15.0|false|2020-06-10T14:18:22Z|Red Hat|https://github.com/rh-messaging/activemq-artemis-operator|4.6|v0.8.2|golang|yes|||||current|current
+amq-broker-operator.v0.9.1|0.9.1|false|2019-12-09T08:16:32Z|Red Hat, Inc.|https://github.com/rh-messaging/amq-broker-operator|4.6|v0.8.2|golang|yes|||||current|current
+amq-broker-operator.v0.9.3|0.9.3|false|2020-03-25T08:16:32Z|Red Hat|https://github.com/rh-messaging/activemq-artemis-operator|4.6|v0.8.2|golang|yes|||||current|current
+amq-online.1.6.0|1.6.0|false|2019-02-19T00:00:00Z|Red Hat, Inc||4.6|||yes||||| alpha| ""
+amq7-interconnect-operator.v1.2.1|1.2.1|false|2019-06-28T22:00:00Z|Red Hat|https://github.com/interconnectedcloud/qdr-operator|4.6|||yes|||||beta|
+amqstreams.v1.5.3|1.5.3|false|2020-05-25T10:00:00Z|Red Hat|https://github.com/strimzi/strimzi-kafka-operator|4.6|||yes||||||
+anaconda-team-edition.v6.1.3|6.1.3|false|2020-08-27T04:49:49Z|Anaconda, Inc.|github.com/anaconda|4.6|||||yes|yes||unknown|unknown
+anchore-engine-operator.v0.1.11|0.1.11|true|2019-12-13T07:00:00Z|Anchore Inc.|https://github.com/anchore/engine-operator|4.6|v1.1.0|helm||||yes||alpha|alpha
+anchore-engine-operator.v0.1.3|0.1.3|true|2019-12-13T07:00:00Z|Anchore Inc.|https://github.com/anchore/engine-operator|4.6|v1.1.0|helm|||||yes|alpha|alpha
+anzograph-operator.v1.3.400|1.3.4|true|2020-10-15|Cambridge Semantics||4.6|||||yes|yes|| alpha| ""
+api-operator.v1.2.2|1.2.2|false|2020-10-23T03:00:00.000Z|WSO2|https://github.com/wso2/k8s-api-operator|4.6|||||||yes|stable|stable
+apicast-community-operator.v0.2.1|0.2.1|false|2019-10-27T22:40:00Z|Red Hat|https://github.com/3scale/apicast-operator|4.6|||||||yes| alpha|
+apicast-operator.v0.2.4|0.2.4|false|2019-10-27T22:40:00Z|Red Hat|https://github.com/3scale/apicast-operator|4.6|||yes||||| alpha|
+apicast-operator.v0.3.1|0.3.1|false|2019-10-27T22:40:00Z|Red Hat|https://github.com/3scale/apicast-operator|4.6|||yes||||| alpha|
+apicurio-registry.v0.0.3-v1.2.3.final|0.0.3-v1.2.3.final|false|2020-07-08|Apicurio|https://github.com/Apicurio/apicurio-registry-operator|4.6|v0.17.0|golang|||||yes|alpha|alpha
+apicuritooperator.v7.7.1|7.7.1|false|2020-06-09 10:50:34|Red Hat|https://github.com/Apicurio/apicurio-operators/tree/master/apicurito|4.6|||yes|||||unknown|unknown
+appdynamics-operator.v0.4.1|0.4.1|false|2019-11-30 12:00:00|AppDynamics LLC|https://github.com/Appdynamics/appdynamics-operator|4.6|||||||yes|alpha|alpha
+appdynamics-operator.v0.4.3|0.4.3|true|2020-03-26 12:00:00|AppDynamics LLC|https://github.com/Appdynamics/appdynamics-operator|4.6||||||yes||alpha|alpha
+appranix.v2.3.0|2.3.0|true|2020-02-18 10:47:57|Appranix, Inc|https://github.com/operator-framework/community-operators/tree/master/upstream-community-operators/appranix|4.6|||||yes|yes||unknown|unknown
+appranix.v2.4.0|2.4.0|true|2020-03-04 12:34:42|Appranix, Inc|https://github.com/operator-framework/community-operators/tree/master/upstream-community-operators/appranix|4.6|||||yes|yes||unknown|unknown
+appsody-operator.v0.6.0|0.6.0|true|2020-05-21 09:00:00|Appsody|https://github.com/appsody/appsody-operator|4.6|v0.15.2|golang|||||yes|beta|beta
+appsody-operator.v0.6.1|0.6.1|true|2020-06-26 09:00:00|Appsody|https://github.com/appsody/appsody-operator|4.6|v0.15.2|golang||||yes||beta|beta
+aqua-operator.v1.0.2|1.0.2|false|2020-03-25T08:00:00Z|Aqua Security, Inc.|https://github.com/aquasecurity/aqua-operator|4.6|v0.15.1|golang|||||yes||
+aqua-operator.v1.0.4|1.0.4|true|2020-03-25T08:00:00Z|Aqua Security, Inc.|https://github.com/aquasecurity/aqua-operator|4.6|v0.15.1|golang|||yes|yes|||
+argocd-operator-helm.v0.0.7|0.0.7|false|2020-07-07 01:01:01|Disposable Zone|https://github.com/disposab1e/argocd-operator-helm.git|4.6|||||||yes|unknown|unknown
+argocd-operator.v0.0.14|0.0.14|false|2020-10-09 15:19:40|Argo CD Community|https://github.com/argoproj-labs/argocd-operator|4.6|v0.18.0|golang|||||yes| "alpha"| "alpha"
+artifactory-ha-operator.v1.1.2|1.1.2|true|2020-03-25 00:00:00+00:00|JFrog|https://github.com/jfrog/JFrog-Cloud-Installers/tree/openshift4/Openshift4|4.6||||||yes||unknown|unknown
+atlasmap-operator.v0.3.0|0.3.0|false|2019-06-10T06:42:43Z|AtlasMap|https://github.com/atlasmap/atlasmap-operator|4.6|v0.15.1|golang|||||yes|alpha|alpha
+atomicorp-helm-operator.v0.0.1|0.0.1|false|2020-05-05T12:00:00Z|Atomicorp|N/A|4.6|||||yes|yes||unknown|unknown
+aws-sources-operator.v0.2.0|0.2.0|false|2020-07-18T12:00:00Z|TriggerMesh Inc.|https://github.com/triggermesh/aws-event-sources|4.6|||||yes|yes|||
+awss3operator.v1.0.0|1.0.0|false|2019-05-02 16:12:00|Red Hat|https://github.com/yard-turkey/aws-s3-operator|4.6|||||||yes||
+awss3operator.v1.0.1|1.0.1|false|2019-05-02 16:12:00|Community|https://github.com/yard-turkey/aws-s3-provisioner|4.6|||||||yes||
+ax-cps-operator.v1.0.0|1.0.0|true|2020-01-30T12:45:55+05:30|Appranix, Inc|https://github.com/operator-framework/community-operators/tree/master/upstream-community-operators/appranix|4.6|||||||yes|unknown|unknown
+ax-cps-operator.v2.3.0|2.3.0|true|2020-02-10T13:27:50+05:30|Appranix, Inc|https://github.com/operator-framework/community-operators/tree/master/upstream-community-operators/appranix|4.6|||||||yes|unknown|unknown
+azure-service-operator.v0.37.0|0.37.0|false|2020-08-20 12:00:00|Microsoft|https://github.com/Azure/azure-service-operator|4.6|||||||yes||
+banzaicloud-kafka-operator.0.3.1|0.3.1|false|2019-05-28T08:00:00Z|Banzai Cloud|https://github.com/banzaicloud/kafka-operator/tree/master|4.6|||||||yes|unknown|unknown
+banzaicloud-kafka-operator.0.6.1|0.6.1|false|2019-10-15T08:00:00Z|Banzai Cloud|https://github.com/banzaicloud/kafka-operator/tree/master|4.6|||||||yes|unknown|unknown
+businessautomation-operator.7.8.1|7.8.1|true|2020-09-07 08:37:06|Red Hat|https://github.com/kiegroup/kie-cloud-operator|4.6|v0.19.2|golang|yes||||| stable| stable
+camel-k-operator.v1.2.0|1.2.0|false|2020-10-12T02:45:00Z|The Apache Software Foundation|https://github.com/apache/camel-k|4.6|||||||yes|stable|stable
+can-operator.v0.0.2|0.0.2|false|2020-10-15T10:18:00Z|Avanseus Technologies Pvt. Ltd.|N/A|4.6|||||yes|yes||unknown|unknown
+cass-operator.v1.0.0|1.0.0|true|2020-03-31|DataStax|https://github.com/datastax/cass-operator|4.6|v0.17.0|golang|||yes|yes|||
+cassandra-operator.v2.0.0|2.0.0|false|2019-09-04 12:00:00|Instaclustr|https://github.com/instaclustr/cassandra-operator|4.6|v0.16.0|golang|||||yes||
+cert-manager-operator.v0.15.2|0.15.2|true|2020-05-04T12:00:00Z|Jetstack|https://github.com/jetstack/cert-manager|4.6|||||yes|yes|||
+chaosblade-operator.v0.5.1|0.5.1|false|2020-02-11T15:40:00Z|Alibaba Cloud|https://github.com/chaosblade-io/chaosblade-operator|4.6|v0.17.0|golang|||||yes|alpha|alpha
+chaosoperator.v0.1.0|0.1.0|false|2019-07-15 10:28:08|MayaData|https://github.com/litmuschaos/chaos-operator|4.6|v0.15.2|golang|||||yes||
+chaosoperator.v1.3.0|1.3.0|false|2020-04-16T02:45:37Z|MayaData|https://github.com/litmuschaos/chaos-operator|4.6|v0.15.2|golang|||||yes||
+cic-operator.v1.7.6|1.7.6|false|2020-02-06|Citrix|https://github.com/citrix/citrix-k8s-ingress-controller|4.6||||||yes|||
+citrix-adc-istio-ingress-gateway-operator.v1.0.1|1.0.1|false|2019-12-03 14:16:17|Citrix|https://github.com/citrix/citrix-istio-adaptor|4.6||||||yes|||
+citrix-api-gateway-operator.v0.0.1|1.8.19|false|06-26-2020|Citrix|https://github.com/citrix/citrix-k8s-ingress-controller|4.6|||||yes|yes|||
+clickhouse-operator.v0.10.0|0.10.0|false|2019-11-11T10:00:00Z|Altinity|https://github.com/altinity/clickhouse-operator|4.6|||||||yes||
+cloud-native-postgresql.v0.3.0|0.3.0|true|2020-09-01T11:43:00Z|2ndQuadrant|https://github.com/citrix/citrix-k8s-ingress-controller|4.6||||||yes|||
+cluster-manager.v0.2.0|0.2.0|false|2020-10-13T20:00:31Z|Red Hat, Inc.|https://github.com/open-cluster-management/registration-operator|4.6|||||||yes| stable| stable
+clusterkubedescheduleroperator.4.6.0-202010200139.p0|4.6.0-202010200139.p0|false|2020/04/18|Red Hat, Inc.|https://github.com/openshift/cluster-kube-descheduler-operator|4.6|||yes||||| "beta"| "beta"
+clusterlogging.4.6.0-202010201329.p0|4.6.0-202010201329.p0|false|2018-08-01T08:00:00Z|Red Hat|https://github.com/openshift/cluster-kube-descheduler-operator|4.6|||yes||||| "beta"| "beta"
+clusterresourceoverride-operator.4.6.0-202010201329.p0.3|4.6.0-202010200139.p0|false|2019/11/15|Red Hat|https://github.com/openshift/cluster-resource-override-operator|4.6|||yes|||||unknown|unknown
+cnvrg-operator.v0.352.0|0.352.0|true|2020-06-11T12:59:59.000Z|cnvrg.io/new|https://github.com/accessibleAI/cnvrg-operator|4.6|||||yes|yes||unknown|unknown
+cockroach-operator.v1.0.1|1.0.1|true|2020-09-03T19:29:26Z|Cockroach Labs|https://github.com/cockroachdb/cockroach-operator|4.6|||||yes|yes|||
+cockroachdb.v2.1.11|2.1.11|false|2019-01-24T15-33-43Z|Helm Community|https://github.com/dmesser/cockroachdb-operator|4.6|v0.18.1|helm|||||yes|,stable-3.x,stable-2.x,stable|stable-3.x
+cockroachdb.v3.0.7|3.0.7|false|2020-06-22T15-00-00Z|Helm Community|https://github.com/dmesser/cockroachdb-operator|4.6|v0.18.1|helm|||||yes|,stable-3.x,stable-2.x,stable|stable-3.x
+compliance-operator.v0.1.17|0.1.17|false|2019/11/15|Red Hat Inc.|https://github.com/openshift/cluster-resource-override-operator|4.6|||yes|||||unknown|unknown
+composable-operator.v0.1.3|0.1.3|false|2019-11-16T20:39:31Z|IBM|https://github.com/IBM/composable|4.6|||||||yes|alpha|
+container-security-operator.v3.3.1|3.3.1|false|2020-05-20 17:15:55|Red Hat|https://github.com/quay/container-security-operator|4.6|||yes|||||alpha|alpha
+conversational-hub-operator.v2.1.0|2.1.0|true|2020-04-20 12:59:59|EscalateAI Conversation Hub Team|https://github.com/cockroachdb/cockroach-operator|4.6||||||yes|||
+coralogix-operator.v1.0.0|1.0.0|false|2020-09-08T07:15:53Z|Coralogix Ltd.|https://github.com/coralogix/coralogix-operator|4.6||||||yes|| stable| stable
+cortex-certifai-operator.v1.3.4|1.3.4|true|2020-1-23T12:03:45Z|CognitiveScale|https://github.com/cockroachdb/cockroach-operator|4.6|||||yes|yes|||
+cortex-certifai-operator.v1.3.5-rc.2|1.3.5-rc.2|false|2020-1-23T12:03:45Z|CognitiveScale|https://github.com/coralogix/coralogix-operator|4.6||||||yes|| stable| stable
+cortex-fabric-operator.v1.0.0|1.0.0|false|2020-5-01T12:03:45Z|CognitiveScale|https://github.com/cognitivescale/cortex-fabric|4.6|||||yes|yes||unknown|unknown
+cortex-healthcare-hub-operator.v0.0.25|0.0.25|false|2020-5-01T12:03:45Z|CognitiveScale|https://github.com/CognitiveScale/cortex-healthcare-hub-operator|4.6|||||yes|yes||unknown|unknown
+cortex-hub-operator.v0.0.25|0.0.25|false|2020-5-01T12:03:45Z|CognitiveScale|https://github.com/CognitiveScale/cortex-hub-operator|4.6|||||yes|yes||unknown|unknown
+cos-bucket-operator.v0.1.0|0.1.0|false|2019-08-23T12:38:36Z|IBM|https://github.com/IBM/cos-bucket-operator|4.6|||||||yes|alpha|
+couchbase-operator.v1.0.0|1.0.0|false|2019-02-25T12:24:59Z|Couchbase|https://github.com/IBM/cos-bucket-operator|4.6|||||||yes|alpha|
+couchbase-operator.v1.2.2|1.2.2|true|2019/08/30|Couchbase|https://github.com/CognitiveScale/cortex-hub-operator|4.6|||||yes|yes||unknown|unknown
+couchbase-operator.v2.0.2|2.0.2|true|2020/08/13|Couchbase|https://github.com/IBM/cos-bucket-operator|4.6|||||||yes|alpha|
+couchdb-operator.v1.0.13|1.0.13|true|2020-05-29T12:00:00Z|IBM|https://github.com/IBM/cos-bucket-operator|4.6|||||||yes|alpha|
+couchdb-operator.v1.0.14|1.0.14|true|2020-08-06T12:00:00Z|IBM|https://github.com/CognitiveScale/cortex-hub-operator|4.6||||||yes||unknown|unknown
+couchdb-operator.v1.1.0|1.1.0|true|2020-09-08T12:00:00Z|IBM|https://github.com/CognitiveScale/cortex-hub-operator|4.6||||||yes||unknown|unknown
+couchdb-operator.v1.2.1|1.2.1|true|2020-09-15T18:00:00Z|IBM|https://github.com/CognitiveScale/cortex-hub-operator|4.6||||||yes||unknown|unknown
+couchdb-operator.v1.3.0|1.3.0|true|2020-10-22T18:00:00Z|IBM|https://github.com/CognitiveScale/cortex-hub-operator|4.6|||||yes|||unknown|unknown
+couchdb-operator.v1.3.1|1.3.1|true|2020-10-22T18:00:00Z|IBM|https://github.com/CognitiveScale/cortex-hub-operator|4.6||||||yes||unknown|unknown
+cpx-cic-operator.v130.47.103|130.47.103|false|2020-02-06|Citrix|https://github.com/citrix/citrix-k8s-ingress-controller|4.6|||||yes|yes|||
+credstash-operator.v1.13.0|1.13.0|false|2020-07-20 01:01:01|Ouzi|https://github.com/ouzi-dev/credstash-operator|4.6|v0.19.0|golang|||||yes||
+crossplane.v0.11.0|0.11.0|false|2020-05-26T00:20:38.159772+00:00|Upbound|https://github.com/crossplane/crossplane|4.6|||||||yes||
+crwoperator.v2.4.0|2.4.0|true|2020-09-24T13:43:48+00:00|Red Hat|https://github.com/redhat-developer/codeready-workspaces-operator/|4.6|||yes||||| alpha| ""
+cyberarmor-operator.0.0.1|0.0.1|false|26-05-2020|Cyber Armor Ltd|https://github.com/citrix/citrix-k8s-ingress-controller|4.6|||||yes|yes|||
+datadog-operator.v0.3.0|0.3.0|true|2020-008-31 17:01:40|Datadog|https://github.com/DataDog/datadog-operator|4.6|||||yes|yes|| alpha| ""
+datadog-operator.v0.3.2|0.3.2|true|2020-009-16 14:14:02|Datadog|https://github.com/DataDog/datadog-operator|4.6|||||||yes| alpha| ""
+datagrid-operator.v8.0.3|8.0.3|false|2020-08-07T16:26:17Z|Red Hat|https://github.com/infinispan/infinispan-operator|4.6|v0.15.2|golang|yes|||||,dev-preview,stable|dev-preview
+datagrid-operator.v8.1.1|8.1.1|false|2020-10-06T20:33:23Z|Red Hat|https://github.com/infinispan/infinispan-operator|4.6|v0.15.2|golang|yes|||||,dev-preview,stable|dev-preview
+dell-csi-operator.v1.0.0|1.0.0|Yes|2020-03-03T11:30:59Z|Dell EMC|https://github.com/dell/dell-csi-operator|4.6|||||||yes||
+dell-csi-operator.v1.1.0|1.1.0|true|2020-03-03T11:30:59Z|Dell EMC|https://github.com/dell/dell-csi-operator|4.6|||||yes|yes|||
+densify-operator.v0.0.2|0.0.2|false|2020-08-19T:12:00:00Z|Densify|https://github.com/densify-dev/Container-Optimization-Data-Forwarder|4.6|||||yes|yes|||
+deployment-validation-operator.v0.0.10|0.0.10|false|08/25/2020|Red Hat|https://github.com/app-sre/dv-operator|4.6|v0.17.0|golang|||||yes| "alpha"| "alpha"
+ditto-operator.v0.1.1|0.1.1|false|2020-07-19T19:15:00Z|Jens Reimann|https://github.com/ctron/ditto-operator|4.6|||||||yes|alpha|alpha
+dynatrace-monitoring.v0.8.2|0.8.2|false|2020-08-24T15:00:00Z|Dynatrace LLC|https://github.com/Dynatrace/dynatrace-oneagent-operator|4.6|v0.17.0|golang|||yes|yes|yes|alpha|
+eap-operator.v2.0.0|2.0.0|false|2020-09-17T08:00:00Z|Red Hat|https://github.com/wildfly/wildfly-operator|4.6|v0.17.2|golang|yes|||||alpha|alpha
+eclipse-che.v7.19.2|7.19.2|false|2020-09-30T14:30:51Z|Eclipse Foundation|https://github.com/eclipse/che-operator|4.6|v0.0.0-00010101000000-000000000000|golang|||||yes| nightly| nightly
+eddi-operator.v1.0.2|1.0.2|false|2020-05-26|LABS.AI|https://github.com/labsai/EDDI-operator/|4.6|v0.18.1|ansible|||yes|yes|| alpha| ""
+elastic-cloud-eck.v1.2.1|1.2.1|false|2020-08-12 07:39:56|Elastic|https://github.com/elastic/cloud-on-k8s|4.6|||||||yes||
+elasticsearch-operator.4.6.0-202010200139.p0.2|4.6.0-202010200139.p0|false|2019-02-20T08:00:00Z|Red Hat, Inc|https://github.com/wildfly/wildfly-operator|4.6|v0.17.2|golang|yes|||||alpha|alpha
+ember-csi-operator.v0.9.1|0.9.1|false|2020-06-25:16:07:00|Red Hat|https://github.com/embercsi/ember-csi-operator|4.6|||||||yes|beta|beta
+enc-key-sync-operator.v0.0.1|0.0.1|false|2020-07-21 20:00:00|IBM|https://github.com/IBM/k8s-enc-image-operator|4.6|||||||yes||
+enmasse.0.32.2|0.32.2|false|2019-02-19T00:00:00Z|EnMasse|https://github.com/EnMasseProject/enmasse|4.6|Replacements|golang|||||yes| ${olm.package.channel}| ${olm.package.channel}
+esindex-operator.v0.1.0|0.1.0|false|2019-08-09T09:40:38Z|IBM|https://github.com/IBM/esindex-operator|4.6|||||||yes|alpha|
+etcdoperator-community.v0.6.1|0.6.1|false|2019-08-09T09:40:38Z|CoreOS, Inc|https://github.com/IBM/esindex-operator|4.6|||||||yes|alpha|
+etcdoperator.v0.9.4|0.9.4|false|2019-02-28 01:03:00|CNCF|https://github.com/coreos/etcd-operator|4.6|||||||yes||
+etcdoperator.v0.9.4-clusterwide|0.9.4-clusterwide|false|2019-02-28 01:03:00|CNCF|https://github.com/coreos/etcd-operator|4.6|||||||yes||
+eunomia.v0.1.7|0.1.7|false|11/18/2019|Kohl's Technology|https://github.com/KohlsTechnology/eunomia|4.6|v0.12.1-0.20191112211508-82fc57de5e5b|golang|||||yes||
+event-streams-topic.v0.1.1|0.1.1|false|2019-10-29T13:52:40Z|IBM|https://github.com/IBM/event-streams-topic|4.6|||||||yes|alpha|
+ext-postgres-operator.v0.4.1|0.4.1|false|2019-12-19T14:12:00Z|movetokube.com|https://github.com/movetokube/postgres-operator|4.6|v0.17.1|golang|||||yes|stable|
+f5-bigip-ctlr-operator.v1.2.0|1.2.0|false|2020-08-21|F5 Networks Inc.|https://github.com/F5Networks/k8s-bigip-ctlr|4.6||||||yes||beta|
+falco-operator.v0.7.6|0.7.6|false|2019-03-12T18:30:00Z|Sysdig|https://github.com/falcosecurity/falco-operator/tree/helm-based-operator|4.6|||||||yes|unknown|unknown
+falco-operator.v1.2.0|1.2.0|false|2020-07-07 18:30:00|Sysdig|https://github.com/sysdiglabs/falco-operator/|4.6||||||yes|| alpha| ""
+federatorai.v4.2.603|4.2.603|true|2019-10-07T18:00:00Z|ProphetStor Data Services, Inc.|https://access.redhat.com/containers/#/registry.connect.redhat.com/prophetstor/federatorai-operator|4.6||||yes||||unknown|unknown
+federatorai.v4.3.958|4.3.958|true|2020-09-18T13:00:00Z|ProphetStor Data Services, Inc.|https://access.redhat.com/containers/#/registry.connect.redhat.com/prophetstor/federatorai-operator|4.6||||||yes|yes|unknown|unknown
+file-integrity-operator.v0.1.6|0.1.6|false|2019-02-20T08:00:00Z|Red Hat|https://github.com/wildfly/wildfly-operator|4.6|v0.17.2|golang|yes|||||alpha|alpha
+fp-predict-plus-operator.v0.0.4|0.0.4|true|2020-05-16 00:00:00|Findability Sciences, LLC|https://access.redhat.com/containers/#/registry.connect.redhat.com/prophetstor/federatorai-operator|4.6||||||yes||unknown|unknown
+fuse-console.v7.7.1|7.7.1|false|2020-06-03T15:17:00Z|Red Hat|https://github.com/hawtio/hawtio-operator|4.6|||yes||||| alpha| ""
+fuse-online-operator.v7.7.1|7.7.1|false|2020-06-04T16:12:00Z|Red Hat|https://github.com/syndesisio/syndesis/|4.6|||yes||||| alpha| ""
+gitlab-operator.v0.1.12|0.1.12|false|2020-03-11T13:29:00Z|GitLab, Inc|https://gitlab.com/ochienged/gitlab-operator|4.6||||||yes||unknown|unknown
+gpu-operator-certified.v1.1.7-r2|1.1.7-r2|false|2019-02-27T00:21:25Z|NVIDIA Corporation|http://github.com/NVIDIA/gpu-operator|4.6|v0.17.0|golang||||yes||unknown|unknown
+grafana-operator.v2.0.0|2.0.0|False|2019-07-23 00:00:00|Red Hat|https://github.com/integr8ly/grafana-operator|4.6|v0.18.2|golang|||||yes|alpha|
+grafana-operator.v3.2.0|3.2.0|False|2020-04-20 00:00:00|Red Hat|https://github.com/integr8ly/grafana-operator|4.6|v0.18.2|golang|||||yes|alpha|
+growth-stack-operator.v1.0.0|1.0.0|true|2020-09-19T16:00:00Z|IBM Digital Growth and Commerce|https://github.ibm.com/IBM-Analytics-Services/instrumentation-hybrid|4.6|||||yes|yes||unknown|unknown
+halkyon.v0.1.8|0.1.8|false|2019-08-21|Snowdrop Team|https://github.com/halkyonio/operator|4.6|v0.8.2|golang|||||yes|alpha|
+ham-deploy.v0.1.0|0.1.0|false|2020-05-12 00:00:00|IBM|https://github.com/hybridapp-io/ham-deploy|4.6|v0.18.0|golang|||||yes||
+hawkbit-operator.v0.1.4|0.1.4|false|2020-09-07T16:23:00Z|Jens Reimann|https://github.com/ctron/hawkbit-operator|4.6|||||||yes|alpha|alpha
+hazelcast-enterprise-operator.v0.3.3|0.3.3|true|2020-10-23T11:59:59Z|Hazelcast, Inc|https://github.com/hazelcast/hazelcast-operator|4.6|||||yes|yes|yes||
+hazelcast-jet-enterprise-operator.v0.2.0|0.2.0|true|2020-04-16 11:59:59|Hazelcast Inc.|https://github.com/hazelcast/hazelcast-jet-operator|4.6|||||yes|yes|||
+hazelcast-jet-enterprise-operator.v0.3.0|0.3.0|false|2020-10-26T11:59:59Z|Hazelcast Inc.|https://github.com/hazelcast/hazelcast-jet-operator|4.6|||||||yes||
+hazelcast-jet-operator.v0.3.0|0.3.0|false|2020-10-26T11:59:59Z|Hazelcast Inc.|https://github.com/hazelcast/hazelcast-jet-operator|4.6|||||||yes||
+hazelcast-operator.v0.3.3|0.3.3|false|2020-10-22T11:59:59Z|Hazelcast, Inc|https://github.com/hazelcast/hazelcast-operator|4.6|||||||yes||
+hive-operator.v1.0.11|1.0.11|false|2020-10-07T11:48:51Z|Red Hat|https://github.com/openshift/hive|4.6|||||||yes||
+hive-operator.v1.0.3-7-gba4793f|1.0.3-7-gba4793f|false|2020-05-08T15:03:21Z|Red Hat|https://github.com/openshift/hive|4.6|||||||yes||
+hive-operator.v1.0.5|1.0.5|false|2020-06-22T15:46:24Z|Red Hat|https://github.com/openshift/hive|4.6|||||||yes||
+hls-service-operator.v0.0.1|0.0.1|true|2020-03-24|HERE Technologies|https://github.com/heremaps/here-hls-service-broker|4.6||||||yes||unknown|unknown
+hpa-operator.v0.1.6|0.1.6|false|2019-04-09T08:00:00Z|Banzai Cloud|https://github.com/banzaicloud/hpa-operator|4.6|||||||yes||
+hpe-csi-operator.v1.2.0|1.2.0|true|Mon Jun  1 12:54:27 PDT 2020|HPE|https://github.com/hpe-storage/co-deployments|4.6|||||||yes|stable|stable
+hpe-csi-operator.v1.3.0|1.3.0|true|Tue Aug 18 13:26:38 PDT 2020|HPE|https://github.com/hpe-storage/co-deployments|4.6||||||yes||stable|stable
+ibm-application-gateway-operator.v0.9.0|0.9.0|false|2020-09-04T21:30:05Z|IBM|https://github.com/IBM-Security/ibm-application-gateway-operator|4.6|v0.16.0|golang|||||yes||
+ibm-block-csi-operator.v1.3.0|1.3.0|true|2020-08-30T15:15:00Z|IBM|https://github.com/IBM/ibm-block-csi-operator|4.6|v0.11.1-0.20191012024916-f419ad3f3dc5|golang|||yes|yes|yes|stable|stable
+ibm-quantum-operator.v0.1.0|0.1.0|false|2020-008-28 22:25:53|IBM Quantum|https://github.com/redhat-et/ibm-quantum-operator|4.6|||||||yes|alpha|alpha
+ibm-spectrum-scale-csi-operator.v2.0.0|2.0.0|false|Tue Jun  9 11:18:01 EDT 2020|IBM|https://github.com/IBM/ibm-spectrum-scale-csi/|4.6||||||yes|yes| alpha| ""
+ibm-spectrum-symphony-operator.v1.0.0|1.0.0|true|Mon  6 Apr 2020 11:00:00 EDT|IBM|https://github.com/IBM/ibm-spectrum-symphony-operator|4.6||||||yes|||
+ibmcloud-iam-operator.v0.1.0|0.1.0|false|2020-08-12T13:36:55Z|IBM|https://github.com/IBM/ibmcloud-iam-operator|4.6|v0.13.0|golang|||||yes|alpha|
+ibmcloud-operator.v0.1.11|0.1.11|false|2020-06-25T20:38:46Z|IBM|https://github.com/IBM/cloud-operators|4.6|||||||yes||
+ibmcloud-operator.v1.0.0|1.0.0|false|2020-09-23T23:57:03Z|IBM|https://github.com/IBM/cloud-operators|4.6|||||||yes||
+infinibox-operator.v0.0.1|0.0.1|false|2020-03-11 10:20:01|Infinidat|https://github.com/Infinidat/infinibox-csi-driver|4.6||||||yes||alpha|alpha
+infinispan-operator.v1.1.2|1.1.2|false|2020-05-15T08:42:04Z|Infinispan|https://github.com/infinispan/infinispan-operator|4.6|v0.15.2|golang|||||yes|,dev-preview,stable|dev-preview
+infinispan-operator.v2.0.4|2.0.4|false|2020-10-09T15:00:00Z|Infinispan|https://github.com/infinispan/infinispan-operator|4.6|v0.15.2|golang|||||yes|,dev-preview,stable|dev-preview
+insightedge-enterprise-operator.v15.0.1|15.0.1|true|2020-04-17 14:59:59|Gigaspaces|https://github.com/IBM/ibm-block-csi-operator|4.6|v0.11.1-0.20191012024916-f419ad3f3dc5|golang|||yes|yes||stable|stable
+instana-agent-operator.v0.3.6|0.3.6|false|2020-09-09T19:33:54Z|Instana|https://github.com/instana/instana-agent-operator|4.6|||||yes|yes|yes||
+iot-simulator.0.1.0|0.1.0|false|2019-03-19 00:00:00|Jens Reimann|https://github.com/ctron/iot-simulator-operator|4.6|v0.3.0|golang|||||yes|preview|
+istio-operator.0.1.6|0.1.6|false|2019-04-01T08:00:00Z|Banzai Cloud|https://github.com/banzaicloud/istio-operator/tree/release-1.1|4.6|||||||yes|unknown|unknown
+ivory-server-operator.v1.0.0|1.0.0|false|2019-09-01 12:00:00|GT Software, Inc.|https://github.com/instana/instana-agent-operator|4.6|||||yes|yes|||
+jaeger-operator.v1.13.2-1|1.13.2-1|false|2019-07-05T11:16:15+00:00|Red Hat, Inc.|https://github.com/jaegertracing/jaeger-operator|4.6|v0.18.2|golang|yes|||||stable|stable
+jaeger-operator.v1.17.6|1.17.6|false|2020-07-27T00:00:00+00:00|Red Hat|N/A|4.6|||yes|||||unknown|unknown
+jaeger-operator.v1.20.0|1.20.0|false|2019-09-04T13:28:40+00:00|CNCF|https://github.com/jaegertracing/jaeger-operator|4.6|v0.18.2|golang|||||yes|stable|stable
+jenkins-operator.v0.3.0|0.3.0|false|2019-09-04T13:28:40+00:00|VirtusLab|https://github.com/jenkinsci/kubernetes-operator|4.6|v0.17.0|golang|||||yes|alpha|alpha
+joget-dx-openshift-operator.v0.0.2|0.0.1|true|2019-07-23 12:59:59|Joget, Inc|https://github.com/instana/instana-agent-operator|4.6|||||yes|yes|||
+joget-openshift-operator.v0.0.4|0.0.4|true|2019-07-23 12:59:59|Joget, Inc|github.com/jogetworkflow/jw-community|4.6|||||yes|yes||unknown|unknown
+k10-helm-operator.2.5.18|2.5.18|true|2020-04-22 23:00:00|Kasten, Inc.|github.com/jogetworkflow/jw-community|4.6|||||yes|yes||unknown|unknown
+k8s-triliovault-cluster.v1.1.1|1.1.1|false|2020-04-27 17:12:00|Trilio|https://github.com/triliovault-k8s-issues/triliovault-k8s-issues|4.6|||||yes|yes|||
+k8s-triliovault-namespaced.v1.1.1|1.1.1|false|2020-04-27 17:12:00|Trilio|https://github.com/triliovault-k8s-issues/triliovault-k8s-issues|4.6|||||yes|yes|||
+keda.v1.5.0|1.5.0|false|2020-07-08T00:00:00.000Z|KEDA Community|https://github.com/kedacore/keda-olm-operator|4.6|||||||yes||
+keycloak-operator.v11.0.0|11.0.0|False|2020-07-24 00:00:00|Red Hat|https://github.com/keycloak/keycloak-operator|4.6|v0.18.2|golang|||||yes|alpha|alpha
+kiali-operator.v1.12.16|1.12.16|false|2020-08-05T00:00:00Z|Red Hat|https://github.com/kiali/kiali|4.6|||yes||||||
+kiali-operator.v1.25.0|1.25.0|false|2020-10-09T00:00:00Z|Kiali|https://github.com/kiali/kiali|4.6|||||||yes||
+klusterlet.v0.2.0|0.2.0|false|2020-10-15T12:00:31Z|Red Hat, Inc.|https://github.com/open-cluster-management/registration-operator|4.6|||||||yes| stable| stable
+knative-eventing-operator.v0.13.1|0.13.1|false|2020-03-27T10:00:00Z|The Knative Authors|https://github.com/knative/eventing-operator|4.6|||||||yes|alpha|alpha
+knative-operator.v0.18.1|0.18.1|false|2020-10-27T00:00:00Z|The Knative Authors|https://github.com/knative/operator|4.6|||||||yes|alpha|
+knative-serving-operator.v0.13.1|0.13.1|false|2020-03-04T00:00:00Z|The Knative Authors|https://github.com/knative/serving-operator|4.6|||||||yes|alpha|alpha
+kogito-operator.v0.16.0|0.16.0|false|2019-08-22T13:12:22Z|Red Hat|https://github.com/kiegroup/kogito-cloud-operator|4.6|v0.18.2|golang|||||yes|,alpha,dev-preview,original_0_9_0,original_0_8_0,original_0_7_0|alpha
+kong.v0.3.0|0.3.0|true|2020-04-10T17:26:45Z|Kong Inc|https://github.com/kong/kong-operator|4.6|v0.16.0|helm|||yes|yes||alpha|
+kong.v0.5.0|0.5.0|false|2020-08-05T16:07:00Z|Kong Inc.|https://github.com/kong/kong-operator|4.6|v0.16.0|helm|||||yes|alpha|
+kube-arangodb.v1.0.1|1.0.1|true|2019-11-30 22:40:00|ArangoDB GmbH|https://github.com/arangodb/kube-arangodb|4.6||||||yes|||
+kube-arangodb.v1.0.2|1.0.1|true|2019-11-30 22:40:00|ArangoDB GmbH|https://github.com/arangodb/kube-arangodb|4.6|||||||yes||
+kubefed-operator.v0.1.0|0.1.0|false|2019-06-14T00:00:00Z|Red Hat|https://github.com/openshift/kubefed-operator|4.6|||||||yes|alpha|
+kubeflow.v1.0.0|1.0.0|False|2020-03-19T00:00:00Z|Kubeflow|https://github.com/kubeflow/kfctl|4.6|v0.13.0|golang|||||yes|alpha|alpha
+kubemod.v0.6.0|0.6.0|false|2020-10-16T12:00:00+00:00|KubeMod|https://github.com/kubemod/kubemod|4.6|||||||yes||
+kubemq-operator.v0.3.2|0.3.2|false|2020-02-16T18:00:00.000Z|Kubemq.io|https://github.com/kubemq-io/kubemq-operator|4.6|||||||yes|unknown|unknown
+kubemq-operator.v0.5.1|0.5.1|false|2020-03-11T12:00:00.000Z|Kubemq.io|https://github.com/kubemq-io/kubemq-operator|4.6|||||||yes|unknown|unknown
+kubemq-operator.v1.1.0|1.1.0|false|2020-03-11 12:00:00+00:00|Kubemq.io|https://github.com/kong/kong-operator|4.6|v0.16.0|helm|||yes|yes||alpha|
+kubernetes-imagepuller-operator.v0.0.3|0.0.3|false||Red Hat, Inc.|https://github.com/che-incubator/kubernetes-image-puller-operator|4.6|v0.15.2|golang|||||yes|stable|stable
+kubestone.v0.4.0|0.4.0|false|2019-10-18T12:32:00Z|xridge.io|https://github.com/xridge/kubestone|4.6|||||||yes||
+kubeturbo-operator.v7.21.0|7.21.0|false|2019-05-01T00:00:00.000Z|Turbonomic, Inc.|https://github.com/turbonomic/kubeturbo/tree/master/deploy/kubeturbo-operator|4.6|||||||yes|unknown|unknown
+kubeturbo-operator.v8.0.0|8.0.0|false|2019-05-01T00:00:00Z|Turbonomic, Inc.|https://github.com/turbonomic/kubeturbo/tree/master/deploy/kubeturbo-operator|4.6|||||yes|yes|yes|unknown|unknown
+kubevirt-hyperconverged-operator.v2.1.0|2.1.0|false|2019-10-17 09:34:37|KubeVirt project|https://github.com/kubevirt/hyperconverged-cluster-operator|4.6|v0.19.1|golang|yes||||| 1.3.0| 1.3.0
+kubevirt-hyperconverged-operator.v2.2.0|2.2.0|false|2020-01-26 16:24:03|KubeVirt project|https://github.com/kubevirt/hyperconverged-cluster-operator|4.6|v0.19.1|golang|yes||||| 1.3.0| 1.3.0
+kubevirt-hyperconverged-operator.v2.3.0|2.3.0|true|2020-04-27 14:59:35|Red Hat|https://github.com/kubevirt/hyperconverged-cluster-operator|4.6|v0.19.1|golang|yes||||| 1.3.0| 1.3.0
+kubevirt-hyperconverged-operator.v2.4.2|2.4.2|true|2020-09-29 09:20:17|Red Hat|https://github.com/kubevirt/hyperconverged-cluster-operator|4.6|v0.19.1|golang|yes||||| 1.3.0| 1.3.0
+kubevirtoperator.0.18.1|0.18.1|false|2019-06-13 10:28:08|KubeVirt project|https://github.com/kubevirt/kubevirt|4.6|||||||yes||
+lib-bucket-provisioner.v1.0.0|1.0.0|false|2014-07-19 07:02:32.267701|Red Hat|https://github.com/kube-object-storage/lib-bucket-provisioner|4.6|||||||yes|alpha|alpha
+lightbend-console-operator.v0.0.1|0.0.1|false|2019-09-18T00:00:00Z|Lightbend, Inc.|https://github.com/lightbend/console-charts/tree/master/operator|4.6|||||||yes|alpha|
+linstor-operator.v1.0.0-dev4-ef10773|1.0.0-dev4+ef10773|true|2019-05-01T00:00:00Z|LINBIT|https://github.com/piraeusdatastore/piraeus-operator|4.6|v0.16.0|golang|||yes||||
+linstor-operator.v1.0.0-dev9.bc86329|1.0.0-dev9.bc86329|true|2020-10-13T14:46:07+00:00|LINBIT|https://github.com/piraeusdatastore/piraeus-operator|4.6|v0.16.0|golang||||yes|||
+linstor-operator.v1.1.0|1.1.0|true|2020-10-14T13:16:20+00:00|LINBIT|https://github.com/piraeusdatastore/piraeus-operator|4.6|v0.16.0|golang|||yes|yes|||
+local-storage-operator.4.6.0-202010200139.p0.2|4.6.0-202010200139.p0|true|2019-08-14T00:00:00Z|Red Hat|https://github.com/openshift/local-storage-operator|4.6|v0.16.0|golang|yes||||| preview| preview
+logging-operator.v0.2.0|0.2.0|false|9-07-2020|Opstree Solutions|https://github.com/OT-CONTAINER-KIT/logging-operator|4.6|||||||yes||
+mariadb-operator.v0.0.4|0.0.4|true|2020-04-07T11:17:00Z|Manoj Dhanorkar|https://github.com/abalki001/mariadb-operator|4.6|v0.16.1-0.20200402040752-a0a5778d9957|golang|||||yes||
+mattermost-operator.v0.5.0|0.5.0|false|2019-07-18 09:42:00|Mattermost|https://github.com/mattermost/mattermost-operator|4.6|||||||yes||
+mcad-operator.v0.1.9|0.1.9|false|2019-07-18 09:42:00|IBM|https://github.com/mattermost/mattermost-operator|4.6|||||||yes||
+memsql-operator.v1.2.1|1.2.1|true|2020-08-19 21:52:47.341572+00:00|MemSQL|https://github.com/piraeusdatastore/piraeus-operator|4.6|v0.16.0|golang|||yes|yes|||
+metering-operator-upstream.v4.2.0|4.2.0|false|2019-01-01 11:59:59|Red Hat|https://github.com/operator-framework/operator-metering|4.6|||||||yes| "4.7"| "4.7"
+metering-operator.4.6.0-202010200139.p0.2|4.6.0-202010200139.p0|false|2019-01-01T11:59:59Z|Red Hat|https://github.com/kube-reporting/metering-operator|4.6|||yes||||| "4.7"| "4.7"
+microcks-operator.v0.3.0|0.3.0|false|2020-04-07T19:21:00Z|Microcks.io|https://github.com/microcks/microcks-ansible-operator|4.6|v0.16.0|ansible|||||yes||
+microcks-operator.v1.1.0|1.1.0|false|2020-10-26T07:57:11Z|Microcks.io|https://github.com/microcks/microcks-ansible-operator|4.6|v0.16.0|ansible|||||yes||
+minio-operator.v1.0.3|1.0.3|false|2019-10-21T00:00:00.000Z|MinIO, Inc.|https://github.com/minio/minio-operator|4.6|||||||yes||
+mongodb-enterprise-advanced-ibm.v1.6.3|1.6.3|true|2020-07-06T10:00:00Z|IBM|https://github.com/mongodb/mongodb-enterprise-kubernetes|4.6|||||yes|yes|||
+mongodb-enterprise.v1.8.0|1.8.0|true|2020-09-02T15:33:27Z|MongoDB, Inc|https://github.com/mongodb/mongodb-enterprise-kubernetes|4.6|||||yes|yes|yes||
+mtc-operator.v1.2.5|1.2.5|false|2019-07-25T10:21:00Z|Red Hat|https://github.com/konveyor/mig-operator|4.6|latest|ansible|yes||||| development| development
+mtc-operator.v1.3.1|1.3.1|false|2019-07-25T10:21:00Z|Red Hat|https://github.com/konveyor/mig-operator|4.6|latest|ansible|yes||||| development| development
+multicluster-operators-subscription.v0.1.2|0.1.2|false|2020-03-24T17:00:00Z|Red Hat|https://github.com/open-cluster-management/multicloud-operators-subscription|4.6|v0.18.0|golang|||||yes||
+myvirtualdirectory.1.0.0|1.0.0|false|2019-04-15|Tremolo Security, Inc.|https://github.com/TremoloSecurity/|4.6|||||||yes| alpha| ""
+neuvector-operator.v1.0.0|1.0.0|false|2019-11-18T02:09:59Z|NeuVector|https://github.com/neuvector/neuvector-operator|4.6|v0.12.0|helm|||||yes|alpha|alpha
+neuvector-operator.v1.0.1|1.0.1|false|2019-11-18 02:09:59|NeuVector|https://github.com/neuvector/neuvector-operator|4.6|v0.12.0|helm|||yes|yes||alpha|alpha
+nexus-operator.v0.3.0|0.3.0|false|2019-11-16T13:12:22Z|m88i Labs|https://github.com/m88i/nexus-operator|4.6|||||||yes| alpha| ""
+nfd-operator.v0.1.0|0.1.0|false|2019-05-30T00:00:00Z|Red Hat|https://github.com/kubernetes-sigs/node-feature-discovery-operator|4.6|v0.4.1-0.20190129222657-43d37ce85826|golang|||||yes||
+nginx-ingress-operator.v0.0.4|0.0.4|true|2020-03-03 12:59:59+00:00|NGINX Inc|https://github.com/nginxinc/nginx-ingress-operator|4.6|v0.17.2|golang||||yes||alpha|alpha
+node-red-operator.v0.0.2|0.0.2|false|2020-05-29T12:00:00Z|IBM-Edge|https://github.com/rhm-samples/node-red-operator/|4.6|||||yes|yes|| alpha| ""
+noobaa-operator.v2.1.1|2.1.1|false|2019-07-08T13:10:20.940Z|NooBaa|https://github.com/noobaa/noobaa-operator|4.6|v0.17.0|golang|||||yes|alpha|alpha
+noobaa-operator.v2.3.0|2.3.0|false|2019-07-08T13:10:20.940Z|NooBaa|https://github.com/noobaa/noobaa-operator|4.6|v0.17.0|golang|||||yes|alpha|alpha
+nsm-operator.v0.0.1|0.0.1|false|2020-01-28T10:45:31.000Z|networkservicemesh.io|https://github.com/acmenezes/nsm-operator|4.6|v0.12.0|golang|||||yes|alpha|alpha
+nsx-container-plugin-operator.v0.1.0|0.1.0|True|2020-05-29T12:00:00Z|VMware|https://github.com/vmware/nsx-container-plugin/operator|4.6||||||yes||alpha|
+nuodb-operator.v2.0.2|2.0.2|true|2019-06-06 12:59:59|NuoDB, Inc.|https://github.com/nuodb/nuodb-operator|4.6|v0.9.1-0.20190806200632-6c7039c37324|golang|||yes|||alpha|
+nuodb-operator.v2.0.3|2.0.3|true|2019-06-06 12:59:59|NuoDB, Inc.|https://github.com/nuodb/nuodb-operator|4.6|v0.9.1-0.20190806200632-6c7039c37324|golang||||yes|yes|alpha|
+nuxeo-operator.v0.7.1|0.7.1|false|2020-09-26T00:00:00Z|Eric Ace|https://github.com/aceeric/nuxeo-operator|4.6|||||||yes| alpha| alpha
+nxiq-operator-certified.v1.99.0-1|1.99.0-1|true|2020-07-20|Sonatype|https://github.com/sonatype/operator-iq|4.6|v0.17.0|helm||||yes||stable|stable
+nxrm-operator-certified.v3.26.1-1|3.26.1-1|true|2020-07-17|Sonatype|https://github.com/sonatype/operator-nxrm3|4.6|v0.16.0|helm||||yes||stable|stable
+ocs-operator.v4.3.0|4.3.0|false|2020-04-06 21:53:38|Red Hat, Inc|https://github.com/openshift/ocs-operator|4.6|v0.17.0|golang|yes||||| alpha| alpha
+ocs-operator.v4.4.2|4.4.2|false|2020-07-29 18:34:25|Red Hat, Inc|https://github.com/openshift/ocs-operator|4.6|v0.17.0|golang|yes||||| alpha| alpha
+ocs-operator.v4.5.1|4.5.1|false|2020-10-13 13:58:20|Red Hat|https://github.com/openshift/ocs-operator|4.6|v0.17.0|golang|yes||||| alpha| alpha
+open-liberty-0.0.1|0.0.1|false|2019-05-16T12:00:00.000-0500|IBM|https://github.com/OpenLiberty/open-liberty-operator|4.6|v0.15.2|golang|||||yes|beta|beta
+open-liberty-operator.v0.7.0|0.7.0|true|2020-07-22 09:00:00|IBM|https://github.com/OpenLiberty/open-liberty-operator|4.6|v0.15.2|golang|||||yes|beta|beta
+openebsoperator.v1.5.0|1.5.0|false|2020-01-11T15:52:12Z|MayaData|https://github.com/openebs/helm-operator|4.6|v0.7.0|helm|||||yes|alpha|
+openshift-pipelines-operator.v1.0.1|1.0.1|false|2020-05-07T05:39:25Z|Red Hat|https://github.com/openshift/tektoncd-pipeline-operator|4.6|v0.17.2|golang|yes||||| canary| canary
+openshift-pipelines-operator.v1.1.1|1.1.1|false|2020-05-07T05:39:25Z|Red Hat|https://github.com/openshift/tektoncd-pipeline-operator|4.6|v0.17.2|golang|yes||||| canary| canary
+openshift-qiskit-operator.v0.1.0|0.1.0|false|2020-006-28 22:25:53|IBM Quantum|https://github.com/qiskit-community/openshift-quantum-operators/tree/master/operators-examples/openshift-qiskit-operator|4.6|||||||yes|unknown|unknown
+openunison.1.0.0|1.0.0|true|2020-01-08|Tremolo Security, Inc.|https://github.com/TremoloSecurity/openunison-k8s-operator|4.6|||||yes|yes|||
+opsmx-spinnaker-operator.v1.20.3|1.20.3|false|2019-04-08 19:49:35|OpsMx|https://github.com/qiskit-community/openshift-quantum-operators/tree/master/operators-examples/openshift-qiskit-operator|4.6|||||||yes|unknown|unknown
+orca-operator.v1.0.197|1.0.197|true||Tufin|https://github.com/Tufin/orca-operator|4.6|||||yes|yes||beta|
+perceptilabs-operator.v1.0.16|1.0.16|false|2019-10-02T12:00:00Z|PerceptiLabs|https://github.com/Tufin/orca-operator|4.6|||||yes|yes||beta|
+percona-server-mongodb-operator.v1.3.0|1.3.0|false|2019-12-11T11:35:26.000Z|Percona|https://github.com/percona/percona-server-mongodb-operator|4.6|v0.17.1|golang|||||yes||
+percona-server-mongodb-operator.v1.4.0|1.4.0|true|2020-03-10T10:35:26Z|Percona|https://github.com/percona/percona-server-mongodb-operator|4.6|v0.17.1|golang||||yes|||
+percona-server-mongodb-operator.v1.5.0|1.5.0|true|2020-09-10T10:35:26.000Z|Percona|https://github.com/percona/percona-server-mongodb-operator|4.6|v0.17.1|golang|||||yes||
+percona-xtradb-cluster-operator.v1.5.0|1.5.0|true|2020-05-08T19:11:44.000Z|Percona|https://github.com/percona/percona-xtradb-cluster-operator|4.6|v0.17.1|golang||||yes|||
+percona-xtradb-cluster-operator.v1.6.0|1.6.0|true|2020-10-15T10:11:44.000Z|Percona|https://github.com/percona/percona-xtradb-cluster-operator|4.6|v0.17.1|golang|||||yes||
+performance-addon-operator.v4.4.1|4.4.1|false|2020-05-07T05:39:25Z|Red Hat|https://github.com/operator-kni/performance-addon-operators|4.6|||yes|||||unknown|unknown
+performance-addon-operator.v4.5.1|4.5.1|false|2020-05-07T05:39:25Z|Red Hat|https://github.com/operator-kni/performance-addon-operators|4.6|||yes|||||unknown|unknown
+performance-addon-operator.v4.6.0|4.6.0|false|2020-05-07T05:39:25Z|Red Hat|https://github.com/operator-kni/performance-addon-operators|4.6|||yes|||||unknown|unknown
+planetscale-operator.v0.1.8|0.1.8|False|2019-03-06 21:40:00|PlanetScale|https://github.com/percona/percona-xtradb-cluster-operator|4.6|v0.17.1|golang|||||yes||
+pmem-csi-operator.v0.8.0|0.8.0|false|2020-10-13T17:41:44Z|Intel® Corporation|https://github.com/intel/pmem-csi/tree/release-0.8|4.6|||||||yes|unknown|unknown
+portshift-operator.v0.1.6|0.1.6|true|2020-02-11 01:00:00+00:00|Portshift|https://github.com/Tufin/orca-operator|4.6|||||yes|yes||beta|
+portworx-essentials.v1.3.3|1.3.3|false|2020-08-04T08:00:00Z|Portworx|https://github.com/libopenstorage/operator|4.6|||||||yes|alpha|
+portworx-operator.v1.4.0|1.4.0|true|2020-09-24T08:00:00Z|Portworx|https://github.com/libopenstorage/operator|4.6|||||yes|yes|yes|alpha|
+postgres-operator.v1.3.0|1.3.0|false|2019-07-24 10:30:00|Zalando SE|https://github.com/zalando/postgres-operator|4.6|||||||yes|stable|
+postgresoperator.v4.0.1|4.0.1|false|07/04/2019|CrunchyData.com|https://github.com/CrunchyData/postgres-operator|4.6|||||||yes|stable|
+postgresoperator.v4.1.0|4.1.0|false|10/29/2019|CrunchyData.com|https://github.com/CrunchyData/postgres-operator|4.6|||||||yes|stable|
+postgresoperator.v4.2.2|4.2.2|false|2019-12-31 19:40Z|Crunchy Data|https://github.com/CrunchyData/postgres-operator|4.6|||||||yes|stable|
+postgresoperator.v4.3.2|4.3.2|false|2019-12-31 19:40Z|Crunchy Data|https://github.com/CrunchyData/postgres-operator|4.6|||||||yes|stable|
+postgresoperator.v4.5.0|4.5.0|false|2019-12-31 19:40Z|Crunchy Data|https://github.com/CrunchyData/postgres-operator|4.6|||||yes|yes|yes|stable|
+postgresql-operator.v0.0.1|0.0.1|true|2019-12-13 09:00:00|Openlabs|https://github.com/janepelladinesh/postgresql-operator|4.6|||||||yes|alpha|alpha
+postgresql-operator.v0.1.1|0.1.1|false|2019-09-08T08:00:00Z|Dev4Devs.com|https://github.com/dev4devs-com/postgresql-operator|4.6|v0.18.1|golang|||||yes|alpha|alpha
+presto-operator.0.32.0|0.32.0|true|2020-07-23T01:49:01Z|Starburst Data|https://github.com/CrunchyData/postgres-operator|4.6|||||yes|yes||stable|
+prisma-cloud-compute-console-operator.v1.0.0|1.0.0|false|2019-04-01 00:00:00|Palo Alto Networks|https://github.com/twistlock/sample-code/tree/master/operators/twistlock-console-helm-operator|4.6|||||||yes|unknown|unknown
+project-quay-container-security-operator.v1.0.6|1.0.6|false|2020-04-13 00:00:00|Project Quay|https://github.com/quay/container-security-operator|4.6|||||||yes|alpha|alpha
+project-quay.v1.1.2|1.1.2|false|2020-07-01|Project Quay|https://github.com/redhat-cop/quay-operator|4.6|||||||yes|alpha|alpha
+prometheus-exporter-operator.v0.2.0|0.2.0|false|2020-06-08 00:00:00|Red Hat|https://github.com/3scale/prometheus-exporter-operator|4.6|v0.18.1|ansible|||||yes|alpha|alpha
+prometheusoperator.0.37.0|0.37.0|false|2019-09-04 12:00:00|Red Hat|https://github.com/coreos/prometheus-operator|4.6|||||||yes||
+ptp-operator.4.6.0-202010200139.p0.8|4.6.0-202010200139.p0|false|2019-10-14|Red Hat|https://github.com/openshift/ptp-operator|4.6|v0.18.1|golang|yes|||||4.6|
+pystol.v0.8.17|0.8.17|false|2020-06-11 10:00:00|Pystol|https://github.com/pystol/pystol|4.6|||||||yes|alpha|alpha
+quay-bridge-operator.v3.3.1|3.3.1|false|2020-03-18 01:03:00|Red Hat|https://github.com/redhat-cop/quay-openshift-registry-operator|4.6|v0.8.1-0.20190607203525-cf3aaf10d465|golang|yes|||||alpha|alpha
+rapidbiz-operator.v0.0.1|0.0.1|Red Hat certified|2020-02-04T16:00:00Z|Vacava|https://access.redhat.com/containers/#/registry.connect.redhat.com/vacava/rapidbiz-operator|4.6|||||yes|yes||unknown|unknown
+red-hat-quay.v3.3.2-20200903|3.3.2-20200903|false|2020-06-08|Red Hat|https://github.com/redhat-cop/quay-operator|4.6|||yes|||||alpha|alpha
+redhat-marketplace-operator.v1.0.4|1.0.4|true|2020-10-16T03:24:13Z|Red Hat Marketplace|https://github.com/redhat-marketplace/redhat-marketplace-operator|4.6|v0.19.2|golang||||yes|| stable,beta| stable
+redis-enterprise-operator-preview.v6.0.8-1|6.0.8-1|true|2020-10-16T03:24:13Z|Redis Labs|https://github.com/redhat-marketplace/redhat-marketplace-operator|4.6|v0.19.2|golang||||yes|| stable,beta| stable
+redis-enterprise-operator.v0.0.1|0.0.1|false|2019-02-24 11:35:59|Redis Labs, Inc|https://github.com/pystol/pystol|4.6|||||||yes|alpha|alpha
+redis-enterprise-operator.v5.4.14-7|5.4.14-7|true|2020-10-16T03:24:13Z|Redis Labs|https://github.com/redhat-marketplace/redhat-marketplace-operator|4.6|v0.19.2|golang||||yes|| stable,beta| stable
+redis-enterprise-operator.v6.0.6-24|6.0.6-24|true|2020-10-16T03:24:13Z|Redis Labs|https://github.com/redhat-marketplace/redhat-marketplace-operator|4.6|v0.19.2|golang||||yes|| stable,beta| stable
+redis-enterprise-operator.v6.0.8-1|6.0.8-1|true|2020-10-16T03:24:13Z|Redis Labs|https://github.com/redhat-marketplace/redhat-marketplace-operator|4.6|v0.19.2|golang||||yes|| stable,beta| stable
+redis-operator.v0.2.0|0.2.0|false|8-1-2020|Opstree Solutions|https://github.com/ot-container-kit/redis-operator|4.6|v0.15.2|golang|||||yes||
+rhsso-operator.7.4.2|7.4.2|False|2020-05-04 00:00:00|Red Hat|https://github.com/keycloak/keycloak-operator|4.6|v0.18.2|golang|yes|||||alpha|alpha
+ripsaw.v0.1.0|0.1.0|false|2019-06-28 06:42:43|Red Hat Performance|https://github.com/cloud-bulldozer/ripsaw/|4.6|v0.17.1|ansible|||||yes| alpha| ""
+robin-operator.v5.3.2-52|5.3.2-52|true||Robin.io|https://access.redhat.com/containers/#/registry.connect.redhat.com/vacava/rapidbiz-operator|4.6|||||yes|yes||unknown|unknown
+robin-operator.v5.3.2-55|5.3.2-55|true|2020-10-27-T12:59:59Z|Robin.io|https://github.com/cloud-bulldozer/ripsaw/|4.6|v0.17.1|ansible|||||yes| alpha| ""
+rocketchat-operator.v0.1.0|0.1.0|true|2020-03-26T04:07:54+00:00|Rocket.Chat|github.com/jsm84/rocketchat-operator|4.6|||||yes|yes||unknown|unknown
+rocketmq-operator.0.2.1|0.2.1|False|2019-11-8 16:06:00|the Apache Software Foundation|https://github.com/apache/rocketmq-operator|4.6|v0.6.0|golang|||||yes||
+rook-ceph.v1.1.1|1.1.1|false|2019-09-23T11-51-58Z|The Rook Authors|https://github.com/rook/rook|4.6|||||||yes|beta|
+rook-edgefs.v1.0.1|1.0.1|false|2019-05-16T22-53-57Z|The Rook Authors|https://github.com/rook/rook|4.6|||||||yes|beta|
+rqlite-operator.v0.0.1|0.0.1|false||Jeff McCormick|https://github.com/rook/rook|4.6|||||||yes|beta|
+runtime-component-operator.v0.7.0|0.7.0|true|2020-07-16 09:00:00|Community|https://github.com/application-stacks/runtime-component-operator|4.6|v0.15.2|golang|||yes|yes|yes|beta|beta
+sealed-secrets-operator-helm.v0.0.2|0.0.2|false|2020-07-08 01:01:01|Disposable Zone|https://github.com/disposab1e/sealed-secrets-operator-helm.git|4.6|||||||yes|unknown|unknown
+seldon-deploy-operator.v0.7.0|0.7.0|false|2020-05-21 15:00:00|Seldon Technologies|https://github.com/SeldonIO/seldon-core|4.6|||||yes|yes|| alpha| ""
+seldon-operator.v1.2.2|1.2.2|false|2019-05-21 15:00:00|Seldon Technologies|https://github.com/SeldonIO/seldon-core|4.6|||||yes|yes|yes| alpha| ""
+sematext-operator.v1.0.9|1.0.9|false|2019-06-13 08:00:00|Sematext|https://github.com/sematext/sematext-operator|4.6|v0.12.0|helm||||yes|yes|stable|
+serverless-operator.v1.10.0|1.10.0|false|2020-04-20T17:00:00Z|Red Hat|https://github.com/openshift-knative/serverless-operator|4.6|||yes||||| "XX.XX,YY.YY"| "XX.XX"
+serverless-operator.v1.7.2|1.7.2|false|2020-04-20T17:00:00Z|Red Hat, Inc.|https://github.com/openshift-knative/serverless-operator|4.6|||yes||||| "XX.XX,YY.YY"| "XX.XX"
+service-binding-operator.v0.3.0|0.3.0|false|2020-10-05T10:38:22Z|Red Hat|https://github.com/redhat-developer/service-binding-operator|4.6|v0.16.0|golang|yes|||||,beta,alpha|alpha
+service-registry-operator.v1.0.2|1.0.2|false|2020-06-04|Red Hat|https://github.com/Apicurio/apicurio-registry-operator|4.6|v0.17.0|golang|yes|||||alpha|alpha
+servicemeshoperator.v1.1.10|1.1.10-0|false|2020-10-09T23:28:18UTC|Red Hat, Inc.|https://github.com/maistra/istio-operator|4.6|||yes|||||2.0|2.0
+siddhi-operator.v0.2.2|0.2.2|false|2020-01-02T16:45:00Z|Siddhi|https://github.com/siddhi-io/siddhi-operator/|4.6|||||||yes| alpha| ""
+skydive-operator.v0.0.12|0.0.12|false|Jan 14, 2020 11:40 am|Skydive Community|https://github.com/skydive-project/skydive-operator|4.6|v0.13.0|helm|||||yes||
+snapscheduler.v1.1.1|1.1.1|false||Backube|https://github.com/backube/snapscheduler|4.6|||||||yes|stable|stable
+snyk-operator.v1.33.0|1.33.0|false|2020-10-03T05:05:45Z|Snyk Ltd.|https://github.com/snyk/kubernetes-monitor|4.6|||||||yes|stable|stable
+sparkoperator.v1.0.2|1.0.2|false|2019-01-17 12:00:00|radanalytics.io|https://github.com/radanalyticsio/spark-operator|4.6|||||||yes|alpha|
+sparkoperator.v2.4.0|2.4.0|False|2019-01-17 12:00:00|GoogleCloudPlatform|https://github.com/GoogleCloudPlatform/spark-on-k8s-operator|4.6|||||||yes||
+spinnaker-operator.v1.20.3|1.20.3|false|2019-04-29 19:49:35|OpsMx|https://github.com/GoogleCloudPlatform/spark-on-k8s-operator|4.6|||||||yes||
+splunk.v0.1.0|0.1.0|false|2019-12-18|Splunk Inc.||4.6||||||yes|yes| alpha| ""
+sriov-network-operator.4.6.0-202010200139.p0|4.6.0-202010200139.p0|false|2019/04/30|Red Hat|https://github.com/openshift/sriov-network-operator|4.6|||yes||||| alpha| ""
+starboard-operator.v0.6.0|0.6.0|false|2020-09-15T08:00:00Z|Aqua Security|https://github.com/aquasecurity/starboard|4.6|||||||yes|alpha|alpha
+storageosoperator.v2.2.0|2.2.0|true|2020-09-01T22:31:18Z|StorageOS, Inc|https://github.com/storageos/cluster-operator|4.6|v0.18.1|golang|||yes|yes||stable|
+storageosoperator.v2.3.0|2.3.0|false|2020-10-26T15:39:45Z|StorageOS, Inc|https://github.com/storageos/cluster-operator|4.6|v0.18.1|golang|||||yes|stable|
+strimzi-cluster-operator.v0.19.0|0.19.0|false|2020-07-27 22:49:00|Strimzi|https://github.com/strimzi/strimzi-kafka-operator|4.6|||||||yes||
+strimzi-cluster-operator.v0.20.0|0.20.0|false|2020-10-26 13:16:00|Strimzi|https://github.com/strimzi/strimzi-kafka-operator|4.6|||||||yes||
+submariner.v0.7.0|0.7.0|false|2020-10-20 23:00:00|submariner.io|https://github.com/submariner-io/submariner-operator|4.6|v0.17.0|golang|||||yes||
+synopsys-operator.2019.4.0|2019.4.0|false|2018-12-14 17:09:00|Synopsys, Inc|https://github.com/blackducksoftware/synopsys-operator|4.6|||||||yes||
+synopsys-operator.2019.8.4|2019.8.4|false|2018-12-14 17:09:00|Synopsys, Inc|https://github.com/blackducksoftware/synopsys-operator|4.6||||||yes|yes||
+sysdig-operator.v1.7.2|1.7.2|false|2019-03-08T18:30:00Z|Sysdig|https://github.com/sysdiglabs/sysdig-operator/|4.6|||||||yes| alpha| ""
+sysdig-operator.v1.8.3|1.8.3|false|2019-03-08 18:30:00|Sysdig|https://github.com/sysdiglabs/sysdig-operator/|4.6|||||yes|yes|| alpha| ""
+t8c-operator.v7.21.0|7.21.0|false|2019-07-01T00:00:00.000Z|Turbonomic, Inc.|https://github.com/turbonomic/t8c-install/tree/master/operator|4.6|||||||yes|alpha|
+t8c-operator.v7.22.9|7.22.9|false|2019-07-01T00:00:00.000Z|Turbonomic, Inc.|https://github.com/turbonomic/t8c-install/tree/master/operator|4.6|||||yes|yes||alpha|
+ta-operator.v2.2.0|2.2.0|false|2020-07-01T20:00:00Z|IBM|N/A|4.6||||||yes||unknown|unknown
+ta-operator.v2.3.1|2.3.1|false|2020-10-01T20:00:00Z|IBM|N/A|4.6||||||yes||unknown|unknown
+tektoncd-operator.v0.15.2-1|0.15.2-1|false|2020-08-26T00:00:00Z|The Tekton Authors|https://github.com/tektoncd/operator|4.6|v0.17.0|golang|||||yes|alpha|
+tidb-operator.v1.1.6|1.1.6|false|2020-10-16T07-18-39Z|PingCAP|https://github.com/pingcap/tidb-operator|4.6|||||||yes||
+tigera-operator.v1.7.3|1.7.3|true|2020-08-07T22:44:11.830728Z|Tigera|https://github.com/tigera/operator|4.6|v1.0.1|golang||||yes||alpha|
+time-machine-operator4.v0.0.4|0.0.4|false|2020-03-26 15:13:59|Solution-Soft|https://github.com/turbonomic/t8c-install/tree/master/operator|4.6|||||yes|yes||alpha|
+traefikee-operator.v2.1.1|2.1.1|false|2019-12-12T09:01:00Z|Containous|https://github.com/pingcap/tidb-operator|4.6|||||||yes||
+traefikee-redhat-certified.v2.0.2|2.0.2|true|2019-12-12T09:01:00Z|Containous|https://github.com/turbonomic/t8c-install/tree/master/operator|4.6|||||yes|yes||alpha|
+uma-operator.v1.0.0|1.0.0|false|2019-10-15T15:23:00Z|Broadcom, Inc.|https://github.gwd.broadcom.net/BROADCOM/uma-operator|4.6|||||yes|yes||unknown|unknown
+universalagent-operator.v0.0.2|0.0.1|false|2020-04-14 11:38:00|Stonebranch|registry.marketplace.redhat.com/rhm/stonebranch/stonebranch-operator@sha256:a99b1c14a08cbaa2facd56c2a3125eefd59349ab59d98f56b58e9cbc167131a2|4.6|||||yes|yes||unknown|unknown
+vaultoperator.v0.4.10|0.4.10|false|2019-03-07T08:00:00Z|Banzai Cloud|https://github.com/banzaicloud/bank-vaults/tree/master/operator|4.6|||||||yes|alpha|
+verticalpodautoscaler.4.6.0-202010200139.p0.3|4.6.0-202010200139.p0|false|2019-10-14T12:17:13Z|Red Hat|https://github.com/openshift/vertical-pod-autoscaler-operator|4.6|||yes|||||4.6|4.6
+vfunction-server-operator.v1.0.1|1.0.1|Red Hat certified|2020-05-18 20:00:00|vFunction|registry.marketplace.redhat.com/rhm/stonebranch/stonebranch-operator@sha256:a99b1c14a08cbaa2facd56c2a3125eefd59349ab59d98f56b58e9cbc167131a2|4.6|||||yes|yes||unknown|unknown
+vprotect-operator.v0.0.1|0.0.1|false|2020-04-17T10:40:45Z|Storware||4.6|||||yes|yes|| alpha| ""
+wavefront-operator.v0.1.0|0.1.0|true|2019-11-26 01:09:59|VMware|https://github.com/wavefrontHQ/wavefront-operator|4.6|v0.10.1-0.20190912163340-c0e167d4f396|golang||||yes|yes|alpha|
+web-terminal.v1.0.1|1.0.1|false|2020-05-27T05:12:57Z|Red Hat|https://github.com/devfile/devworkspace-operator|4.6|v0.17.0|golang|yes||||||
+wildfly-operator.v0.4.1|0.4.1|false|2020-09-18T08:00:00Z|WildFly|https://github.com/wildfly/wildfly-operator|4.6|v0.17.2|golang|||||yes|alpha|alpha
+wso2am-operator.v1.1.0|1.1.0|false|2020-09-07T03:00:00.000Z|WSO2|https://github.com/wso2/k8s-wso2am-operator|4.6|||||||yes|stable|stable
+xray-operator.v1.1.4|1.1.4|true|2020-05-22 00:00:00+00:00|JFrog|https://github.com/jfrog/JFrog-Cloud-Installers/tree/openshift4/Openshift4|4.6||||||yes||unknown|unknown
+xrootd-operator.v0.2.1|0.2.1|true|2020-08-30 17:20:00|Xrootd community|https://github.com/xrootd/xrootd-k8s-operator|4.6|||||||yes| alpha| ""
+yugabyte-operator.v0.0.1|0.0.1|true|2020-08-30 17:20:00|YugabyteDB|https://github.com/yugabyte/yugabyte-operator|4.6|v0.17.1|golang|||||yes||
+yugabyte-operator.v0.9.0|0.9.0|true|2020-03-31 12:00:00|Yugabyte Inc|https://github.com/yugabyte/yugabyte-operator|4.6|v0.17.1|golang||||yes|||
+zabbix-operator-certified.v0.0.2|0.0.2|true|2020-09-21T08:03:44Z|Zabbix LLC||4.6|||||yes|yes|| alpha| ""
+zoperator.v0.3.6|0.3.6|true|August 26, 2020|Zadara|https://github.com/zadarastorage/zadara-operator|4.6||||||yes|yes||
+zts-xcrypt-operator.v0.0.11|0.0.11|false|2020-07-07T15:30:13.97Z|Zettaset||4.6|||||yes|yes|| alpha| ""

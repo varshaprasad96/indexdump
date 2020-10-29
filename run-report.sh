@@ -6,7 +6,7 @@ if test -f "$SORTEDFILE"; then
     mv $SORTEDFILE $SORTEDFILE.previous
 fi
 echo Column headers are as follows:
-echo operator,version,certified,created,company,repos,ocpversion,sdkversion,operatortype,source-redhat,source-community,source-marketplace,source-certified,source-operatorhub
+echo operator,version,certified,created,company,repos,ocpversion,sdkversion,operatortype,source-redhat,source-community,source-marketplace,source-certified,source-operatorhub,channel,default-channel
 
 go run indexdump.go \
 "index.db.4.6.redhat-operators:redhat:4.6" \

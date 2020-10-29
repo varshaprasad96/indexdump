@@ -5,10 +5,15 @@ import (
 	"encoding/json"
 	"fmt"
 	_ "github.com/mattn/go-sqlite3"
+	"github.com/operator-framework/api/pkg/manifests"
 	"github.com/operator-framework/api/pkg/operators/v1alpha1"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"os"
+	"path/filepath"
+	"regexp"
+	"sigs.k8s.io/yaml"
 	"sort"
 	"strings"
 )
@@ -34,6 +39,8 @@ type ReportColumns struct {
 	SourceMarketplace string
 	SourceCertified   string
 	SourceOperatorHub string
+	Channel           string
+	DefaultChannel    string
 }
 
 var ReportMap map[string]ReportColumns
@@ -74,6 +81,14 @@ func main() {
 		}
 
 		dump(db, InputsList[i].Source, InputsList[i].Version)
+
+		//TODO REMOVE THIS if stmt
+		/**
+		if i == 0 {
+			fmt.Printf("jeff breaking out after 1\n")
+			break
+		}
+		*/
 	}
 
 	printReport()
@@ -99,7 +114,15 @@ func dump(db *sql.DB, sourceDescription, ocpVersion string) {
 		}
 
 		certified := csvStruct.ObjectMeta.Annotations["certified"]
+
 		repo := csvStruct.ObjectMeta.Annotations["repository"]
+		exists, repoPath := repoExists(repo)
+		channel := "unknown"
+		defaultChannel := "unknown"
+		if exists {
+			channel, defaultChannel, err = getChannel(repoPath)
+		}
+
 		createdAt := csvStruct.ObjectMeta.Annotations["createdAt"]
 		companyName := csvStruct.Spec.Provider.Name
 		sdkVersion, found, operatorType := getSDKVersion(repo)
@@ -113,15 +136,17 @@ func dump(db *sql.DB, sourceDescription, ocpVersion string) {
 			//fmt.Printf("Jeff - update an entry %s\n", name)
 		} else {
 			ReportMap[name] = ReportColumns{
-				Operator:     name,
-				Version:      csvStruct.Spec.Version.String(),
-				Certified:    certified,
-				CreatedAt:    createdAt,
-				Company:      companyName,
-				Repo:         repo,
-				OCPVersion:   ocpVersion,
-				SDKVersion:   sdkVersion,
-				OperatorType: operatorType,
+				Operator:       name,
+				Version:        csvStruct.Spec.Version.String(),
+				Certified:      certified,
+				CreatedAt:      createdAt,
+				Company:        companyName,
+				Repo:           repo,
+				OCPVersion:     ocpVersion,
+				SDKVersion:     sdkVersion,
+				OperatorType:   operatorType,
+				Channel:        channel,
+				DefaultChannel: defaultChannel,
 			}
 			f = ReportMap[name]
 		}
@@ -247,10 +272,10 @@ func printReport() {
 	sort.Strings(keys)
 
 	// print the 1st row which acts as the spreadsheet header
-	fmt.Println("operator|version|certified|created|company|repos|ocpversion|sdkversion|operatortype|source-redhat|source-community|source-marketplace|source-certified|source-operatorhub")
+	fmt.Println("operator|version|certified|created|company|repos|ocpversion|sdkversion|operatortype|source-redhat|source-community|source-marketplace|source-certified|source-operatorhub|channel|default-channel")
 	for _, k := range keys {
 		f := ReportMap[k]
-		fmt.Printf("%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s\n",
+		fmt.Printf("%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s\n",
 			f.Operator,
 			f.Version,
 			f.Certified,
@@ -264,6 +289,127 @@ func printReport() {
 			f.SourceCommunity,
 			f.SourceMarketplace,
 			f.SourceCertified,
-			f.SourceOperatorHub)
+			f.SourceOperatorHub,
+			f.Channel,
+			f.DefaultChannel)
 	}
+}
+
+func repoExists(repoURL string) (exists bool, path string) {
+
+	pieces := strings.Split(repoURL, "/")
+	repoName := pieces[len(pieces)-1]
+	path = "repos/" + repoName
+	_, err := os.Stat(path)
+	if !os.IsNotExist(err) {
+		exists = true
+	}
+	//fmt.Printf("repo %s exists %t\n", repoName, exists)
+	return exists, path
+}
+
+func getChannel(repoPath string) (channel, defaultChannel string, err error) {
+
+	pattern := "annotations.yaml"
+	repoPath = repoPath
+
+	//fmt.Printf("looking for %s in %s\n", pattern, repoPath)
+
+	//libRegEx, e := regexp.Compile("^.+\\.(LICENSE)$")
+	//libRegEx, e := regexp.Compile("^.+\\.go")
+	libRegEx, e := regexp.Compile(pattern)
+	if e != nil {
+		log.Fatal(e)
+	}
+
+	var found bool
+	var pathFound string
+	e = filepath.Walk(repoPath, func(path string, info os.FileInfo, err error) error {
+		//		fmt.Printf("comparing to %s\n", info.Name())
+		if err == nil && libRegEx.MatchString(info.Name()) {
+			//println(info.Name())
+			found = true
+			pathFound = path
+			return nil
+		}
+		return nil
+	})
+	if e != nil {
+		log.Fatal(e)
+	}
+	if found {
+		content, err := ioutil.ReadFile(pathFound)
+		if err != nil {
+			return "", "", err
+		}
+		lines := strings.Split(string(content), "\n")
+		//operators.operatorframework.io.bundle.channel.default.v1: "alpha"
+		//operators.operatorframework.io.bundle.channels.v1: "alpha"
+
+		for i := 0; i < len(lines); i++ {
+			pieces := strings.Split(lines[i], ":")
+			if strings.Contains(lines[i], "bundle.channel.default") {
+				defaultChannel = pieces[1]
+			}
+			if strings.Contains(lines[i], "bundle.channels") {
+				channel = pieces[1]
+			}
+		}
+		return channel, defaultChannel, nil
+	} else {
+		//check for *.package.yaml
+		channel, defaultChannel = checkForPackageYaml(repoPath)
+		return channel, defaultChannel, nil
+	}
+	return "notfound", "notfound", nil
+}
+
+func checkForPackageYaml(repoPath string) (channel string, channelDefault string) {
+
+	//look for *.package.yaml files
+	pattern := "^.+\\.package.yaml"
+	//libRegEx, e := regexp.Compile("^.+\\.go")
+	libRegEx, e := regexp.Compile(pattern)
+	if e != nil {
+		log.Fatal(e)
+	}
+
+	var found bool
+	var pathFound string
+	e = filepath.Walk(repoPath, func(path string, info os.FileInfo, err error) error {
+		if err == nil && libRegEx.MatchString(info.Name()) {
+			//fmt.Printf("found %s\n", path)
+			//println(info.Name())
+			found = true
+			pathFound = path
+			return nil
+		}
+		return nil
+	})
+	if e != nil {
+		log.Fatal(e)
+	}
+	if found {
+		content, err := ioutil.ReadFile(pathFound)
+		if err != nil {
+			fmt.Println(err.Error())
+			return "", ""
+		}
+		var pm manifests.PackageManifest
+		err = yaml.Unmarshal(content, &pm)
+		if err != nil {
+			fmt.Println(err.Error())
+			return "", ""
+		}
+
+		if len(pm.Channels) == 1 {
+			channel = pm.Channels[0].Name
+		} else {
+			for i := 0; i < len(pm.Channels); i++ {
+				channel = channel + "," + pm.Channels[i].Name
+			}
+		}
+		channelDefault = pm.DefaultChannelName
+	}
+	return channel, channelDefault
 }
