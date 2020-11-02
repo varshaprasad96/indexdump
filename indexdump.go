@@ -23,6 +23,7 @@ const source_community = "community"
 const source_marketplace = "marketplace"
 const source_certified = "certified"
 const source_operatorhub = "operatorhub"
+const source_prod = "prod"
 
 type ReportColumns struct {
 	Operator          string
@@ -39,6 +40,7 @@ type ReportColumns struct {
 	SourceMarketplace string
 	SourceCertified   string
 	SourceOperatorHub string
+	SourceProd        string
 	Channel           string
 	DefaultChannel    string
 }
@@ -116,12 +118,11 @@ func dump(db *sql.DB, sourceDescription, ocpVersion string) {
 		certified := csvStruct.ObjectMeta.Annotations["certified"]
 
 		repo := csvStruct.ObjectMeta.Annotations["repository"]
-		exists, repoPath := repoExists(repo)
+		//exists, repoPath := repoExists(repo)
 		channel := "unknown"
-		defaultChannel := "unknown"
-		if exists {
-			channel, defaultChannel, err = getChannel(repoPath)
-		}
+		//if exists {
+		channel, err = getChannel(db, name)
+		//}
 
 		createdAt := csvStruct.ObjectMeta.Annotations["createdAt"]
 		companyName := csvStruct.Spec.Provider.Name
@@ -136,17 +137,16 @@ func dump(db *sql.DB, sourceDescription, ocpVersion string) {
 			//fmt.Printf("Jeff - update an entry %s\n", name)
 		} else {
 			ReportMap[name] = ReportColumns{
-				Operator:       name,
-				Version:        csvStruct.Spec.Version.String(),
-				Certified:      certified,
-				CreatedAt:      createdAt,
-				Company:        companyName,
-				Repo:           repo,
-				OCPVersion:     ocpVersion,
-				SDKVersion:     sdkVersion,
-				OperatorType:   operatorType,
-				Channel:        channel,
-				DefaultChannel: defaultChannel,
+				Operator:     name,
+				Version:      csvStruct.Spec.Version.String(),
+				Certified:    certified,
+				CreatedAt:    createdAt,
+				Company:      companyName,
+				Repo:         repo,
+				OCPVersion:   ocpVersion,
+				SDKVersion:   sdkVersion,
+				OperatorType: operatorType,
+				Channel:      channel,
 			}
 			f = ReportMap[name]
 		}
@@ -157,6 +157,8 @@ func dump(db *sql.DB, sourceDescription, ocpVersion string) {
 			f.SourceCommunity = "yes"
 		case source_marketplace:
 			f.SourceMarketplace = "yes"
+		case source_prod:
+			f.SourceProd = "yes"
 		case source_certified:
 			f.SourceCertified = "yes"
 		case source_operatorhub:
@@ -272,7 +274,7 @@ func printReport() {
 	sort.Strings(keys)
 
 	// print the 1st row which acts as the spreadsheet header
-	fmt.Println("operator|version|certified|created|company|repos|ocpversion|sdkversion|operatortype|source-redhat|source-community|source-marketplace|source-certified|source-operatorhub|channel|default-channel")
+	fmt.Println("operator|version|certified|created|company|repos|ocpversion|sdkversion|operatortype|source-redhat|source-community|source-marketplace|source-certified|source-operatorhub|source-prod|channel")
 	for _, k := range keys {
 		f := ReportMap[k]
 		fmt.Printf("%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s\n",
@@ -290,8 +292,8 @@ func printReport() {
 			f.SourceMarketplace,
 			f.SourceCertified,
 			f.SourceOperatorHub,
-			f.Channel,
-			f.DefaultChannel)
+			f.SourceProd,
+			f.Channel)
 	}
 }
 
@@ -308,60 +310,21 @@ func repoExists(repoURL string) (exists bool, path string) {
 	return exists, path
 }
 
-func getChannel(repoPath string) (channel, defaultChannel string, err error) {
-
-	pattern := "annotations.yaml"
-	repoPath = repoPath
-
-	//fmt.Printf("looking for %s in %s\n", pattern, repoPath)
-
-	//libRegEx, e := regexp.Compile("^.+\\.(LICENSE)$")
-	//libRegEx, e := regexp.Compile("^.+\\.go")
-	libRegEx, e := regexp.Compile(pattern)
-	if e != nil {
-		log.Fatal(e)
+func getChannel(db *sql.DB, name string) (channel string, err error) {
+	sqlString := fmt.Sprintf("SELECT c.name FROM channel c, operatorbundle o where c.head_operatorbundle_name = '%s'", name)
+	//fmt.Println(sqlString)
+	row, err := db.Query(sqlString)
+	if err != nil {
+		panic(err)
 	}
 
-	var found bool
-	var pathFound string
-	e = filepath.Walk(repoPath, func(path string, info os.FileInfo, err error) error {
-		//		fmt.Printf("comparing to %s\n", info.Name())
-		if err == nil && libRegEx.MatchString(info.Name()) {
-			//println(info.Name())
-			found = true
-			pathFound = path
-			return nil
-		}
-		return nil
-	})
-	if e != nil {
-		log.Fatal(e)
+	defer row.Close()
+	var channelName string
+	for row.Next() { // Iterate and fetch the records from result cursor
+		row.Scan(&channelName)
 	}
-	if found {
-		content, err := ioutil.ReadFile(pathFound)
-		if err != nil {
-			return "", "", err
-		}
-		lines := strings.Split(string(content), "\n")
-		//operators.operatorframework.io.bundle.channel.default.v1: "alpha"
-		//operators.operatorframework.io.bundle.channels.v1: "alpha"
 
-		for i := 0; i < len(lines); i++ {
-			pieces := strings.Split(lines[i], ":")
-			if strings.Contains(lines[i], "bundle.channel.default") {
-				defaultChannel = pieces[1]
-			}
-			if strings.Contains(lines[i], "bundle.channels") {
-				channel = pieces[1]
-			}
-		}
-		return channel, defaultChannel, nil
-	} else {
-		//check for *.package.yaml
-		channel, defaultChannel = checkForPackageYaml(repoPath)
-		return channel, defaultChannel, nil
-	}
-	return "notfound", "notfound", nil
+	return channelName, nil
 }
 
 func checkForPackageYaml(repoPath string) (channel string, channelDefault string) {
