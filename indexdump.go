@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"database/sql"
 	"encoding/json"
 	"fmt"
@@ -11,6 +12,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"regexp"
 	"sigs.k8s.io/yaml"
@@ -98,7 +100,7 @@ func main() {
 }
 
 func dump(db *sql.DB, sourceDescription, ocpVersion string) {
-	row, err := db.Query("SELECT name, csv FROM operatorbundle where csv is not null order by name")
+	row, err := db.Query("SELECT name, csv, bundlepath FROM operatorbundle where csv is not null order by name")
 	if err != nil {
 		panic(err)
 	}
@@ -109,7 +111,8 @@ func dump(db *sql.DB, sourceDescription, ocpVersion string) {
 	for row.Next() { // Iterate and fetch the records from result cursor
 		var name string
 		var csv string
-		row.Scan(&name, &csv)
+		var bundlepath string
+		row.Scan(&name, &csv, &bundlepath)
 		err := json.Unmarshal([]byte(csv), &csvStruct)
 		if err != nil {
 			fmt.Printf("error unmarshalling csv %s\n", err.Error())
@@ -126,10 +129,11 @@ func dump(db *sql.DB, sourceDescription, ocpVersion string) {
 
 		createdAt := csvStruct.ObjectMeta.Annotations["createdAt"]
 		companyName := csvStruct.Spec.Provider.Name
-		sdkVersion, found, operatorType := getSDKVersion(repo)
-		if !found {
-			sdkVersion, found, operatorType = getAnsibleHelmVersion(repo)
-		}
+		//		sdkVersion, found, operatorType := getSDKVersion(repo)
+		//		if !found {
+		//			sdkVersion, found, operatorType = getAnsibleHelmVersion(repo)
+		//		}
+		operatorType, sdkVersion := parseBundleImage(bundlepath)
 
 		f, ok := ReportMap[name]
 		if ok {
@@ -375,4 +379,123 @@ func checkForPackageYaml(repoPath string) (channel string, channelDefault string
 		channelDefault = pm.DefaultChannelName
 	}
 	return channel, channelDefault
+}
+
+//import "github.com/containers/libpod/pkg/domain/entities"
+
+type ImageSummary struct {
+	ID          string            `json:"Id"`
+	ParentId    string            `json:",omitempty"` // nolint
+	RepoTags    []string          `json:",omitempty"`
+	Created     string            `json:",omitempty"`
+	Size        int64             `json:",omitempty"`
+	SharedSize  int               `json:",omitempty"`
+	VirtualSize int64             `json:",omitempty"`
+	Labels      map[string]string `json:",omitempty"`
+	Containers  int               `json:",omitempty"`
+	ReadOnly    bool              `json:",omitempty"`
+	Dangling    bool              `json:",omitempty"`
+
+	// Podman extensions
+	Names        []string `json:",omitempty"`
+	Digest       string   `json:",omitempty"`
+	Digests      []string `json:",omitempty"`
+	ConfigDigest string   `json:",omitempty"`
+	//	History      []string `json:",omitempty"`
+}
+
+func parseBundleImage(bundleImage string) (operatorType, sdkVersion string) {
+	sha, err := pullBundleImage(bundleImage)
+	if err != nil {
+		fmt.Println(err.Error())
+		return operatorType, sdkVersion
+	}
+	//fmt.Printf("sha %s\n", sha)
+
+	var inspectOutput string
+	inspectOutput, err = inspectImage(strings.TrimSpace(sha))
+	if err != nil {
+		fmt.Println(err.Error())
+		return operatorType, sdkVersion
+	}
+
+	fmt.Println(inspectOutput)
+	operatorType, sdkVersion, err = printLabels(inspectOutput)
+	if err != nil {
+		fmt.Println(err.Error())
+		return operatorType, sdkVersion
+	}
+	//fmt.Printf("operator type [%s] sdk version [%s]\n", operatorType, sdkVersion)
+	return operatorType, sdkVersion
+
+}
+
+func printLabels(inspectOutput string) (operatorType string, sdkversion string, err error) {
+	//convert string into object
+	var i []ImageSummary
+	err = json.Unmarshal([]byte(inspectOutput), &i)
+	if err != nil {
+		fmt.Println(err.Error())
+		return "", "", err
+	}
+	//	fmt.Printf("images len %d\n", len(i))
+	if i[0].Labels == nil {
+		fmt.Println("labels are nil")
+		return "", "", err
+	}
+	//	fmt.Printf("labels are %+v\n", i[0].Labels)
+	for k, v := range i[0].Labels {
+		if k == "operators.operatorframework.io.metrics.builder" {
+			sdkversion = v
+		}
+		if k == "operators.operatorframework.io.metrics.project_layout" {
+
+			fmt.Printf("[%s][%s]\n", k, v)
+			if strings.Contains(v, "ansible") {
+				operatorType = "ansible"
+			}
+			if strings.Contains(v, "helm") {
+				operatorType = "helm"
+			}
+			if strings.Contains(v, "go") {
+				operatorType = "golang"
+			}
+		}
+	}
+	return operatorType, sdkversion, nil
+
+}
+
+func pullBundleImage(bundlePath string) (sha string, err error) {
+
+	var stdout bytes.Buffer
+	cmd := &exec.Cmd{
+		Path:   "/usr/bin/podman",
+		Args:   []string{"/usr/bin/podman", "pull", bundlePath, "--quiet"},
+		Stdout: &stdout,
+		Stderr: os.Stderr,
+	}
+
+	err = cmd.Run()
+	return stdout.String(), err
+
+}
+
+func inspectImage(bundlePath string) (imageOutput string, err error) {
+	var stdout bytes.Buffer
+	//var stderr bytes.Buffer
+	cmd := &exec.Cmd{
+		Path:   "/usr/bin/podman",
+		Args:   []string{"/usr/bin/podman", "inspect", bundlePath, "--format", "json"},
+		Stdout: &stdout,
+		Stderr: os.Stderr,
+	}
+
+	err = cmd.Run()
+	if err != nil {
+		fmt.Println(err.Error())
+		return "", err
+	}
+	return stdout.String(), err
+
 }
