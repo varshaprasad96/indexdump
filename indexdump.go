@@ -28,23 +28,25 @@ const source_operatorhub = "operatorhub"
 const source_prod = "prod"
 
 type ReportColumns struct {
-	Operator          string
-	Version           string
-	Certified         string
-	CreatedAt         string
-	Company           string
-	Repo              string
-	OCPVersion        string
-	SDKVersion        string
-	OperatorType      string
-	SourceRedhat      string
-	SourceCommunity   string
-	SourceMarketplace string
-	SourceCertified   string
-	SourceOperatorHub string
-	SourceProd        string
-	Channel           string
-	DefaultChannel    string
+	Operator           string
+	Version            string
+	Certified          string
+	CreatedAt          string
+	Company            string
+	Repo               string
+	OCPVersion         string
+	SDKVersion         string
+	OperatorType       string
+	SDKVersionGithub   string
+	OperatorTypeGithub string
+	SourceRedhat       string
+	SourceCommunity    string
+	SourceMarketplace  string
+	SourceCertified    string
+	SourceOperatorHub  string
+	SourceProd         string
+	Channel            string
+	DefaultChannel     string
 }
 
 var ReportMap map[string]ReportColumns
@@ -129,10 +131,10 @@ func dump(db *sql.DB, sourceDescription, ocpVersion string) {
 
 		createdAt := csvStruct.ObjectMeta.Annotations["createdAt"]
 		companyName := csvStruct.Spec.Provider.Name
-		//		sdkVersion, found, operatorType := getSDKVersion(repo)
-		//		if !found {
-		//			sdkVersion, found, operatorType = getAnsibleHelmVersion(repo)
-		//		}
+		sdkVersionGithub, found, operatorTypeGithub := getSDKVersion(repo)
+		if !found {
+			sdkVersionGithub, found, operatorTypeGithub = getAnsibleHelmVersion(repo)
+		}
 		operatorType, sdkVersion := parseBundleImage(bundlepath)
 
 		f, ok := ReportMap[name]
@@ -141,16 +143,18 @@ func dump(db *sql.DB, sourceDescription, ocpVersion string) {
 			//fmt.Printf("Jeff - update an entry %s\n", name)
 		} else {
 			ReportMap[name] = ReportColumns{
-				Operator:     name,
-				Version:      csvStruct.Spec.Version.String(),
-				Certified:    certified,
-				CreatedAt:    createdAt,
-				Company:      companyName,
-				Repo:         repo,
-				OCPVersion:   ocpVersion,
-				SDKVersion:   sdkVersion,
-				OperatorType: operatorType,
-				Channel:      channel,
+				Operator:           name,
+				Version:            csvStruct.Spec.Version.String(),
+				Certified:          certified,
+				CreatedAt:          createdAt,
+				Company:            companyName,
+				Repo:               repo,
+				OCPVersion:         ocpVersion,
+				SDKVersion:         sdkVersion,
+				OperatorType:       operatorType,
+				SDKVersionGithub:   sdkVersionGithub,
+				OperatorTypeGithub: operatorTypeGithub,
+				Channel:            channel,
 			}
 			f = ReportMap[name]
 		}
@@ -278,10 +282,10 @@ func printReport() {
 	sort.Strings(keys)
 
 	// print the 1st row which acts as the spreadsheet header
-	fmt.Println("operator|version|certified|created|company|repos|ocpversion|sdkversion|operatortype|source-redhat|source-community|source-marketplace|source-certified|source-operatorhub|source-prod|channel")
+	fmt.Println("operator|version|certified|created|company|repos|ocpversion|sdkversion|operatortype|sdkversion-github|operatortype-github|source-redhat|source-community|source-marketplace|source-certified|source-operatorhub|source-prod|channel")
 	for _, k := range keys {
 		f := ReportMap[k]
-		fmt.Printf("%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s\n",
+		fmt.Printf("%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s\n",
 			f.Operator,
 			f.Version,
 			f.Certified,
@@ -291,6 +295,8 @@ func printReport() {
 			f.OCPVersion,
 			f.SDKVersion,
 			f.OperatorType,
+			f.SDKVersionGithub,
+			f.OperatorTypeGithub,
 			f.SourceRedhat,
 			f.SourceCommunity,
 			f.SourceMarketplace,
@@ -407,7 +413,7 @@ type ImageSummary struct {
 func parseBundleImage(bundleImage string) (operatorType, sdkVersion string) {
 	sha, err := pullBundleImage(bundleImage)
 	if err != nil {
-		fmt.Println(err.Error())
+		//		fmt.Println(err.Error())
 		return operatorType, sdkVersion
 	}
 	//fmt.Printf("sha %s\n", sha)
@@ -419,10 +425,10 @@ func parseBundleImage(bundleImage string) (operatorType, sdkVersion string) {
 		return operatorType, sdkVersion
 	}
 
-	fmt.Println(inspectOutput)
+	//	fmt.Println(inspectOutput)
 	operatorType, sdkVersion, err = printLabels(inspectOutput)
 	if err != nil {
-		fmt.Println(err.Error())
+		//		fmt.Println(err.Error())
 		return operatorType, sdkVersion
 	}
 	//fmt.Printf("operator type [%s] sdk version [%s]\n", operatorType, sdkVersion)
@@ -435,12 +441,12 @@ func printLabels(inspectOutput string) (operatorType string, sdkversion string, 
 	var i []ImageSummary
 	err = json.Unmarshal([]byte(inspectOutput), &i)
 	if err != nil {
-		fmt.Println(err.Error())
+		//		fmt.Println(err.Error())
 		return "", "", err
 	}
 	//	fmt.Printf("images len %d\n", len(i))
 	if i[0].Labels == nil {
-		fmt.Println("labels are nil")
+		//		fmt.Println("labels are nil")
 		return "", "", err
 	}
 	//	fmt.Printf("labels are %+v\n", i[0].Labels)
