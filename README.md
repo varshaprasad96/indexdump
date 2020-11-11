@@ -36,6 +36,9 @@ Then run the  oc-get-index-redhat-operators.sh script to download the index
 files.
 
 also...
+docker login registry.connect.redhat.com
+Username: jemccorm@redhat.com
+
 
 https://github.com/operator-framework/operator-lifecycle-manager/blob/master/deploy/upstream/manifests/0.16.1/0000_50_olm_17-upstream-operators.catalogsource.yaml#L10
 

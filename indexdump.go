@@ -8,6 +8,7 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/operator-framework/api/pkg/manifests"
 	"github.com/operator-framework/api/pkg/operators/v1alpha1"
+	"golang.org/x/mod/modfile"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -102,7 +103,8 @@ func main() {
 }
 
 func dump(db *sql.DB, sourceDescription, ocpVersion string) {
-	row, err := db.Query("SELECT name, csv, bundlepath FROM operatorbundle where csv is not null order by name")
+	//row, err := db.Query("SELECT name, csv, bundlepath FROM operatorbundle where csv is not null and name like 'enmasse%' order by name")
+	row, err := db.Query("SELECT name, csv, bundlepath FROM operatorbundle where csv is not null  order by name")
 	if err != nil {
 		panic(err)
 	}
@@ -199,13 +201,30 @@ func getSDKVersion(inURL string) (sdkVersion string, found bool, operatorType st
 		return "", false, ""
 	}
 
+	fix := func(path, version string) (string, error) {
+		return version, nil
+	}
+	f, err2 := modfile.ParseLax("go.mod", body, fix)
+	if err2 != nil {
+		fmt.Println(err2.Error())
+		return "", false, ""
+	}
+	for i := 0; i < len(f.Require); i++ {
+		m := f.Require[i].Mod
+		//fmt.Printf("path %s %s\n", m.Path, m.Version)
+		if strings.Contains(m.Path, "operator-sdk") {
+			return m.Version, true, "golang"
+		}
+	}
+
 	//	fmt.Println("Number of bytes copied to STDOUT:", n)
+	/**
 	temp := strings.Split(string(body), "\n")
 	for i := 0; i < len(temp); i++ {
 		if strings.Contains(temp[i], "operator-sdk") &&
 			!strings.Contains(temp[i], "=>") &&
 			!strings.Contains(temp[i], "replace") {
-			//fmt.Printf("%s\n", temp[i])
+			fmt.Printf("jeff problem line is [%s]\n", temp[i])
 			sdkVersion := strings.Split(strings.TrimSpace(temp[i]), " ")
 			if len(sdkVersion) > 1 {
 				//fmt.Printf("version [%s]\n", sdkVersion[1])
@@ -213,6 +232,7 @@ func getSDKVersion(inURL string) (sdkVersion string, found bool, operatorType st
 			}
 		}
 	}
+	*/
 	return "", false, ""
 
 }
@@ -426,9 +446,12 @@ func parseBundleImage(bundleImage string) (operatorType, sdkVersion string) {
 	}
 
 	//	fmt.Println(inspectOutput)
+	operatorType = ""
+	sdkVersion = ""
 	operatorType, sdkVersion, err = printLabels(inspectOutput)
+	//fmt.Printf("jeff after [%s] [%s] \n", operatorType, sdkVersion)
 	if err != nil {
-		//		fmt.Println(err.Error())
+		fmt.Println("jeff error is [%s]\n", err.Error())
 		return operatorType, sdkVersion
 	}
 	//fmt.Printf("operator type [%s] sdk version [%s]\n", operatorType, sdkVersion)
@@ -438,18 +461,21 @@ func parseBundleImage(bundleImage string) (operatorType, sdkVersion string) {
 
 func printLabels(inspectOutput string) (operatorType string, sdkversion string, err error) {
 	//convert string into object
+	operatorType = "unknown"
+	sdkversion = "unknown"
+
 	var i []ImageSummary
 	err = json.Unmarshal([]byte(inspectOutput), &i)
 	if err != nil {
-		//		fmt.Println(err.Error())
+		fmt.Println(err.Error())
 		return "", "", err
 	}
-	//	fmt.Printf("images len %d\n", len(i))
+	//fmt.Printf("images len %d\n", len(i))
 	if i[0].Labels == nil {
-		//		fmt.Println("labels are nil")
+		fmt.Println("labels are nil")
 		return "", "", err
 	}
-	//	fmt.Printf("labels are %+v\n", i[0].Labels)
+	//fmt.Printf("labels are %+v\n", i[0].Labels)
 	for k, v := range i[0].Labels {
 		if k == "operators.operatorframework.io.metrics.builder" {
 			sdkversion = v
