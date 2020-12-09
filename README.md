@@ -1,3 +1,9 @@
+# Steps to run this script:
+
+1. Connect to RedHat VPN.
+2. Authenticate yourself to RedHat customer portal - https://access.redhat.com/terms-based-registry/
+3. Run `./oc-get-index-redhat-operators.sh`- index databases would download locally.
+4. Run `./run-report.sh` - A file with name `report.txt` should have been generated.
 # indexdump
 
 This command line program dumps out the 'certified' annotation for each operator it finds in an index.db.
